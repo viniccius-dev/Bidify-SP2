@@ -653,6 +653,18 @@ video {
   gap: 1.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-y-12 {
   row-gap: 3rem;
 }
@@ -787,6 +799,10 @@ video {
   padding-top: 1rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -847,6 +863,22 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.hover\:fixed:hover {
+  position: fixed;
+}
+
+.hover\:absolute:hover {
+  position: absolute;
+}
+
+.hover\:rounded:hover {
+  border-radius: 0.25rem;
+}
+
+.hover\:rounded-full:hover {
+  border-radius: 9999px;
+}
+
 .hover\:border-green-400:hover {
   --tw-border-opacity: 1;
   border-color: rgb(74 222 128 / var(--tw-border-opacity));
@@ -862,6 +894,26 @@ video {
   background-color: rgb(34 34 34 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-green-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+}
+
+.hover\:px-6:hover {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.hover\:py-3:hover {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.hover\:text-lg:hover {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(34 34 34 / var(--tw-text-opacity));
@@ -870,4 +922,9 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-green-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(74 222 128 / var(--tw-text-opacity));
 }
