@@ -6,3 +6,7 @@ body {
     font-family: 'Poppins', sans-serif;
     max-width: 2800px;
 }
+
+footer {
+    background-color: #F6F6F6;
+}
