@@ -17,8 +17,9 @@
     <script src="/src/js/login/script.js"></script>
 </head>
 <body class="mx-auto text-primary bg-light">
-    <main class="flex 2xl:px-32 h-screen items-center">
-        <div class="grid w-1/4 figure items-center">
+
+    <main class="flex 2xl:px-6 h-screen items-center justify-between wrapper mx-auto">
+        <div class="grid figure items-center">
             <img src="/src/images/Figure/rectangle-1.png" alt="">
             <img src="/src/images/Figure/rectangle-1.png" alt="">
             <img src="/src/images/Figure/round-purple-1.png" alt="">
@@ -56,6 +57,32 @@
             <img src="/src/images/Figure/rectangle-10.png" alt=""> 
         </div>
 
-        <div></div>
+        <div class="w-1/2">
+            <h1 class="text-3xl font-bold 2xl:mb-5">Log in.</h1>
+            <p class="leading-relaxed w-3/4 text-lg">Welcome back to Bidify - your premier auction marketplace. Buy, sell, and discover unique items effortlessly. Join us now and start bidding!</p>
+
+            <div class="flex flex-col gap-2 pt-10">
+                <label for="email">Your e-mail:</label>
+                <input type="text" id="email" name="email" class="w-3/4 border rounded h-12">
+            </div>
+
+            <div class="flex flex-col gap-2 pt-10">
+                <label for="password">Your password:</label>
+                <input type="password" id="password" name="password" class="w-3/4 border rounded h-12">
+            </div>
+
+            <div class="flex pt-8 justify-between w-3/4 text-sm">
+                <div class="flex items-center gap-3">
+                    <input type="checkbox" id="remember-me" name="remember-me" class="border rounded h-5 w-5">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <span class="font-medium">Forgot your password?</span>
+            </div>
+
+            <button class="bg-primary px-6 py-3 text-white rounded mt-8">Log in</button>
+
+            <p class="mt-8">Don't have an account yet? Sign up <a href="#" class="underline font-medium">here.</a></p>
+            
+        </div>
     </main>
 </body>
