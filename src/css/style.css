@@ -10,3 +10,10 @@ body {
 footer {
     background-color: #F6F6F6;
 }
+
+.figure {
+    grid-template-columns: repeat(5, 128px);
+    grid-template-rows: repeat(7, 128px);
+    gap: 1px;
+}
+
