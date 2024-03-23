@@ -21,3 +21,9 @@ footer {
     gap: 1px;
 }
 
+@media (min-width: 1280px) and (max-width: 1535px) {
+    .figure {
+        grid-template-columns: repeat(5, 100px);
+        grid-template-rows: repeat(7, 100px);
+    }
+}
