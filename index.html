@@ -40,7 +40,7 @@
 <div class="bg-green-100 flex items-center flex-col py-3 md:py-5 lg:relative">
     <p class="font-bold text-xl md:text-2xl xl:text-3xl pt-2 lg:pt-6 text-center">Where every bid ignites excitement.</p>
     <p class="font-bold text-xl md:text-2xl xl:text-3xl pb-3 lg:pb-6 text-center">Dive into auctions redefined.</p>
-    <p class="text-sm md:text-base xl:text-lg pb-8 lg:pb-20 text-center">Search through our thousands of listings below. Let the bidding begin!</p>
+    <p class="text-sm md:text-base xl:text-lg pb-8 lg:pb-20 text-center">Search through thousands of listings below. Let the bidding begin!</p>
 
     <div class="lg:absolute w-full lg:w-3/4 2xl:w-2/5 bg-green-100 searchbar lg:p-6 rounded flex items-center gap-3 px-3 md:px-14 2xl:px-12">
         <input type="text" class="w-full py-1 md:py-2 lg:py-2.5 outline-none pl-3 rounded" placeholder="Start searching...">
@@ -48,10 +48,31 @@
     </div>
 </div>
 
-<section class="px-4 md:px-14 xl:px-20 2xl:px-80">
+<section class="px-4 md:px-14 xl:px-20 2xl:px-80 pt-10 pb-16">
     <div class="flex justify-between pt-24 items-center">
-        <h1 class="text-xl">Ending soon.</h1>
+        <div class="flex gap-32">
+            <div class="flex flex-col">
+                <div class="flex items-center gap-3">
+                    <hr class="w-10">
+                    <span class="font-bold text-green-700 text-lg">Don't miss out</span>
+                </div>
+                
+                <h1 class="text-2xl font-bold pl-12 ml-1">Ending soon.</h1>
+            </div>
+
+            <div class="flex self-end gap-4">
+                <button class="bg-gray-100 w-12 h-12 rounded-full hover:bg-gray-200">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="bg-gray-100 w-12 h-12 rounded-full hover:bg-gray-200">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div> 
         <a href="/pages/auctions/index.html" class="view-all">view all</a>
+    </div>
+        
+        
     </div>
 
     <div class="grid grid-cols-4 gap-6 pt-6 pb-20">

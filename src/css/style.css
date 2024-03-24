@@ -40,3 +40,7 @@ footer {
     height: 280px;
     width: 280px;
 }
+
+hr {
+    border-bottom: 1px solid #158252;
+}
