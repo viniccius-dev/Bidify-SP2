@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bidlify | All auctions</title>
+    <title>Bidlify | Home</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
 <body class="mx-auto text-primary bg-light">
 
 <!--HEADER-->
-    <header class="flex justify-between items-center pt-4 pb-3 lg:pt-8 lg:pb-6 px-4 md:px-14 xl:px-20 2xl:px-32 mx-auto bg-green-200">
+    <header class="flex justify-between items-center pt-4 pb-3 lg:pt-8 lg:pb-6 px-4 md:px-14 xl:px-20 2xl:px-32 mx-auto bg-green-100">
         <span class="w-1/6">
             <a href="/index.html" class="text-2xl lg:text-3xl font-bold">Bidlify<span class="text-green-400">.</span></a>
         </span>
@@ -37,16 +37,82 @@
 
 <!--UPPER CONTENT-->
 
-<div class="bg-green-200 flex items-center flex-col py-5 relative">
-    <p class="font-bold text-3xl pt-6">Where every bid ignites excitement.</p>
-    <p class="font-bold text-3xl pb-6">Dive into auctions redefined.</p>
-    <p class="text-lg pb-14">Search through our thousands of listings below. Let the bidding begin!</p>
+<div class="bg-green-100 flex items-center flex-col py-3 md:py-5 lg:relative">
+    <p class="font-bold text-xl md:text-2xl xl:text-3xl pt-2 lg:pt-6 text-center">Where every bid ignites excitement.</p>
+    <p class="font-bold text-xl md:text-2xl xl:text-3xl pb-3 lg:pb-6 text-center">Dive into auctions redefined.</p>
+    <p class="text-sm md:text-base xl:text-lg pb-8 lg:pb-20 text-center">Search through our thousands of listings below. Let the bidding begin!</p>
 
-    <div class="absolute w-1/2 bg-green-200 searchbar px-6 py-6 rounded flex items-center gap-3">
-        <input type="text" class="w-full py-2">
-        <button class="px-6 py-2 bg-primary text-white font-light rounded">Search</button>
+    <div class="lg:absolute w-full lg:w-3/4 2xl:w-2/5 bg-green-100 searchbar lg:p-6 rounded flex items-center gap-3 px-3 md:px-14 2xl:px-12">
+        <input type="text" class="w-full py-1 md:py-2 lg:py-2.5 outline-none pl-3 rounded" placeholder="Start searching...">
+        <button class="px-6 py-1.5 md:py-2.5 bg-primary text-white font-light rounded text-sm lg:text-base">Search</button>
     </div>
 </div>
+
+<section class="px-4 md:px-14 xl:px-20 2xl:px-72">
+    <div class="flex justify-between pt-24 items-center">
+        <h1 class="text-xl">Ending soon.</h1>
+        <a href="/pages/auctions/index.html" class="view-all">view all</a>
+    </div>
+
+    <div class="grid grid-cols-4 gap-6 pt-6 pb-20">
+        <figure>
+            <img src="/src/images/img-1.jpg" alt="" class="rounded">
+            <figcaption>
+                <h2>MOBI CHAIR</h2>
+                <span>Ends in 2 hours 1 min</span>
+                <p>Current bid: <span>$ 45.00</span></p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="/src/images/img-2.png" alt="" class="rounded">
+            <figcaption>
+                <h2>MOBI CHAIR</h2>
+                <span>Ends in 2 hours 1 min</span>
+                <p>Current bid: <span>$ 45.00</span></p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="/src/images/img-3.png" alt="" class="rounded">
+            <figcaption>
+                <h2>MOBI CHAIR</h2>
+                <span>Ends in 2 hours 1 min</span>
+                <p>Current bid: <span>$ 45.00</span></p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="/src/images/img-4.png" alt="" class="rounded">
+            <figcaption>
+                <h2>MOBI CHAIR</h2>
+                <span>Ends in 2 hours 1 min</span>
+                <p>Current bid: <span>$ 45.00</span></p>
+            </figcaption>
+        </figure>
+    </div>
+</section>
+
+<section class="px-4 md:px-14 xl:px-20 2xl:px-72 bg-gray-100 pb-20">
+    <h1 class="flex flex-col font-bold text-2xl pt-20 pb-10">Check out our <span>most popular cathegories.</span></h1>
+    
+    <div class="flex gap-6">
+        <figure class="w-1/3">
+            <img src="/src/images/watches.png" alt="" class="object-cover w-full">
+            <button class="flex items-center flex-col text-center justify-center w-full">Watches <span>(1234 listings)</span></button>
+        </figure>
+
+        <figure class="w-1/3">
+            <img src="/src/images/watches.png" alt="" class="object-cover w-full">
+            <button class="flex items-center flex-col text-center justify-center w-full">Watches <span>(1234 listings)</span></button>
+        </figure>
+
+        <figure class="w-1/3">
+            <img src="/src/images/watches.png" alt="" class="object-cover w-full">
+            <button class="flex items-center flex-col text-center justify-center w-full">Watches <span>(1234 listings)</span></button>
+        </figure>
+    </div>
+</section>
 
 </body>
 </html>
