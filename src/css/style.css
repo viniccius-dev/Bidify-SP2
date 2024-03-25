@@ -51,19 +51,19 @@ hr {
 }
 
 .figure img:nth-child(odd) {
-    animation-delay: 0.2s;
-}
-
-.figure img:nth-child(even) {
-    animation-delay: 0.3s;
-}
-
-.figure img:nth-child(3n) {
     animation-delay: 0.4s;
 }
 
-.figure img:nth-child(4n) {
+.figure img:nth-child(even) {
     animation-delay: 0.5s;
+}
+
+.figure img:nth-child(3n) {
+    animation-delay: 0.6s;
+}
+
+.figure img:nth-child(4n) {
+    animation-delay: 0.7s;
 }
 
 @media (min-width: 1280px) and (max-width: 1535px) {
