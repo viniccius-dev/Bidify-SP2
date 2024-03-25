@@ -44,3 +44,10 @@ footer {
 hr {
     border-bottom: 1px solid #158252;
 }
+
+
+.summer {
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+}
