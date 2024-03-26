@@ -7,17 +7,21 @@ export default function headerWord() {
         "vintage bags",
         "accessorizes",
         "toys",
-        "plants"
+        "plants",
+        "books",
+        "clothes"
     ];
 
     const colors = [
-        "#AC86EF", // Purple
+        "#804ADE", // Purple
         "#EF86C9", // Yellow
-        "#EFAC86", // Red
-        "#158058", // Green (dark)
-        "#EF86C9",  // Pink
+        "#DE804A", // Orange
+        "#4ADECA", // Blue
+        "#DE4AA8",  // Pink
         "#AC86EF", // Purple
-        "#158058", // Green (dark)
+        "#4A5EDE", // Blue
+        "#DE804A", // Orange
+        "#EF86C9", // Yellow
     ];
 
     let index = 0;
