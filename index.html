@@ -21,49 +21,52 @@
 <body class="mx-auto text-primary bg-light">
 
 <!--HEADER-->
-    <header class="flex justify-between items-center pt-4 pb-3 lg:pt-8 lg:pb-6 px-4 md:px-14 xl:px-20 2xl:px-32 mx-auto bg-grey">
-        <span class="w-1/6">
-            <a href="/index.html" class="text-2xl lg:text-3xl font-bold">Bidlify<span class="text-green-400">.</span></a>
-        </span>
+<header class="flex justify-between items-center pt-4 pb-3 lg:pt-8 lg:pb-6 px-4 md:px-14 xl:px-20 2xl:px-32 mx-auto bg-lightpink">
+    <span class="w-1/6">
+        <a href="/index.html" class="text-2xl lg:text-3xl font-bold">bidlify<span class="text-secondary">.</span></a>
+    </span>
 
-        <div class="items-center justify-between w-1/4 xl:w-1/3 mx-auto gap-10 hidden xl:flex">
-            <a href="#" class="w-1/3 hover:bg-green-200 hover:rounded-full text-center py-4">New listing</a>
-            <a href="#" class="w-1/3 hover:bg-green-200 hover:rounded-full text-center py-4">Auctions</a>
-            <a href="#" class="w-1/3 hover:bg-green-200 hover:rounded-full text-center py-4">About</a>
-        </div>
+    <div class="items-center justify-between w-1/4 xl:w-1/3 mx-auto gap-10 hidden xl:flex">
+        <a href="#" class="w-1/3 text-center py-4">New listing</a>
+        <a href="#" class="w-1/3 text-center py-4">Auctions</a>
+        <a href="#" class="w-1/3 text-center py-4">About</a>
+    </div>
 
-        <div class="xL:w-1/5 2xl:w-1/6 gap-3 items-center justify-end hidden xl:flex">
-            <button class="font-semibold hover:text-green-400">Sign up</button>
-            <span>or</span>
-            <a href="/pages/login/index.html" class="px-6 py-3 rounded bg-green-400">Log in</a>
-        </div>
-    </header>
+    <div class="xL:w-1/5 2xl:w-1/6 gap-3 items-center justify-end hidden xl:flex">
+        <button class="font-semibold hover:text-green-400">Sign up</button>
+        <span>or</span>
+        <a href="/pages/login/index.html" class="border px-6 py-3 rounded hover:bg-green-400 hover:border-green-400">Log in</a>
+    </div>
+</header>
 
 <!--UPPER CONTENT-->
 
-<div class="flex justify-between pb-3 md:pb-5 2xl:px-80 relative bg-grey">
-    <div class="flex flex-col justify-center items-center w-full py-16">
-        <p class="font-bold text-xl md:text-2xl xl:text-4xl text-center">Where every bid ignites excitement.</p>
-        <p class="font-bold text-xl md:text-2xl xl:text-4xl pt-4 text-center">Discover pre-used <span class="header-word text-purple-500">furniture</span></p>
-        <p class="font-medium md:text-lg xl:text-2xl pt-4 text-gray-600 text-center">...and so much more!</p>
-        <p class="text-sm md:text-base xl:text-lg mt-10 text-gray-600 text-center">Search through thousands of listings below. Let the bidding begin!</p>
-
-        <div class="flex gap-3 w-1/2 absolute searchbar bg-grey p-6">
-            <input type="text" class="w-full py-1 md:py-2 lg:py-2.5 outline-none pl-3 rounded" placeholder="Start searching...">
-            <button class="px-6 py-1.5 md:py-2.5 bg-primary text-white font-light rounded text-sm lg:text-base">Search</button>
+<div class="bg-lightpink pt-4 pb-14">
+    <div class="flex flex-col px-4 md:px-14 xl:px-20 2xl:px-80">
+        <div class="flex flex-col text-primary ">
+            <p class="font-bold text-xl md:text-2xl xl:text-4xl pt-20 rounded text-center">Welcome to Bidlify</p>
+            <p class="font-bold text-xl md:text-2xl xl:text-4xl pt-4 py-3 text-center">Discover or sell <span class="header-word text-purple-500">furniture</span></p>
+            <p class="font-medium md:text-lg xl:text-2xl pt-2 text-center">...and so much more!</p>
         </div>
+
+        <span class="flex gap-3 pt-14 rounded-md w-1/2 mx-auto">
+            <input type="text" class="w-full py-1 md:py-2 lg:py-2.5 outline-none pl-3 rounded" placeholder="Search through thousands of listings...">
+            <button class="px-8 py-1.5 md:py-2.5 bg-primary text-white rounded text-sm lg:text-base">Search</button>
+        </span>
     </div>
 </div>
 
+<!--  SELL BUY -->
+
 <!--LISTINGS: ENDING SOON-->
 
-<section class="px-4 md:px-14 xl:px-20 2xl:px-80 pt-10 pb-16">
-    <div class="flex justify-between pt-24 items-center">
+<section class="px-4 md:px-14 xl:px-20 2xl:px-80 pb-16">
+    <div class="flex justify-between pt-20 items-center">
         <div class="flex gap-32">
             <div class="flex flex-col">
                 <div class="flex items-center gap-3">
                     <hr class="w-10">
-                    <span class="font-bold text-green-500 text-lg">Don't miss out</span>
+                    <span class="font-bold text-secondary text-lg">Don't miss out</span>
                 </div>
                 
                 <h1 class="text-2xl font-bold pl-12 ml-1">Ending soon.</h1>
@@ -79,9 +82,6 @@
             </div>
         </div> 
         <a href="/pages/auctions/index.html" class="view-all">view all</a>
-    </div>
-        
-        
     </div>
 
     <div class="grid grid-cols-4 gap-6 pt-6 pb-20">
@@ -127,11 +127,76 @@
     </div>
 </section>
 
-<!--SOMETHING-->
+<!--LISTINGS: ENDING SOON-->
 
-<section class="bg-grey px-4 md:px-14 xl:px-20 2xl:px-80 pt-10 pb-16">
-    <h1 class="text-2xl font-bold pl-12 ml-1">Prepare for summer</h1>
+<section class="px-4 md:px-14 xl:px-20 2xl:px-80 pb-16">
+    <div class="flex justify-between pt-20 items-center">
+        <div class="flex gap-32">
+            <div class="flex flex-col">
+                <div class="flex items-center gap-3">
+                    <hr class="w-10">
+                    <span class="font-bold text-green-500 text-lg">New in</span>
+                </div>
+                
+                <h1 class="text-2xl font-bold pl-12 ml-1">Latest listings.</h1>
+            </div>
+
+            <div class="flex self-end gap-4">
+                <button class="bg-gray-100 w-12 h-12 rounded-full hover:bg-gray-200">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="bg-gray-100 w-12 h-12 rounded-full hover:bg-gray-200">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div> 
+        <a href="/pages/auctions/index.html" class="view-all">view all</a>
+    </div>
+
+    <div class="grid grid-cols-4 gap-6 pt-6 pb-20">
+        <figure>
+            <img src="/src/images/img-1.jpg" alt="" class="rounded w-full object-cover listing-image">
+            <figcaption>
+                <h2 class="font-medium xl:text-lg 2xl:text-xl pt-3">MOBI CHAIR</h2>
+                <p class="text-gray-500 pb-2 xl:pb-4 pt-1 xl:pt-2 font-medium text-xs md:text-sm xl:text-base">Ends in<span class="time-left"> 2 hours 4 min</span></p>
+                <p class="pb-5 text-sm lg:text-base 2xl:text-lg">Current bid: <span class="current-bid">$54.00</span></p>
+                <button class="border rounded w-full py-2 md:py-3 hover:bg-primary hover:text-white text-sm xl:text-base">Make an offer</button>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="/src/images/img-2.png" alt="" class="rounded w-full object-cover listing-image">
+            <figcaption>
+                <h2 class="font-medium xl:text-lg 2xl:text-xl pt-3">MOBI CHAIR</h2>
+                <p class="text-gray-500 pb-2 xl:pb-4 pt-1 xl:pt-2 font-medium text-xs md:text-sm xl:text-base">Ends in<span class="time-left"> 2 hours 4 min</span></p>
+                <p class="pb-5 text-sm lg:text-base 2xl:text-lg">Current bid: <span class="current-bid">$54.00</span></p>
+                <button class="border rounded w-full py-2 md:py-3 hover:bg-primary hover:text-white text-sm xl:text-base">Make an offer</button>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="/src/images/img-3.png" alt="" class="rounded w-full object-cover listing-image">
+            <figcaption>
+                <h2 class="font-medium xl:text-lg 2xl:text-xl pt-3">MOBI CHAIR</h2>
+                <p class="text-gray-500 pb-2 xl:pb-4 pt-1 xl:pt-2 font-medium text-xs md:text-sm xl:text-base">Ends in<span class="time-left"> 2 hours 4 min</span></p>
+                <p class="pb-5 text-sm lg:text-base 2xl:text-lg">Current bid: <span class="current-bid">$54.00</span></p>
+                <button class="border rounded w-full py-2 md:py-3 hover:bg-primary hover:text-white text-sm xl:text-base">Make an offer</button>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="/src/images/img-4.png" alt="" class="rounded w-full object-cover listing-image">
+            <figcaption>
+                <h2 class="font-medium xl:text-lg 2xl:text-xl pt-3">MOBI CHAIR</h2>
+                <p class="text-gray-500 pb-2 xl:pb-4 pt-1 xl:pt-2 font-medium text-xs md:text-sm xl:text-base">Ends in<span class="time-left"> 2 hours 4 min</span></p>
+                <p class="pb-5 text-sm lg:text-base 2xl:text-lg">Current bid: <span class="current-bid">$54.00</span></p>
+                <button class="border rounded w-full py-2 md:py-3 hover:bg-primary hover:text-white text-sm xl:text-base">Make an offer</button>
+            </figcaption>
+        </figure>
+    </div>
 </section>
+
+
 
 </body>
 </html>

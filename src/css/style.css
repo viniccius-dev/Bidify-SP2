@@ -11,10 +11,6 @@ body {
     max-width: 1800px;
 }
 
-.searchbar {
-    bottom: -30px;
-}
-
 .view-all {
     border-bottom: 2px solid #4ADE80;
 }
@@ -71,4 +67,8 @@ hr {
 
 .listing-image {
     height: 27rem;
+}
+
+.border {
+    border: 1px solid #22222253;
 }

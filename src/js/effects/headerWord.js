@@ -4,26 +4,26 @@ export default function headerWord() {
         "furniture",
         "artwork",
         "watches",
-        "vintage bags",
-        "accessorizes",
         "toys",
         "plants",
         "books",
-        "clothes"
+        "clothes",
+        "shoes",
+        "electronics"
     ];
 
     const colors = [
-        "#804ADE", // Purple
-        "#EF86C9", // Yellow
-        "#DE804A", // Orange
-        "#4ADECA", // Blue
-        "#DE4AA8",  // Pink
-        "#AC86EF", // Purple
-        "#4A5EDE", // Blue
-        "#DE804A", // Orange
-        "#EF86C9", // Yellow
+        "#F28482", // Red
+        "#FCD34D", // Yellow
+        "#84A59D", // Green
+        "#82AFF2", // Blue
+        "#F28482", // Red
+        "#84A59D", // Green
+        "#FCD34D", // Yellow
+        "#82AFF2", // Blue
+        "#84A59D", // Green
     ];
-
+ 
     let index = 0;
 
     function headerWord(index) {
