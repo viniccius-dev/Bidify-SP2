@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#261E1E",
-        secondary: "#84A59D",
-        lightpink: "#FFF5F3",
-        light: "#FCFCFC",
-        grey: "#F5F5F5",
-        orange: "#F5841A",
-        background: "#F7F7F7",
+        primary: "#261E1E", // BROWN
+        // secondary: "#84A59D", // GREEN
+        lightpink: "#FFF5F3", // LIGHTPINK
+        light: "#FCFCFC", // BACKGROUND GRAY
+        grey: "#F5F5F5", // BACKGROUND MORE GRAY
+        secondary: "#F28482",
+        pink: "#F5CAC3",
       },
     },
   },
