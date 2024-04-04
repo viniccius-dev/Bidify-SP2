@@ -58,12 +58,6 @@ hr {
     animation-delay: 0.7s;
 }
 
-@media (min-width: 1280px) and (max-width: 1535px) {
-    .figure {
-        grid-template-columns: repeat(5, 100px);
-        grid-template-rows: repeat(7, 100px);
-    }
-}
 
 .listing-image {
     height: 27rem;
@@ -73,6 +67,19 @@ hr {
     border: 1px solid #22222253;
 }
 
-.main-image {
-    height: 40rem;
+@media (min-width: 1280px) and (max-width: 1535px) {
+    .figure {
+        grid-template-columns: repeat(5, 100px);
+        grid-template-rows: repeat(7, 100px);
+    }
+
+    .main-image {
+        min-height: 30rem;
+    }
+}
+
+@media screen and (min-width: 1536px) {
+    .main-image {
+        min-height: 38rem;
+    }
 }
