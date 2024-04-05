@@ -6,7 +6,6 @@ module.exports = {
       colors: {
         primary: "#261E1E", // BROWN
         green: "#84A59D", // GREEN
-        lightpink: "#FFF5F3", // LIGHTPINK
         light: "#FCFCFC", // BACKGROUND GRAY
         grey: "#F5F5F5", // BACKGROUND MORE GRAY
         secondary: "#F28482",

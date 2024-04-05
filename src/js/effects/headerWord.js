@@ -16,11 +16,11 @@ export default function headerWord() {
         "#F28482", // Red
         "#FCD34D", // Yellow
         "#84A59D", // Green
-        "#82AFF2", // Blue
         "#F28482", // Red
-        "#84A59D", // Green
         "#FCD34D", // Yellow
-        "#82AFF2", // Blue
+        "#84A59D", // Green
+        "#F28482", // Red
+        "#FCD34D", // Yellow
         "#84A59D", // Green
     ];
  
