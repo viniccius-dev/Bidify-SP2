@@ -625,6 +625,10 @@ video {
   display: none;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -725,8 +729,8 @@ video {
   min-width: 16rem;
 }
 
-.min-w-12 {
-  min-width: 3rem;
+.min-w-full {
+  min-width: 100%;
 }
 
 .max-w-md {
@@ -1492,6 +1496,10 @@ video {
     width: 100%;
   }
 
+  .xl\:max-w-3xl {
+    max-width: 48rem;
+  }
+
   .xl\:flex-row {
     flex-direction: row;
   }
@@ -1594,8 +1602,16 @@ video {
     width: 24rem;
   }
 
+  .\32xl\:min-w-96 {
+    min-width: 24rem;
+  }
+
   .\32xl\:max-w-2xl {
     max-width: 42rem;
+  }
+
+  .\32xl\:max-w-3xl {
+    max-width: 48rem;
   }
 
   .\32xl\:grid-cols-4 {
@@ -1604,6 +1620,14 @@ video {
 
   .\32xl\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .\32xl\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .\32xl\:gap-6 {
+    gap: 1.5rem;
   }
 
   .\32xl\:px-32 {
