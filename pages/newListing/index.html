@@ -47,11 +47,19 @@
     <!--LEFT SIDE-->
     <div class="bg-grey w-1/2 flex-col items-center hidden px-4 md:px-14 xl:px-20 2xl:px-32 xl:flex">
 
-        <div class="xl:w-3/4 2xl:max-w-xl xl:py-32 2xl:py-24">
-            <div class="relative rounded-lg flex justify-center items-center border-dotted border-2 border-neutral-400 main-image">
-                <button class="absolute flex items-center justify-center bg-white rounded-full h-10 w-10 2xl:h-12 2xl:w-12 top-4 right-4"><i class="fa-solid fa-xmark"></i></button>
+        <div class="xl:w-3/4 2xl:max-w-2xl xl:py-32 2xl:py-24">
+            <div class="flex items-center gap-10">
+                <button class="bg-white h-12 min-w-12 rounded-full">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="relative rounded-lg flex justify-center items-center border-dotted border-2 border-neutral-400 main-image w-full">
+                    <button class="absolute flex items-center justify-center bg-white rounded-full h-10 w-10 2xl:h-12 2xl:w-12 top-4 right-4"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <button class="bg-white h-12 min-w-12 rounded-full">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
-
+            
             <div class="grid grid-cols-3 grid-rows-1 mt-5 h-56 gap-3 2xl:gap-5">
                 <div class="relative rounded-md flex justify-center items-center border-dotted border-2 border-neutral-400 xl:max-h-40 2xl:min-h-52">
                     <button class="absolute flex items-center justify-center bg-white rounded-full h-6 w-6 2xl:h-8 2xl:w-8 top-3 right-3 text-sm"><i class="fa-solid fa-xmark"></i></button>

@@ -725,6 +725,10 @@ video {
   min-width: 16rem;
 }
 
+.min-w-12 {
+  min-width: 3rem;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -1592,10 +1596,6 @@ video {
 
   .\32xl\:max-w-2xl {
     max-width: 42rem;
-  }
-
-  .\32xl\:max-w-xl {
-    max-width: 36rem;
   }
 
   .\32xl\:grid-cols-4 {
