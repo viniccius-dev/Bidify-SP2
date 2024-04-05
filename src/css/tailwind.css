@@ -625,10 +625,6 @@ video {
   display: none;
 }
 
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
-
 .h-10 {
   height: 2.5rem;
 }
@@ -727,10 +723,6 @@ video {
 
 .min-w-64 {
   min-width: 16rem;
-}
-
-.min-w-full {
-  min-width: 100%;
 }
 
 .max-w-md {
@@ -1140,6 +1132,10 @@ video {
   text-decoration-line: underline;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1484,20 +1480,12 @@ video {
     width: 33.333333%;
   }
 
-  .xl\:w-3\/4 {
-    width: 75%;
-  }
-
   .xl\:w-52 {
     width: 13rem;
   }
 
   .xl\:w-full {
     width: 100%;
-  }
-
-  .xl\:max-w-3xl {
-    max-width: 48rem;
   }
 
   .xl\:flex-row {
@@ -1582,8 +1570,8 @@ video {
     height: 2rem;
   }
 
-  .\32xl\:min-h-52 {
-    min-height: 13rem;
+  .\32xl\:min-h-56 {
+    min-height: 14rem;
   }
 
   .\32xl\:w-1\/6 {
@@ -1602,16 +1590,8 @@ video {
     width: 24rem;
   }
 
-  .\32xl\:min-w-96 {
-    min-width: 24rem;
-  }
-
   .\32xl\:max-w-2xl {
     max-width: 42rem;
-  }
-
-  .\32xl\:max-w-3xl {
-    max-width: 48rem;
   }
 
   .\32xl\:grid-cols-4 {
@@ -1620,10 +1600,6 @@ video {
 
   .\32xl\:gap-5 {
     gap: 1.25rem;
-  }
-
-  .\32xl\:gap-10 {
-    gap: 2.5rem;
   }
 
   .\32xl\:gap-6 {
