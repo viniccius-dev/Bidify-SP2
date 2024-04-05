@@ -73,90 +73,91 @@
     </div>
 
     <!--RIGHT SIDE-->
-    <section class="w-1/2 flex flex-col gap-6 px-4 md:px-14 xl:px-20 2xl:px-32">
-        <h1 class="font-bold text-2xl 2xl:text-3xl xl:mb-2 2xl:mb-6">Create a new listing</h1>
+    <section class="w-full xl:w-1/2 flex flex-col pt-6 pb-14 gap-5 md:gap-6 px-4 md:px-14 xl:px-20 2xl:px-32 xl:py-0">
+        <h1 class="font-bold text-xl xl:text-2xl xl:mb-2 2xl:mb-6 2xl:text-3xl">Create a new listing</h1>
     
             <div class="flex flex-col xl:w-full 2xl:max-w-2xl">
-                <label for="listingItem" class="mb-3">What are you selling?</label>
-                <input type="text" id="listingItem" name="listingItem" class="border rounded h-10 w-full px-3">
+                <label for="listingItem" class="mb-3 text-sm md:text-base font-medium xl:font-normal">What are you selling?</label>
+                <input type="text" id="listingItem" name="listingItem" class="border rounded h-8 md:h-10 w-full px-3">
             </div>
     
             <div class="flex flex-col xl:w-full 2xl:max-w-2xl">
                 <span class="flex justify-between items-center mb-3">
-                   <label for="listingImage">Image link:</label> 
-                   <p class="text-sm">0/4 images</p>
+                   <label for="listingImage" class="text-sm md:text-base font-medium xl:font-normal">Image link:</label> 
+                   <p class="text-xs md:text-sm">0/4 images</p>
                 </span>
-                <input type="text" id="listingImage" name="listingImage" class="border rounded h-10 w-full px-3">
+                <input type="text" id="listingImage" name="listingImage" class="border rounded h-8 md:h-10 w-full px-3 text-sm md:text-base">
             </div>
             <!--IMAGES SMALLER DEVICES-->
     
-            <div class="grid grid-cols-2 gap-5 xl:w-full 2xl:max-w-2xl xl:hidden">
-                <div class="relative rounded-md flex justify-center items-center border-dotted border-2 border-neutral-400 h-64">
+            <div class="grid grid-cols-2 gap-2 xl:w-full 2xl:max-w-2xl xl:hidden">
+                <div class="relative rounded-md flex justify-center items-center border-dotted border-2 border-neutral-400 h-40 lg:h-64">
                     <button class="absolute flex items-center justify-center bg-white rounded-full h-8 w-8 top-3 right-3 text-sm">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
     
-                <div class="relative rounded-md flex justify-center items-center border-dotted border-2 border-neutral-400 h-64">
+                <div class="relative rounded-md flex justify-center items-center border-dotted border-2 border-neutral-400 h-40 lg:h-64">
                     <button class="absolute flex items-center justify-center bg-white rounded-full h-8 w-8 top-3 right-3 text-sm">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
     
-                <div class="relative rounded-md flex justify-center items-center border-dotted border-2 border-neutral-400 h-64">
+                <div class="relative rounded-md flex justify-center items-center border-dotted border-2 border-neutral-400 h-40 lg:h-64">
                     <button class="absolute flex items-center justify-center bg-white rounded-full h-8 w-8 top-3 right-3 text-sm">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
     
-                <div class="relative rounded-md flex justify-center items-center border-dotted border-2 border-neutral-400 h-64">
+                <div class="relative rounded-md flex justify-center items-center border-dotted border-2 border-neutral-400 h-40 lg:h-64">
                     <button class="absolute flex items-center justify-center bg-white rounded-full h-8 w-8 top-3 right-3 text-sm">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
             </div>
     
-            <div class="grid grid-cols-3 xl:w-full 2xl:max-w-2xl gap-3">
-                <div class="flex flex-col w-full">
-                    <label for="startingBid" class="mb-3">Starting bid:</label>
-    
-                    <div class="flex relative">
-                        <span class="bottom-1 h-8 bg-white flex items-center justify-center absolute left-2 text-sm">$</span> 
-                        <input type="number" id="startingBid" name="startingBid" class="border h-10 rounded pl-6 w-full xl:text-sm">
+            <div class="grid grid-cols-2 sm:grid-cols-3 xl:w-full 2xl:max-w-2xl gap-3">
+                <div class="col-span-2 sm:col-span-1">
+                    <div class="flex flex-col w-full">
+                        <label for="startingBid" class="mb-3 text-sm md:text-base font-medium xl:font-normal">Starting bid:</label>
+                        <div class="flex relative text-xs md:text-sm">
+                            <span class="bottom-1 h-6 md:h-8 bg-white flex items-center justify-center absolute left-2">$</span> 
+                            <input type="number" id="startingBid" name="startingBid" class="border h-8 md:h-10 rounded pl-6 w-full">
+                        </div>
                     </div>
                 </div>
     
-                <div class="flex flex-col w-full">
-                    <label for="endDate" class="mb-3">Ending date:</label>
-                    <input type="date" id="endDate" name="endDate" class="border h-10 rounded px-3 xl:text-sm">
+                <div class="flex flex-col w-full col-span-1 sm:col-span-1">
+                    <label for="endDate" class="mb-3 text-sm md:text-base font-medium xl:font-normal">Ending date:</label>
+                    <input type="date" id="endDate" name="endDate" class="border h-8 md:h-10 rounded px-3 text-xs md:text-sm">
                 </div>
-                
-                <div class="flex flex-col w-full">
-                    <label for="endTime" class="mb-3">Ending at:</label>
-                    <input type="time" id="endTime" name="endTime" class="border h-10 rounded px-3 xl:text-sm">
+
+                <div class="flex flex-col w-full col-span-1 sm:col-span-1">
+                    <label for="endTime" class="mb-3 text-sm md:text-base font-medium xl:font-normal">Ending at:</label>
+                    <input type="time" id="endTime" name="endTime" class="border h-8 md:h-10 rounded px-3 text-xs md:text-sm">
                 </div>
             </div>
     
             <div class="flex flex-col xl:w-full 2xl:max-w-2xl">
                 <span class="flex justify-between items-center mb-3">
-                    <label for="listingDescription" class="mb-3">Describe your listing:</label>
-                    <p class="text-sm">0/1000 characters</p>
+                    <label for="listingDescription" class="text-sm md:text-base font-medium xl:font-normal">Describe your listing:</label>
+                    <p class="text-xs md:text-sm">0/1000 characters</p>
                 </span>
-                <textarea name="listingDescription" id="listingDescription" class="h-48 w-full border rounded resize-none px-3 pt-2"></textarea>
+                <textarea name="listingDescription" id="listingDescription" class="h-40 xl:h-48 w-full border rounded resize-none px-3 pt-2 text-sm md:text-base"></textarea>
             </div>
 
             <!--TAGS-->
         <div class="tags">
             <div class="w-1/2 flex flex-col">
                 <span class="flex gap-5 items-center mb-3">
-                    <label for="tags">Tags:</label>
-                    <abbr class="rounded-full bg-primary text-white w-6 h-6 text-sm flex justify-center items-center cursor-pointer" title="Tags are descriptive keywords assigned to items to organize them based on their characteristics. ">?</abbr>
+                    <label for="tags" class="text-sm md:text-base font-medium xl:font-normal">Tags:</label>
+                    <abbr class="rounded-full bg-primary text-white w-6 h-6 text-sm hidden lg:flex justify-center items-center cursor-pointer" title="Tags are descriptive keywords assigned to items to organize them based on their characteristics. ">?</abbr>
                 </span>
                 
                 <div>
                     <div class="flex relative">
-                        <span class="bottom-1 h-8 bg-white flex items-center justify-center absolute left-3 text-sm">#</span> 
-                        <input type="text" id="tags" name="tags" class="border h-10 rounded pl-8">
+                        <span class="bottom-1 h-6 md:h-8 bg-white flex items-center justify-center absolute left-3 text-xs md:text-sm">#</span> 
+                        <input type="text" id="tags" name="tags" class="border h-8 md:h-10 rounded pl-8">
                     </div>
                 </div>
             </div>
@@ -207,9 +208,9 @@
         <p class="py-2 lg:py-4 text-xs md:text-sm lg:text-base text-gray-500 leading-relaxed">Enter your email below to be the first to stay updated about new listings, bids and much more.</p>
 
         <div class="flex items-center mt-2 mb-3 lg:mb-6 gap-2 lg:gap-3">
-            <input type="text" placeholder="Email address" class="border h-10 lg:h-12 w-full pl-3 text-xs md:text-sm lg:text-base">
-            <button class="bg-primary text-white min-w-10 h-10 lg:min-w-12 lg:h-12 rounded flex items-center justify-center">
-                <i class="fa-regular fa-envelope"></i>
+            <input type="text" placeholder="Email address" class="border rounded h-8 md:h-10 lg:h-12 w-full pl-3 text-xs md:text-sm lg:text-base">
+            <button class="bg-primary text-white min-w-10 h-8 md:h-10 lg:min-w-12 lg:h-12 rounded flex items-center justify-center">
+                <i class="fa-regular fa-envelope text-sm md:text-base"></i>
             </button>
         </div>
 
