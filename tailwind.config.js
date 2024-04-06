@@ -10,6 +10,7 @@ module.exports = {
         grey: "#F5F5F5", // BACKGROUND MORE GRAY
         secondary: "#F28482",
         pink: "#F5CAC3",
+        lightpink: "#FFF9F8"
       },
     },
   },
