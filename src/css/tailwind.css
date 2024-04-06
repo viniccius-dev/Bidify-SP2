@@ -592,6 +592,14 @@ video {
   top: 1rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -1141,11 +1149,6 @@ video {
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(38 30 30 / var(--tw-text-opacity));
-}
-
-.text-purple-500 {
-  --tw-text-opacity: 1;
-  color: rgb(168 85 247 / var(--tw-text-opacity));
 }
 
 .text-secondary {
