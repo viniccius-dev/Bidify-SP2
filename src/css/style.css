@@ -67,6 +67,10 @@ hr {
     border: 1px solid #22222253;
 }
 
+.border-b {
+    border-bottom: 1px solid #22222253;
+}
+
 @media (min-width: 1280px) and (max-width: 1535px) {
     .figure {
         grid-template-columns: repeat(5, 100px);
