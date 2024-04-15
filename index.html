@@ -29,7 +29,7 @@
 </div>
 
 <!--HEADER-->
-<header class="flex justify-between items-center py-3 lg:pt-8 2xl:pt-5 lg:pb-6 px-4 md:px-14 xl:px-20 2xl:px-32 mx-auto bg-lightpink border-b">
+<header class="flex justify-between items-center py-3 lg:pt-8 2xl:pt-5 lg:pb-6 px-4 md:px-14 xl:px-20 2xl:px-32 mx-auto border-b">
     <span class="w-1/6">
         <a href="/index.html" class="text-2xl lg:text-3xl font-bold">bidlify<span class="text-secondary">.</span></a>
     </span>
@@ -48,17 +48,27 @@
 
 <!--UPPER CONTENT-->
 
-<div class="px-4 md:px-14 xl:px-20 2xl:px-80 mx-auto">
-    <div class="bg-lightpink pt-4 pb-28 relative">
-
+<div class="mx-auto relative">
+    <div class="bg-lightpink pt-12 pb-28 mx-4 md:mx-14 xl:mx-20 2xl:mx-80 mt-10 border rounded-lg">
+        <figure>
+            <img src="/src/images/left-figure.png" alt="" class="absolute top-0 left-80">
+        </figure>
         <div class="flex flex-col px-4 md:px-14 xl:px-20 2xl:px-80">
             <div class="flex flex-col text-primary ">
                 <p class="font-bold text-xl md:text-2xl xl:text-4xl pt-20 rounded text-center">Welcome to bidlify.</p>
                 <p class="font-bold text-xl md:text-2xl xl:text-4xl pt-4 py-3 text-center">Discover or sell <span class="header-word text-secondary">furniture</span></p>
                 <p class="font-medium md:text-lg xl:text-2xl pt-2 text-center">...and so much more!</p>
             </div>
+            <div class="flex mx-auto pt-8 gap-3">
+                <button class="px-8 py-1.5 md:py-2.5 border rounded text-sm lg:text-base">Start selling</button>
+                <button class="px-8 py-1.5 md:py-2.5 bg-secondary rounded text-sm lg:text-base">Find listings</button>
+            </div>
         </div>
-
+        <div>
+        </div>
+        <figure>
+            <img src="/src/images/right-figure.png" alt="" class="absolute right-80 bottom-0">
+        </figure>
     </div>
 </div>
 
@@ -141,7 +151,7 @@
             <div class="flex flex-col">
                 <div class="flex items-center gap-3">
                     <hr class="w-10">
-                    <span class="font-bold text-green-500 text-lg">New in</span>
+                    <span class="font-bold text-secondary text-lg">New in</span>
                 </div>
                 
                 <h1 class="text-2xl font-bold pl-12 ml-1">Latest listings.</h1>
