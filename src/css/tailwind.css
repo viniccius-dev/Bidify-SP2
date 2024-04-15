@@ -1764,6 +1764,10 @@ video {
   .xl\:font-normal {
     font-weight: 400;
   }
+
+  .xl\:font-semibold {
+    font-weight: 600;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -1885,5 +1889,9 @@ video {
   .\32xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .\32xl\:font-bold {
+    font-weight: 700;
   }
 }
