@@ -45,9 +45,9 @@
 
 <main class="flex mx-auto">
     <!--LEFT SIDE-->
-    <div class="bg-grey w-1/2 flex-col items-center hidden px-4 md:px-14 xl:px-20 2xl:px-32 xl:flex">
+    <div class="bg-grey w-1/2 flex-col hidden px-4 md:px-14 xl:px-20 2xl:px-32 xl:flex">
 
-        <div class="xl:w-full 2xl:max-w-2xl xl:py-24">
+        <div class="xl:w-full 2xl:max-w-2xl xl:py-16">
             <div class="flex items-center gap-4 2xl:gap-6">
                 <button class="bg-white h-10 min-w-10 rounded-full">
                     <i class="fa-solid fa-chevron-left"></i>
@@ -65,7 +65,7 @@
                 </button>
             </div>
             
-            <div class="grid grid-cols-3 mt-5 h-56 gap-3 2xl:gap-5">
+            <div class="grid grid-cols-3 mt-5 h-56 gap-3 2xl:gap-5 xl:max-w-md xl:mx-auto">
                 <figure class="relative">
                     <img src="/src/images/Chair.png" alt="" class="rounded-md flex justify-center items-center xl:max-h-50 2xl:min-h-56 w-full">
                 </figure>
@@ -82,14 +82,17 @@
     </div>
 
     <!--RIGHT SIDE-->
-    <section class="w-full xl:w-1/2 flex flex-col pt-6 pb-14 gap-5 md:gap-6 px-4 md:px-14 xl:px-20 2xl:px-32 lg:pt-10 xl:py-0 items-center xl:items-start xl:py-24">
+    <section class="w-full xl:w-1/2 flex flex-col pt-6 pb-14 px-4 md:px-14 xl:px-20 2xl:px-32 lg:pt-10 xl:py-0 items-center xl:items-start xl:py-16">
         <div class="flex gap-6 items-center">
             <figure>
-                <img src="/src/images/img-3.png" alt="" class="rounded-full w-16 h-16" id="userImage">
+                <img src="/src/images/img-3.png" alt="" class="rounded-full w-14 h-14" id="userImage">
             </figure>
             <div class="flex flex-col">
-                <h1 class="mb-1 text-lg"><span id="listingName">Martine's</span> listing</h1>
-
+                <div class="flex gap-4">
+                    <h1 class="mb-2 text-lg"><span id="listingName">Martine's</span> listing</h1>
+                    <a href="" class="flex text-xs bg-grey rounded-full items-center justify-center px-3 max-h-8">view profile</a>
+                </div>
+                
                 <div class="flex gap-2">
                     <span class="border rounded w-12 flex items-center justify-center text-xs">5/5</span>
                     <p class="text-sm">Based on <span id="ratings">22</span> ratings</p>
@@ -97,45 +100,78 @@
             </div>
         </div>
 
-        <div class="flex-col w-full sm:w-3/4 md:w-2/3 2xl:max-w-2xl">
-            <h2 class="mb-3 font-medium xl:text-xl">Beige bouclé chair</h2>
+        <div class="flex-col w-full sm:w-3/4 md:w-2/3 2xl:max-w-2xl mt-6">
+            <h2 class="font-medium xl:text-xl my-3">Beige bouclé chair</h2>
             <div class="grid grid-cols-2">
                 <p class="flex gap-5 text-sm">Starting bid:</p>
                 <span id="startingBid" class="text-sm">$ 50.00</span>
                 <p class="flex gap-5 text-sm mt-1">Ends in:</p>
-                <span id="endingTime" class="text-sm mt-1">5 hours 43 min</span>
+                <span id="endingTime" class="text-sm mt-1">5 hours 43 min 26 sec</span>
             </div>
         </div>
 
-        <div class="flex flex-col mt-1 xl:max-w-md">
-            <h3 class="text-lg font-medium mb-3">Description:</h3>
+        <div class="flex flex-col mt-1 xl:max-w-md mt-6">
+            <h3 class="font-medium mb-3">Description:</h3>
             <p id="listingDescription" class="text-sm leading-relaxed">
                 Beautiful Bouclé vintage chair from the Danish designer Jenny Uteng. 
                 The chair have been rinsed and are in perfect condition. 
                 The legs and framework are made of high-quality oak. 
             </p>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1663.7106379761653!2d-0.0681072168846549!3d38.574327094915795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sno!2sno!4v1713187578105!5m2!1sno!2sno" height="150" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded w-full mt-6"></iframe>
+            <h3 class="font-medium mt-6">Location:</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1663.7106379761653!2d-0.0681072168846549!3d38.574327094915795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sno!2sno!4v1713187578105!5m2!1sno!2sno" height="120" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded w-full mt-3"></iframe>
 
-            <div class="border-b mt-10"></div>
+            <div class="border-b mt-8"></div>
         </div>
 
-        <div class="grid grid-cols-2 w-full sm:w-3/4 md:w-2/3 2xl:max-w-2xl mt-3">
+        <div class="grid grid-cols-2 w-full sm:w-3/4 md:w-2/3 2xl:max-w-2xl mt-6">
             <p class="flex gap-5 font-medium">Current bid:</p>
             <span id="currentBid" class="font-medium">$ 65.00</span>
-            <p class="col-span-2 text-xs text-gray-500 mt-1">Any shipping costs will be negotiated with the seller.</p>
         </div>
 
-        <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 2xl:max-w-2xl">
+        <div class="mt-3 sm:w-3/4 md:w-2/3 2xl:max-w-2xl">
+            <details class="text-sm">
+                <summary>Click here to view bid history</summary>
+                <div class="my-4">
+                    <span class="bg-grey grid grid-cols-2 py-2">
+                        <p class="bg-grey">User 1</p>
+                        <p>$ 50.00</p>
+                    </span>
+
+                    <span class="grid grid-cols-2 py-2">
+                        <p>User 1</p>
+                        <p>$ 55.00</p>
+                    </span>
+
+                    <span class="bg-grey grid grid-cols-2 py-2">
+                        <p>User 1</p>
+                        <p>$ 57.00</p>
+                    </span>
+
+                    <span class="grid grid-cols-2 py-2">
+                        <p>User 1</p>
+                        <p>$ 60.00</p>
+                    </span>
+                  
+                    <span class="bg-grey grid grid-cols-2 py-2">
+                        <p>User 1</p>
+                        <p>$ 65.00</p>
+                    </span>
+                </div>
+            </details>
+            <p class="col-span-2 text-xs text-gray-500 mt-2">*Shipping method and costs will be negotiated with the seller.</p>
+        </div>
+
+        <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 2xl:max-w-2xl mt-6">
             <label for="bidAmount" class="text-sm mb-4">Type the amount of your bid:</label>
 
             <div class="flex gap-3 w-full">
-                <input type="number" id="bidAmount" name="bidAmount" class="border rounded h-12">
+                <input type="number" id="bidAmount" name="bidAmount" class="border rounded h-12 pl-3">
                 <button class="bg-red px-4 py-2 md:px-6 md:py-3 rounded bg-secondary text-sm md:text-base">Place offer</button>
             </div>
         </div>
 
-        <div>
+        <div class="mt-6">
             <span class="text-sm"><a href="" class="underline font-medium">Sign up</a> or <a href="" class="underline font-medium">log in</a> to make an offer.</span>
         </div>
 
