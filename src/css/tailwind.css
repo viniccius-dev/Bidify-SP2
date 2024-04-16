@@ -1876,6 +1876,11 @@ video {
     line-height: 1.75rem;
   }
 
+  .xl\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .xl\:font-normal {
     font-weight: 400;
   }
@@ -2004,6 +2009,11 @@ video {
   .\32xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .\32xl\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .\32xl\:font-bold {
