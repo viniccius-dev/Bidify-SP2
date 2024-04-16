@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidlify | New listing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link href="/src/css/tailwind.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/images/favicon.ico">
+</head>
+<body class="mx-auto text-primary bg-light">
+
+<!--HEADER-->
+<header class="flex justify-between items-center pt-4 pb-3 lg:pt-8 lg:pb-6 px-4 md:px-14 xl:px-20 2xl:px-32 mx-auto">
+    <span class="w-1/6">
+        <a href="/index.html" class="text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl font-semibold 2xl:font-bold">bidlify<span class="text-secondary">.</span></a>
+    </span>
+
+    <div class="items-center justify-between w-1/4 xl:w-1/3 mx-auto gap-10 hidden xl:flex">
+        <a href="#" class="w-1/3 text-center py-4">New listing</a>
+        <a href="#" class="w-1/3 text-center py-4">Auctions</a>
+        <a href="#" class="w-1/3 text-center py-4">About</a>
+    </div>
+
+    <div class="xL:w-1/5 2xl:w-1/6 gap-3 items-center justify-end hidden xl:flex">
+        <button class="font-semibold hover:text-secondary">Sign up</button>
+        <span>or</span>
+        <a href="/pages/login/index.html" class="border px-6 py-3 rounded hover:bg-secondary hover:border-secondary">Log in</a>
+    </div>
+</header>
+
+<!--BORDER-->
+
+<div class="border-b"></div>
+
+<!--MAIN CONTENT-->
+
+<main class="flex mx-auto items-center bg-pink">
+
+    <!--RIGHT SIDE-->
+    <section class="bg-light w-full xl:max-w-3xl flex flex-col pt-6 pb-14 gap-5 md:gap-6 px-4 md:px-14 xl:px-20 2xl:px-32 lg:pt-10 xl:py-0 items-center xl:items-start mx-auto">
+        <h1 class="pt-12 font-bold text-xl xl:text-2xl xl:mb-2 2xl:mb-6 2xl:text-3xl w-full sm:w-3/4 md:w-2/3">Create a new listing</h1>
+    
+            <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl">
+                <label for="listingItem" class="mb-3 text-sm md:text-base font-medium xl:font-normal">What are you selling?</label>
+                <input type="text" id="listingItem" name="listingItem" class="border rounded h-8 md:h-10 w-full px-3">
+            </div>
+    
+            <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl">
+                <span class="flex justify-between items-center mb-3">
+                   <label for="listingImage" class="text-sm md:text-base font-medium xl:font-normal">Image link:</label> 
+                   <p class="text-xs md:text-sm">0/4 images</p>
+                </span>
+                <input type="text" id="listingImage" name="listingImage" class="border rounded h-8 md:h-10 w-full px-3 text-sm md:text-base">
+
+                <div class="flex flex-col my-6">
+                    <div class="bg-white py-5 pr-4 mb-4 flex items-center rounded">
+                        <abbr title="Drag the images to change their order.">
+                            <i class="fa-solid fa-arrows-up-down text-gray-500 p-4 cursor-pointer"></i>
+                        </abbr>
+
+                        <div class="flex items-center w-full gap-6">
+                            <figure>
+                                <img src="/src/images/Chair.png" alt="" class="min-w-32 h-32 object-cover rounded">
+                            </figure>
+
+                            <div class="flex flex-col w-full gap-1">
+                                <p class="text-gray-500 text-xs">Main image</p>
+                                <label for="imageDescription" class="text-sm">Describe the image:</label>
+                                <input type="text" name="imageDescription" id="imageDescription" class="border rounded h-16 mt-1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white py-5 pr-4 mb-4 flex items-center rounded">
+                        <abbr title="Drag the images to change their order.">
+                            <i class="fa-solid fa-arrows-up-down text-gray-500 p-4 cursor-pointer"></i>
+                        </abbr>
+
+                        <div class="flex items-center w-full gap-6">
+                            <figure>
+                                <img src="/src/images/Chair.png" alt="" class="min-w-32 h-32 object-cover rounded">
+                            </figure>
+
+                            <div class="flex flex-col w-full gap-1">
+                                <label for="imageDescription" class="text-sm">Describe the image:</label>
+                                <input type="text" name="imageDescription" id="imageDescription" class="border rounded h-16 mt-1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white py-5 pr-4 flex items-center rounded">
+                        <abbr title="Drag the images to change their order.">
+                            <i class="fa-solid fa-arrows-up-down text-gray-500 p-4 cursor-pointer"></i>
+                        </abbr>
+
+                        <div class="flex items-center w-full gap-6">
+                            <figure>
+                                <img src="/src/images/Chair.png" alt="" class="min-w-32 h-32 object-cover rounded">
+                            </figure>
+
+                            <div class="flex flex-col w-full gap-1">
+                                <label for="imageDescription" class="text-sm">Describe the image:</label>
+                                <input type="text" name="imageDescription" id="imageDescription" class="border rounded h-16 mt-1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--IMAGES SMALLER DEVICES-->
+    
+            <div class="grid grid-cols-2 gap-2 w-full sm:w-3/4 md:w-2/3 lg:py-4 lg:gap-4 xl:hidden">
+                <div class="relative rounded-md flex justify-center items-center border-dotted border-2 border-neutral-400 h-44 sm:h-64 lg:h-72">
+                    <button class="absolute flex items-center justify-center bg-white rounded-full h-8 w-8 top-3 right-3 text-sm">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+    
+                <div class="relative rounded-md flex justify-center items-center border-dotted border-2 border-neutral-400 h-44 sm:h-64 lg:h-72">
+                    <button class="absolute flex items-center justify-center bg-white rounded-full h-8 w-8 top-3 right-3 text-sm">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+    
+                <div class="relative rounded-md flex justify-center items-center border-dotted border-2 border-neutral-400 h-44 sm:h-64 lg:h-72">
+                    <button class="absolute flex items-center justify-center bg-white rounded-full h-8 w-8 top-3 right-3 text-sm">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+    
+                <div class="relative rounded-md flex justify-center items-center border-dotted border-2 border-neutral-400 h-44 sm:h-64 lg:h-72">
+                    <button class="absolute flex items-center justify-center bg-white rounded-full h-8 w-8 top-3 right-3 text-sm">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="grid grid-cols-2 md:grid-cols-3 w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl gap-3">
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex flex-col w-full">
+                        <label for="startingBid" class="mb-3 text-sm md:text-base font-medium xl:font-normal">Starting bid:</label>
+                        <div class="flex relative text-xs md:text-sm">
+                            <span class="bottom-1 h-6 md:h-8 bg-white flex items-center justify-center absolute left-2">$</span> 
+                            <input type="number" id="startingBid" name="startingBid" class="border h-8 md:h-10 rounded pl-6 w-full">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col w-full col-span-1">
+                    <label for="endDate" class="mb-3 text-sm md:text-base font-medium xl:font-normal">Ending date:</label>
+                    <input type="date" id="endDate" name="endDate" class="border h-8 md:h-10 rounded px-3 text-xs md:text-sm">
+                </div>
+
+                <div class="flex flex-col w-full col-span-1">
+                    <label for="endTime" class="mb-3 text-sm md:text-base font-medium xl:font-normal">Ending at:</label>
+                    <input type="time" id="endTime" name="endTime" class="border h-8 md:h-10 rounded px-3 text-xs md:text-sm">
+                </div>
+            </div>
+    
+            <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl">
+                <span class="flex justify-between items-center mb-3">
+                    <label for="listingDescription" class="text-sm md:text-base font-medium xl:font-normal">Describe your listing:</label>
+                    <p class="text-xs md:text-sm">0/1000 characters</p>
+                </span>
+                <textarea name="listingDescription" id="listingDescription" class="h-40 xl:h-48 w-full border rounded resize-none px-3 pt-2 text-sm md:text-base"></textarea>
+            </div>
+
+            <!--TAGS-->
+            <div class="w-full sm:w-3/4 md:w-2/3 flex flex-col">
+                <span class="flex gap-5 items-center mb-3">
+                    <label for="tags" class="text-sm md:text-base font-medium xl:font-normal">Tags:</label>
+                    <abbr class="rounded-full bg-primary text-white w-6 h-6 text-sm hidden lg:flex justify-center items-center cursor-pointer" title="Tags are descriptive keywords assigned to items to organize them based on their characteristics. ">?</abbr>
+                </span>
+                
+                <div>
+                    <div class="flex relative w-full self-start">
+                        <span class="bottom-1 h-6 md:h-8 bg-white flex items-center justify-center absolute left-3 text-xs md:text-sm">#</span> 
+                        <input type="text" id="tags" name="tags" class="border h-8 md:h-10 rounded pl-8 w-full">
+                    </div>
+                </div>
+            </div>
+    <!--TAGS-->
+            
+            <div class="flex h-12 gap-3 xl:mt-3 w-full sm:w-3/4 md:w-2/3">
+                <button class="border px-4 py-2 md:px-6 md:py-3 rounded text-sm md:text-base">Cancel</button>
+                <button class="bg-red px-4 py-2 md:px-6 md:py-3 rounded bg-secondary text-sm md:text-base">Create listing</button>
+            </div>
+    </section>
+</main>
+
+<!--FOOTER-->
+
+<footer class="border-t border-b px-4 md:px-14 xl:px-20 2xl:px-32 pt-4 pb-6 lg:pt-10 lg:pb-14 flex flex-col xl:flex-row xl:justify-between bg-grey">
+    <span class="lg:w-1/6">
+        <a href="/index.html" class="text-lg lg:text-xl font-bold">Bidlify<span class="text-secondary">.</span></a>
+    </span>
+
+    <div class="pt-3 pb-4">
+        <a href="#" class="font-medium text-sm md:text-base">Contact us</a>
+        <ul class="text-gray-500 pt-1 lg:pt-4">
+            <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Support</li>
+            <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">FAQ</li>
+            <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Terms & policies</li>
+            <li class="pt-1 lg:pt-3 pb-1 text-xs md:text-sm 2xl:text-base">Phone: +47 56 97 34 00</li>
+            <li class="py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Mail: <span class="underline">contact@bidlify.com</span></li>
+        </ul>
+    </div>
+
+    <div class="pb-4">
+        <a href="#" class="font-medium text-sm md:text-base">Services</a>
+        <ul class="text-gray-500 pt-1 lg:pt-4">
+            <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">About us</li>
+            <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Gift cards</li>
+            <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Sales guide</li>
+            <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Positions</li>
+        </ul>
+    </div>
+
+    <div class="max-w-md">
+        <h2 class="font-medium text-sm md:text-base">Newsletter</h2>
+        <p class="py-2 lg:py-4 text-xs md:text-sm 2xl:text-base text-gray-500 leading-relaxed">Enter your email below to be the first to stay updated about new listings, bids and much more.</p>
+
+        <div class="flex items-center mt-2 mb-3 lg:mb-6 gap-2 lg:gap-3">
+            <input type="text" placeholder="Email address" class="border rounded h-8 md:h-10 lg:h-12 w-full pl-3 text-xs md:text-sm lg:text-base">
+            <button class="bg-primary text-white min-w-10 h-8 md:h-10 lg:min-w-12 lg:h-12 rounded flex items-center justify-center">
+                <i class="fa-regular fa-envelope text-sm md:text-base"></i>
+            </button>
+        </div>
+
+        <img src="/src/images/payments.png.png" alt="">
+    </div>
+</footer>
+
+<footer class="flex lg:items-center flex-col lg:flex-row lg:justify-between px-4 md:px-14 xl:px-20 2xl:px-32 py-4 md:py-6 bg-grey">
+    <p class="text-gray-500 text-xs md:text-sm 2xl:text-base">Copyright © Bidlify 2024. All rights reserved.</p>
+    <div class="flex items-center justify-between w-28 lg:w-40 text-lg md:text-2xl mt-2 md:mt-3">
+        <i class="fa-brands fa-instagram hover:text-3xl w-1/3 lg:text-right"></i>
+        <i class="fa-brands fa-square-facebook hover:text-3xl w-1/3 lg:text-right"></i>
+        <i class="fa-brands fa-square-twitter hover:text-3xl w-1/3 lg:text-right"></i>
+    </div>
+</footer>
+
+</body>
+</html>
