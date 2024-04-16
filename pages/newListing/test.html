@@ -43,44 +43,37 @@
 
 <!--MAIN CONTENT-->
 
-<main class="flex mx-auto items-center bg-pink">
+<main class="flex mx-auto items-center">
 
     <!--RIGHT SIDE-->
     <section class="bg-light w-full xl:max-w-3xl flex flex-col pt-6 pb-14 gap-5 md:gap-6 px-4 md:px-14 xl:px-20 2xl:px-32 lg:pt-10 xl:py-0 items-center xl:items-start mx-auto">
-        <h1 class="pt-12 font-bold text-xl xl:text-2xl xl:mb-2 2xl:mb-6 2xl:text-3xl w-full sm:w-3/4 md:w-2/3">Create a new listing</h1>
+        <h1 class="pt-12 font-bold text-xl xl:text-xl xl:mb-2 2xl:mb-6 2xl:text-3xl w-full sm:w-3/4 md:w-2/3">Create a new listing</h1>
     
             <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl">
-                <label for="listingItem" class="mb-3 text-sm md:text-base font-medium xl:font-normal">What are you selling?</label>
+                <label for="listingItem" class="mb-3 text-sm md:text-base font-medium xl:font-normal">What are you selling?
+                    <span class="text-gray-500 text-sm">For example bicycle, chair, book...</span>
+                </label>
                 <input type="text" id="listingItem" name="listingItem" class="border rounded h-8 md:h-10 w-full px-3">
             </div>
     
             <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl">
                 <span class="flex justify-between items-center mb-3">
                    <label for="listingImage" class="text-sm md:text-base font-medium xl:font-normal">Image link:</label> 
-                   <p class="text-xs md:text-sm">0/4 images</p>
+                   <p class="text-xs md:text-sm text-gray-500">0/6 images</p>
                 </span>
-                <input type="text" id="listingImage" name="listingImage" class="border rounded h-8 md:h-10 w-full px-3 text-sm md:text-base">
+                <div class="flex gap-3">
+                    <input type="text" id="listingImage" name="listingImage" class="border rounded h-8 md:h-10 w-full px-3 text-sm md:text-base">
+                    <button class="px-6 py-2 bg-primary text-white rounded text-sm 2xl:text-base">Upload</button>
+                </div>
+                
 
                 <div class="flex flex-col my-6">
-                    <div class="bg-white py-5 pr-4 mb-4 flex items-center rounded">
-                        <abbr title="Drag the images to change their order.">
-                            <i class="fa-solid fa-arrows-up-down text-gray-500 p-4 cursor-pointer"></i>
-                        </abbr>
 
-                        <div class="flex items-center w-full gap-6">
-                            <figure>
-                                <img src="/src/images/Chair.png" alt="" class="min-w-32 h-32 object-cover rounded">
-                            </figure>
+                    <div class="bg-white py-5 pr-4 mb-4 flex items-center rounded relative">
+                        <button class="absolute right-4 top-4">
+                            <abbr title="Remove image"><i class="fa-solid fa-xmark text-gray-500 hover:text-primary"></i></abbr>
+                        </button>
 
-                            <div class="flex flex-col w-full gap-1">
-                                <p class="text-gray-500 text-xs">Main image</p>
-                                <label for="imageDescription" class="text-sm">Describe the image:</label>
-                                <input type="text" name="imageDescription" id="imageDescription" class="border rounded h-16 mt-1">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white py-5 pr-4 mb-4 flex items-center rounded">
                         <abbr title="Drag the images to change their order.">
                             <i class="fa-solid fa-arrows-up-down text-gray-500 p-4 cursor-pointer"></i>
                         </abbr>
@@ -97,7 +90,32 @@
                         </div>
                     </div>
 
-                    <div class="bg-white py-5 pr-4 flex items-center rounded">
+                    <div class="bg-white py-5 pr-4 mb-4 flex items-center rounded relative">
+                        <button class="absolute right-4 top-4">
+                            <abbr title="Remove image"><i class="fa-solid fa-xmark text-gray-500 hover:text-primary"></i></abbr>
+                        </button>
+
+                        <abbr title="Drag the images to change their order.">
+                            <i class="fa-solid fa-arrows-up-down text-gray-500 p-4 cursor-pointer"></i>
+                        </abbr>
+
+                        <div class="flex items-center w-full gap-6">
+                            <figure>
+                                <img src="/src/images/Chair.png" alt="" class="min-w-32 h-32 object-cover rounded">
+                            </figure>
+
+                            <div class="flex flex-col w-full gap-1">
+                                <label for="imageDescription" class="text-sm">Describe the image:</label>
+                                <input type="text" name="imageDescription" id="imageDescription" class="border rounded h-16 mt-1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white py-5 pr-4 mb-4 flex items-center rounded relative">
+                        <button class="absolute right-4 top-4">
+                            <abbr title="Remove image"><i class="fa-solid fa-xmark text-gray-500 hover:text-primary"></i></abbr>
+                        </button>
+
                         <abbr title="Drag the images to change their order.">
                             <i class="fa-solid fa-arrows-up-down text-gray-500 p-4 cursor-pointer"></i>
                         </abbr>
@@ -168,7 +186,7 @@
             <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl">
                 <span class="flex justify-between items-center mb-3">
                     <label for="listingDescription" class="text-sm md:text-base font-medium xl:font-normal">Describe your listing:</label>
-                    <p class="text-xs md:text-sm">0/1000 characters</p>
+                    <p class="text-xs md:text-sm text-gray-500">0/1000 characters</p>
                 </span>
                 <textarea name="listingDescription" id="listingDescription" class="h-40 xl:h-48 w-full border rounded resize-none px-3 pt-2 text-sm md:text-base"></textarea>
             </div>
@@ -189,7 +207,7 @@
             </div>
     <!--TAGS-->
             
-            <div class="flex h-12 gap-3 xl:mt-3 w-full sm:w-3/4 md:w-2/3">
+            <div class="flex h-12 gap-3 xl:mt-3 w-full sm:w-3/4 md:w-2/3 mb-16">
                 <button class="border px-4 py-2 md:px-6 md:py-3 rounded text-sm md:text-base">Cancel</button>
                 <button class="bg-red px-4 py-2 md:px-6 md:py-3 rounded bg-secondary text-sm md:text-base">Create listing</button>
             </div>
