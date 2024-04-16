@@ -806,10 +806,6 @@ video {
   max-width: 28rem;
 }
 
-.max-w-2xl {
-  max-width: 42rem;
-}
-
 .max-w-xl {
   max-width: 36rem;
 }
@@ -996,6 +992,11 @@ video {
      object-fit: cover;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1049,16 +1050,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .py-8 {
