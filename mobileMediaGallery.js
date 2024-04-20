@@ -6,10 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentImageIndex = 0;
     let totalImages = galleryObjects.length;
 
-    // Initially set the total number of images
     imageNumber.textContent = `1 / ${totalImages}`;
 
-    // Function to show current image
     function showCurrentImage() {
         galleryObjects.forEach((obj, index) => {
             if (index === currentImageIndex) {
@@ -21,13 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
         imageNumber.textContent = `${currentImageIndex + 1} / ${totalImages}`;
     }
 
-    // Event listener for previous button
     prevButton.addEventListener("click", function () {
         currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
         showCurrentImage();
     });
 
-    // Event listener for next button
     nextButton.addEventListener("click", function () {
         currentImageIndex = (currentImageIndex + 1) % totalImages;
         showCurrentImage();
