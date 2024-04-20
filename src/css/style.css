@@ -88,3 +88,9 @@ hr {
     }
 }
 
+.gallery-object {
+    display: none;
+}
+.gallery-object.active {
+    display: block;
+}
