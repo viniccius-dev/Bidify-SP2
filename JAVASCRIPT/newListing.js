@@ -1,4 +1,5 @@
 import galleryObject from './galleryObject.js';
+import imageCount from './imageCount.js';
 
 // const listingGallery = document.querySelector('#listingGallery');
 // const imageListing = document.querySelector('#imageListing');
@@ -9,3 +10,4 @@ import galleryObject from './galleryObject.js';
 // const mobileMediaGallery = document.querySelector('.mobile-media-gallery');
 
 galleryObject();
+imageCount();

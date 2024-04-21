@@ -18,10 +18,19 @@ export default function galleryObject() {
             galleryObjects.appendChild(galleryImage); 
             container.appendChild(galleryObjects); 
 
+            saveImageToLocalStorage(imageUrl);
+
             listingImage.value = '';
 
             placeholder.classList.add('hidden');
+
+            updateImageCount();
         }
     });
 }
 
+function saveImageToLocalStorage(imageUrl) {
+    let images = JSON.parse(localStorage.getItem('uploadedImages')) || [];
+    images.push(imageUrl);
+    localStorage.setItem('uploadedImages', JSON.stringify(images));
+}
