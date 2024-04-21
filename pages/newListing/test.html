@@ -16,7 +16,7 @@
 
     <link rel="icon" type="image/png" sizes="16x16" href="/src/images/favicon.ico">
 
-    <script src="/mobileMediaGallery.js"></script>
+    <script defer src="/JAVASCRIPT/newListing.js"></script>
 </head>
 <body class="mx-auto text-primary bg-light">
 
@@ -51,45 +51,38 @@
     <section class="bg-light w-full xl:max-w-3xl flex flex-col pt-6 pb-14 gap-5 md:gap-6 px-4 md:px-14 xl:px-20 2xl:px-32 lg:pt-10 xl:py-0 items-center xl:items-start mx-auto">
         <h1 class="pt-2 xl:pt-12 font-semibold xl:font-bold text-xl xl:text-xl xl:mb-2 2xl:mb-6 2xl:text-3xl w-full sm:w-3/4 md:w-2/3">Create a new listing</h1>
     
-            <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl">
-                <label for="listingItem" class="mb-3 text-sm 2xl:text-base font-medium xl:font-normal">What are you selling?
-                    <span class="text-gray-500 text-xs md:text-sm">E.g. bicycle, chair, book...</span>
-                </label>
-                <input type="text" id="listingItem" name="listingItem" class="border rounded h-8 md:h-10 w-full px-3">
-            </div>
+        <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl">
+            <label for="listingItem" class="mb-3 text-sm 2xl:text-base font-medium xl:font-normal">What are you selling?
+                <span class="text-gray-500 text-xs md:text-sm">E.g. bicycle, chair, book...</span>
+            </label>
+            <input type="text" id="listingItem" name="listingItem" class="border rounded h-8 md:h-10 w-full px-3">
+        </div>
     
-            <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl">
-                <span class="flex justify-between items-center mb-3">
-                   <label for="listingImage" class="text-sm 2xl:text-base font-medium xl:font-normal">Image links:</label> 
-                   <p class="text-xs md:text-sm text-gray-500">0/6 images</p>
-                </span>
-                <div class="flex gap-3">
-                    <input type="text" id="listingImage" name="listingImage" class="border rounded h-8 md:h-10 w-full px-3 text-sm md:text-base">
-                    <button class="py-1 px-6 xl:py-2 bg-primary text-white rounded text-xs md:text-sm 2xl:text-base">Upload</button>
+        <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl" id="listingGallery">
+            <span class="flex justify-between items-center mb-3">
+               <label for="listingImage" class="text-sm 2xl:text-base font-medium xl:font-normal">Image links:</label> 
+               <p id="imageCount" class="text-xs md:text-sm text-gray-500">0/6 images</p>
+            </span>
+            <div class="flex gap-3">
+                <input type="url" id="listingImage" name="listingImage" class="border rounded h-8 md:h-10 w-full px-3 text-sm md:text-base">
+                <button id="uploadButton" class="py-1 px-6 xl:py-2 bg-primary text-white rounded text-xs md:text-sm 2xl:text-base" id="uploadButton">Upload</button>
+            </div>
+
+            <div class="flex flex-col mt-3 lg:my-6">
+                <div class="mt-3 lg:hidden relative mobile-media-gallery">
+            
+                    <span class="absolute bottom-0 w-full bg-primary text-white flex justify-between items-center">
+                        <button id="prevButton">
+                            <i class="fa-solid fa-arrow-left p-3 text-sm"></i>
+                        </button>
+                        <p id="imageNumber" class="text-xs"></p>
+                        <button id="nextButton">
+                            <i class="fa-solid fa-arrow-right p-3 text-sm"></i>
+                        </button>
+                    </span>
                 </div>
-
-                <div class="flex flex-col mt-3 lg:my-6">
-
-                    <div class="mt-3 lg:hidden relative mobile-media-gallery">
-                        <figure class="w-full h-80 md:h-96 flex items-center justify-center rounded relative bg-grey gallery-object">
-                            <img src="/src/images/Chair.png" alt="" class="w-full h-full object-cover rounded">
-                        </figure>
-
-                        <figure class="hidden w-full h-80 md:h-96 flex items-center justify-center rounded relative bg-grey gallery-object">
-                            <i class="fa-regular fa-image text-4xl text-gray-500">2</i>
-                        </figure>
-                
-                        <span class="absolute bottom-0 w-full bg-primary text-white flex justify-between items-center">
-                            <button id="prevButton">
-                                <i class="fa-solid fa-arrow-left p-3 text-sm"></i>
-                            </button>
-                            <p id="imageNumber" class="text-xs"></p>
-                            <button id="nextButton">
-                                <i class="fa-solid fa-arrow-right p-3 text-sm"></i>
-                            </button>
-                        </span>
-                    </div>
-                </div>
+            </div>
+        </div>  
 
                     <!--IMAGE 1-->
                     <div class="hidden lg:flex bg-white py-5 pr-4 mb-4 items-center rounded relative">
