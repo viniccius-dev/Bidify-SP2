@@ -18,7 +18,6 @@ export default function galleryObject() {
             galleryObjects.appendChild(galleryImage); 
             container.appendChild(galleryObjects); 
 
-            saveLocalStorage(imageUrl);
             listingImage.value = '';
 
             placeholder.classList.add('hidden');
