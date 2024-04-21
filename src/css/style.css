@@ -88,3 +88,6 @@ hr {
     }
 }
 
+.active {
+    display: block;
+}
