@@ -6,7 +6,6 @@ export default function galleryObject() {
     const nextButton = document.querySelector('#nextButton');
     const imageNumber = document.querySelector('#imageNumber');
     const imageCount = document.querySelector('#imageCount');
-    const errorMessage = document.querySelector('#errorMessage');
 
     let images = JSON.parse(localStorage.getItem('uploadedImages')) || [];
     let currentIndex = 0;
@@ -43,7 +42,7 @@ export default function galleryObject() {
             container.append(placeholder);
             prevButton.disabled = true;
             nextButton.disabled = true;
-            imageCount.textContent = `0 / 6 images`; // Oppdaterer imageCount til "0 / 6 images"
+            imageCount.textContent = `0 / 6 images`; 
         } else {
             images.forEach((imageUrl, index) => {
                 const figure = createFigure(imageUrl, index);
@@ -51,7 +50,7 @@ export default function galleryObject() {
             });
             prevButton.disabled = false;
             nextButton.disabled = false;
-            imageCount.textContent = `${images.length} / 6 images`; // Oppdaterer imageCount med antall opplastede bilder
+            imageCount.textContent = `${images.length} / 6 images`; 
         }
 
         updateImageNumber(); 
