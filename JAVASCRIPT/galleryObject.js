@@ -50,7 +50,7 @@ export default function galleryObject() {
             nextButton.disabled = false;
         }
 
-        updateImageNumber();
+        updateImageNumber(); 
     }
 
     function showPreviousImage() {
