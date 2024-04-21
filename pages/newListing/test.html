@@ -58,7 +58,7 @@
             <input type="text" id="listingItem" name="listingItem" class="border rounded h-8 md:h-10 w-full px-3">
         </div>
     
-        <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl" id="listingGallery">
+        <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-full" id="listingGallery">
             <span class="flex justify-between items-center mb-3">
                <label for="listingImage" class="text-sm 2xl:text-base font-medium xl:font-normal">Image links:</label> 
                <p id="imageCount" class="text-xs md:text-sm text-gray-500">0/6 images</p>
@@ -68,7 +68,7 @@
                 <button class="py-1 px-6 xl:py-2 bg-primary text-white rounded text-xs md:text-sm 2xl:text-base" id="uploadButton">Upload</button>
             </div>
 
-            <div class="flex flex-col mt-3 lg:my-6 lg:hidden">
+            <div class="flex flex-col mt-3 lg:hidden">
                 <div class="mt-3 relative" id="mobile-media-gallery">
                     <div id="mobile-gallery">
                         <span class="w-full h-80 md:h-96 flex items-center justify-center rounded relative bg-grey" id="mobile-placeholder">
@@ -90,6 +90,8 @@
         </div>  
 
         <!--IMAGE 1-->
+
+        <div class="flex flex-col lg:w-2/3 xl:w-full 2xl:max-w-2xl">
                     <div class="hidden lg:flex bg-white py-5 pr-4 mb-4 items-center rounded relative w-full">
                         <button class="absolute right-4 top-4">
                             <abbr title="Remove image"><i class="fa-solid fa-xmark text-gray-500 hover:text-primary"></i></abbr>
@@ -155,7 +157,8 @@
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>  
+        </div>  
     
             <div class="grid grid-cols-2 md:grid-cols-3 w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl gap-3">
                 <div class="col-span-2 md:col-span-1">
