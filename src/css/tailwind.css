@@ -1834,6 +1834,10 @@ video {
     max-width: 42rem;
   }
 
+  .\32xl\:max-w-4xl {
+    max-width: 56rem;
+  }
+
   .\32xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
