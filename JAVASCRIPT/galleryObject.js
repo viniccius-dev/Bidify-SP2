@@ -12,7 +12,7 @@ export default function galleryObject() {
 
     function createFigure(imageUrl, index) {
         const figure = document.createElement('figure');
-        figure.classList.add('w-full', 'h-80', 'md:h-96', 'flex', 'items-center', 'justify-center', 'rounded', 'relative', 'gallery-object');
+        figure.setAttribute('class', 'w-full h-80 md:h-96 flex items-center justify-center rounded relative gallery-object');
         if (index === currentIndex) {
             figure.classList.add('active');
         } else {
