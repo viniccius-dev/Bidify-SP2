@@ -80,6 +80,10 @@ hr {
     .main-image {
         min-height: 30rem;
     }
+
+    .wrapper {
+        max-width: 1400px;
+    }
 }
 
 @media screen and (min-width: 1536px) {

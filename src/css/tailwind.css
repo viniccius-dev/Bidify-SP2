@@ -682,6 +682,10 @@ video {
   margin-top: 2rem;
 }
 
+.ml-24 {
+  margin-left: 6rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1616,6 +1620,10 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:relative {
+    position: relative;
+  }
+
   .xl\:right-5 {
     right: 1.25rem;
   }
@@ -1640,6 +1648,14 @@ video {
 
   .xl\:mt-3 {
     margin-top: 0.75rem;
+  }
+
+  .xl\:ml-24 {
+    margin-left: 6rem;
+  }
+
+  .xl\:mb-4 {
+    margin-bottom: 1rem;
   }
 
   .xl\:block {
@@ -1732,6 +1748,10 @@ video {
     padding-bottom: 8rem;
   }
 
+  .xl\:pb-3 {
+    padding-bottom: 0.75rem;
+  }
+
   .xl\:pb-4 {
     padding-bottom: 1rem;
   }
@@ -1748,8 +1768,12 @@ video {
     padding-top: 0.5rem;
   }
 
-  .xl\:pb-3 {
-    padding-bottom: 0.75rem;
+  .xl\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .xl\:pt-6 {
+    padding-top: 1.5rem;
   }
 
   .xl\:text-2xl {
@@ -1802,8 +1826,27 @@ video {
     margin-right: 20rem;
   }
 
+  .\32xl\:mx-3 {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
+  .\32xl\:mx-36 {
+    margin-left: 9rem;
+    margin-right: 9rem;
+  }
+
+  .\32xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .\32xl\:mb-6 {
     margin-bottom: 1.5rem;
+  }
+
+  .\32xl\:ml-0 {
+    margin-left: 0px;
   }
 
   .\32xl\:h-12 {
@@ -1880,6 +1923,14 @@ video {
 
   .\32xl\:pt-5 {
     padding-top: 1.25rem;
+  }
+
+  .\32xl\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .\32xl\:pt-8 {
+    padding-top: 2rem;
   }
 
   .\32xl\:text-3xl {
