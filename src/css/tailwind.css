@@ -1019,24 +1019,14 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-1 {
@@ -1095,8 +1085,8 @@ video {
   padding-left: 2rem;
 }
 
-.pr-16 {
-  padding-right: 4rem;
+.pr-28 {
+  padding-right: 7rem;
 }
 
 .pr-3 {
@@ -1133,26 +1123,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pr-12 {
-  padding-right: 3rem;
-}
-
-.pr-32 {
-  padding-right: 8rem;
-}
-
-.pr-36 {
-  padding-right: 9rem;
-}
-
-.pr-2 {
-  padding-right: 0.5rem;
-}
-
-.pr-28 {
-  padding-right: 7rem;
 }
 
 .text-center {
@@ -1660,12 +1630,20 @@ video {
     padding-bottom: 0.5rem;
   }
 
+  .xl\:pb-3 {
+    padding-bottom: 0.75rem;
+  }
+
   .xl\:pb-4 {
     padding-bottom: 1rem;
   }
 
   .xl\:pl-14 {
     padding-left: 3.5rem;
+  }
+
+  .xl\:pt-1 {
+    padding-top: 0.25rem;
   }
 
   .xl\:pt-12 {
@@ -1678,14 +1656,6 @@ video {
 
   .xl\:pt-6 {
     padding-top: 1.5rem;
-  }
-
-  .xl\:pt-1 {
-    padding-top: 0.25rem;
-  }
-
-  .xl\:pb-3 {
-    padding-bottom: 0.75rem;
   }
 
   .xl\:text-2xl {
