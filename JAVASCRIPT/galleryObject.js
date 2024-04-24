@@ -12,7 +12,7 @@ export default function galleryObject() {
 
     function createFigure(imageUrl, index) {
         const figure = document.createElement('figure');
-        figure.setAttribute('class', 'w-full flex items-center justify-center rounded relative gallery-object');
+        figure.setAttribute('class', 'min-h-80 flex justify-end rounded relative gallery-object');
         if (index === currentIndex) {
             figure.classList.add('active');
         } else {
@@ -25,16 +25,17 @@ export default function galleryObject() {
         image.alt = 'Uploaded Image';
 
         const deleteButton = document.createElement('button');
-        deleteButton.setAttribute('class', 'bg-white rounded-full absolute top-4 right-4 h-8 w-8 flex items-center justify-center');
+        deleteButton.setAttribute('class', 'bg-white rounded-full absolute h-8 w-8');
 
-        const abbrText = document.createElement('abbr');
-        abbrText.title = "Remove image";
+        // const abbrText = document.createElement('abbr');
+        // abbrText.title = "Remove image";
 
         const deleteIcon = document.createElement('i');
         deleteIcon.setAttribute('class', 'fa-solid fa-xmark text-gray-500 hover:text-primary')
 
-        abbrText.append(deleteIcon);
-        deleteButton.append(abbrText);
+        deleteButton.append(deleteIcon);
+        // abbrText.append(deleteIcon);
+        // deleteButton.append(abbrText);
         figure.append(image, deleteButton);
         return figure;
     }

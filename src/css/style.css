@@ -133,5 +133,5 @@ hr {
 }
 
 .active {
-    display: block;
+    display: flex;
 }
