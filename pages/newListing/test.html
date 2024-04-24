@@ -48,7 +48,7 @@
 <main class="flex mx-auto items-center">
 
     <!--RIGHT SIDE-->
-    <section class="bg-light w-full xl:max-w-3xl 2xl:max-w-4xl flex flex-col pt-6 pb-14 gap-5 md:gap-6 px-4 md:px-14 xl:px-20 2xl:px-32 lg:pt-10 xl:py-0 items-center xl:items-start mx-auto">
+    <section class="bg-light w-full xl:max-w-3xl flex flex-col pt-6 pb-14 gap-5 md:gap-6 px-4 md:px-14 xl:px-20 2xl:px-32 lg:pt-10 xl:py-0 items-center xl:items-start mx-auto">
         <h1 class="pt-2 xl:pt-12 font-bold text-xl xl:text-2xl xl:mb-2 2xl:mb-2 2xl:text-3xl w-full sm:w-3/4 md:w-2/3">Create a new listing</h1>
     
         <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl">
@@ -68,7 +68,7 @@
                 <button class="py-1 px-6 xl:py-2 bg-primary text-white rounded text-xs md:text-sm" id="uploadButton">Upload</button>
             </div>
 
-            <div class="flex flex-col mt-3 lg:hidden">
+            <div class="flex flex-col mt-3">
                 <div class="mt-3 relative" id="mobile-media-gallery">
                     <div id="mobile-gallery">
                         <span class="w-full h-80 md:h-96 hidden items-center justify-center rounded relative bg-grey" id="mobile-placeholder">
@@ -76,140 +76,73 @@
                         </span>
                     </div>
             
-                    <span class="absolute bottom-0 w-full bg-primary text-white flex justify-between items-center">
+                    <div class="absolute bottom-0 w-full bg-primary text-white flex justify-between items-center">
                         <button id="prevButton">
-                            <i class="fa-solid fa-arrow-left p-3 text-sm"></i>
+                            <abbr title="Previous image">
+                                <i class="fa-solid fa-arrow-left p-3 text-sm"></i>
+                            </abbr>
                         </button>
                         <p id="imageNumber" class="text-xs"></p>
                         <button id="nextButton">
-                            <i class="fa-solid fa-arrow-right p-3 text-sm"></i>
+                            <abbr title="Next image">
+                                <i class="fa-solid fa-arrow-right p-3 text-sm"></i>
+                            </abbr>
                         </button>
-                    </span>
+                    </div>
                 </div>
             </div>
         </div>  
 
-        <!--IMAGE 1-->
-
-        <div class="flex flex-col lg:w-2/3 xl:w-full 2xl:max-w-2xl">
-                    <div class="hidden lg:flex bg-white py-5 pr-4 mb-4 items-center rounded relative w-full">
-                        <button class="absolute right-4 top-4">
-                            <abbr title="Remove image"><i class="fa-solid fa-xmark text-gray-500 hover:text-primary"></i></abbr>
-                        </button>
-
-                        <abbr title="Drag the images to change their order.">
-                            <i class="fa-solid fa-arrows-up-down text-gray-500 p-4 cursor-pointer"></i>
-                        </abbr>
-
-                        <div class="flex items-center w-full gap-6">
-                            <figure>
-                                <img src="/src/images/Chair.png" alt="" class="min-w-32 h-32 object-cover rounded">
-                            </figure>
-
-                            <div class="flex flex-col w-full gap-1">
-                                <p class="text-xs text-gray-500">Main image</p>
-                                <label for="imageDescription" class="text-sm">Add an image description:</label>
-                                <input type="text" name="imageDescription" id="imageDescription" class="border rounded h-16 mt-1">
-                            </div>
-                        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl gap-3">
+            <div class="col-span-2 md:col-span-1">
+                <div class="flex flex-col w-full">
+                    <label for="startingBid" class="mb-3 text-sm 2xl:text-base font-medium xl:font-normal">Starting bid:</label>
+                    <div class="flex relative text-xs md:text-sm 2xl:text-base">
+                        <span class="bottom-1 h-6 md:h-8 bg-white flex items-center justify-center absolute left-2">$</span> 
+                        <input type="number" id="startingBid" name="startingBid" class="border h-8 md:h-10 rounded pl-6 w-full">
                     </div>
-
-                    <!--IMAGE 2-->
-                    <div class="hidden lg:flex bg-white py-5 pr-4 mb-4 items-center rounded relative w-full">
-                        <button class="absolute right-4 top-4">
-                            <abbr title="Remove image"><i class="fa-solid fa-xmark text-gray-500 hover:text-primary"></i></abbr>
-                        </button>
-
-                        <abbr title="Drag the images to change their order.">
-                            <i class="fa-solid fa-arrows-up-down text-gray-500 p-4 cursor-pointer"></i>
-                        </abbr>
-
-                        <div class="flex items-center w-full gap-6">
-                            <figure>
-                                <img src="/src/images/Chair.png" alt="" class="min-w-32 h-32 object-cover rounded">
-                            </figure>
-
-                            <div class="flex flex-col w-full gap-1">
-                                <label for="imageDescription" class="text-sm">Add an image description:</label>
-                                <input type="text" name="imageDescription" id="imageDescription" class="border rounded h-16 mt-1">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="hidden lg:flex bg-white py-5 pr-4 items-center rounded relative w-full">
-                        <button class="absolute right-4 top-4">
-                            <abbr title="Remove image"><i class="fa-solid fa-xmark text-gray-500 hover:text-primary"></i></abbr>
-                        </button>
-
-                        <abbr title="Drag the images to change their order.">
-                            <i class="fa-solid fa-arrows-up-down text-gray-500 p-4 cursor-pointer"></i>
-                        </abbr>
-
-                        <div class="flex items-center w-full gap-6">
-                            <figure>
-                                <img src="/src/images/Chair.png" alt="" class="min-w-32 h-32 object-cover rounded">
-                            </figure>
-
-                            <div class="flex flex-col w-full gap-1">
-                                <label for="imageDescription" class="text-sm">Add an image description:</label>
-                                <input type="text" name="imageDescription" id="imageDescription" class="border rounded h-16 mt-1">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-        </div>  
-    
-            <div class="grid grid-cols-2 md:grid-cols-3 w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl gap-3">
-                <div class="col-span-2 md:col-span-1">
-                    <div class="flex flex-col w-full">
-                        <label for="startingBid" class="mb-3 text-sm 2xl:text-base font-medium xl:font-normal">Starting bid:</label>
-                        <div class="flex relative text-xs md:text-sm 2xl:text-base">
-                            <span class="bottom-1 h-6 md:h-8 bg-white flex items-center justify-center absolute left-2">$</span> 
-                            <input type="number" id="startingBid" name="startingBid" class="border h-8 md:h-10 rounded pl-6 w-full">
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="flex flex-col w-full col-span-1">
-                    <label for="endDate" class="mb-3 text-sm 2xl:text-base font-medium xl:font-normal">Ending date:</label>
-                    <input type="date" id="endDate" name="endDate" class="border h-8 md:h-10 rounded px-3 text-xs md:text-sm">
-                </div>
-
-                <div class="flex flex-col w-full col-span-1">
-                    <label for="endTime" class="mb-3 text-sm 2xl:text-base font-medium xl:font-normal">Ending at:</label>
-                    <input type="time" id="endTime" name="endTime" class="border h-8 md:h-10 rounded px-3 text-xs md:text-sm">
                 </div>
             </div>
     
-            <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl">
-                <span class="flex justify-between items-center mb-3">
-                    <label for="listingDescription" class="text-sm 2xl:text-base font-medium xl:font-normal">Describe your listing:</label>
-                    <p class="text-xs xl:text-sm text-gray-500">0/1000 characters</p>
-                </span>
-                <textarea name="listingDescription" id="listingDescription" class="h-40 xl:h-48 w-full border rounded resize-none px-3 pt-2 text-sm md:text-base"></textarea>
+            <div class="flex flex-col w-full col-span-1">
+                <label for="endDate" class="mb-3 text-sm 2xl:text-base font-medium xl:font-normal">Ending date:</label>
+                <input type="date" id="endDate" name="endDate" class="border h-8 md:h-10 rounded px-3 text-xs md:text-sm">
             </div>
 
-            <!--TAGS-->
-            <div class="w-full sm:w-3/4 md:w-2/3 flex flex-col">
-                <span class="flex gap-5 items-center mb-3">
-                    <label for="tags" class="text-sm 2xl:text-base font-medium xl:font-normal">Tags:</label>
-                    <abbr class="rounded-full bg-primary text-white w-6 h-6 text-sm hidden lg:flex justify-center items-center cursor-pointer" title="Tags are descriptive keywords assigned to items to organize them based on their characteristics. ">?</abbr>
-                </span>
+            <div class="flex flex-col w-full col-span-1">
+                <label for="endTime" class="mb-3 text-sm 2xl:text-base font-medium xl:font-normal">Ending at:</label>
+                <input type="time" id="endTime" name="endTime" class="border h-8 md:h-10 rounded px-3 text-xs md:text-sm">
+            </div>
+        </div>
+    
+        <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 xl:w-full 2xl:max-w-2xl">
+            <span class="flex justify-between items-center mb-3">
+                <label for="listingDescription" class="text-sm 2xl:text-base font-medium xl:font-normal">Describe your listing:</label>
+                <p class="text-xs xl:text-sm text-gray-500">0/1000 characters</p>
+            </span>
+            <textarea name="listingDescription" id="listingDescription" class="h-40 xl:h-48 w-full border rounded resize-none px-3 pt-2 text-sm md:text-base"></textarea>
+        </div>
+
+        <!--TAGS-->
+        <div class="w-full sm:w-3/4 md:w-2/3 flex flex-col">
+            <span class="flex gap-5 items-center mb-3">
+                <label for="tags" class="text-sm 2xl:text-base font-medium xl:font-normal">Tags:</label>
+                <abbr class="rounded-full bg-primary text-white w-6 h-6 text-sm hidden lg:flex justify-center items-center cursor-pointer" title="Tags are descriptive keywords assigned to items to organize them based on their characteristics. ">?</abbr>
+            </span>
                 
-                <div>
-                    <div class="flex relative w-full self-start">
-                        <span class="bottom-1 h-6 md:h-8 bg-white flex items-center justify-center absolute left-3 text-xs md:text-sm">#</span> 
-                        <input type="text" id="tags" name="tags" class="border h-8 md:h-10 rounded pl-8 w-full">
-                    </div>
+            <div>
+                <div class="flex relative w-full self-start">
+                    <span class="bottom-1 h-6 md:h-8 bg-white flex items-center justify-center absolute left-3 text-xs md:text-sm">#</span> 
+                    <input type="text" id="tags" name="tags" class="border h-8 md:h-10 rounded pl-8 w-full">
                 </div>
             </div>
+        </div>
     <!--TAGS-->
             
-            <div class="flex h-12 gap-3 xl:mt-3 w-full sm:w-3/4 md:w-2/3 mb-16">
-                <button class="border px-4 py-2 md:px-6 md:py-3 rounded text-sm 2xl:text-base">Cancel</button>
-                <button class="bg-red px-4 py-2 md:px-6 md:py-3 rounded bg-secondary text-sm 2xl:text-base">Create listing</button>
-            </div>
+        <div class="flex h-12 gap-3 xl:mt-3 w-full sm:w-3/4 md:w-2/3 mb-16">
+            <button class="border px-4 py-2 md:px-6 md:py-3 rounded text-sm 2xl:text-base">Cancel</button>
+            <button class="bg-red px-4 py-2 md:px-6 md:py-3 rounded bg-secondary text-sm 2xl:text-base">Create listing</button>
+        </div>
     </section>
 </main>
 

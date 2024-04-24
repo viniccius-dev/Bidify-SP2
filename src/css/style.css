@@ -70,6 +70,28 @@ hr {
     border-bottom: 1px solid #22222253;
 }
 
+@media screen and (max-width: 575px) {
+    .gallery-object {
+        height: 22rem;
+    } 
+}
+
+/* SMALL */
+
+@media (min-width: 576px) and (max-width: 1023px) {
+    .gallery-object {
+        height: 30rem;
+    } 
+}
+
+/*LARGE*/
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .gallery-object {
+        height: 36rem;
+    } 
+}
+
 @media (min-width: 1280px) and (max-width: 1535px) {
     .figure {
         grid-template-columns: repeat(5, 100px);
@@ -83,6 +105,12 @@ hr {
     .wrapper {
         max-width: 1400px;
     }
+}
+
+@media screen and (min-width: 1280px) {
+    .gallery-object {
+        height: 32rem;
+    } 
 }
 
 @media screen and (min-width: 1536px) {
