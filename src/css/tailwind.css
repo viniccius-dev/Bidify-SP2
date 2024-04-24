@@ -1042,6 +1042,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1124,6 +1129,14 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -1673,14 +1686,17 @@ video {
     justify-content: space-between;
   }
 
+  .xl\:rounded-lg {
+    border-radius: 0.5rem;
+  }
+
+  .xl\:p-0 {
+    padding: 0px;
+  }
+
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .xl\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .xl\:px-20 {
@@ -1719,6 +1735,14 @@ video {
     padding-left: 3.5rem;
   }
 
+  .xl\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .xl\:pr-28 {
+    padding-right: 7rem;
+  }
+
   .xl\:pt-1 {
     padding-top: 0.25rem;
   }
@@ -1733,14 +1757,6 @@ video {
 
   .xl\:pt-6 {
     padding-top: 1.5rem;
-  }
-
-  .xl\:pr-28 {
-    padding-right: 7rem;
-  }
-
-  .xl\:pl-16 {
-    padding-left: 4rem;
   }
 
   .xl\:text-2xl {
