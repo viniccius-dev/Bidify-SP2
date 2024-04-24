@@ -81,10 +81,6 @@ hr {
     }
 }
 
-.rounded-edges {
-    border-radius: 0px 50% 50% 0px;
-}
-
 /* SMALL */
 
 @media (min-width: 576px) and (max-width: 1023px) {
@@ -123,6 +119,10 @@ hr {
 
     .frontpage-image {
         height: 40rem;
+    }
+
+    .rounded-edges {
+        border-radius: 0px 50% 50% 0px;
     }
 }
 
