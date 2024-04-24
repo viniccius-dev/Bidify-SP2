@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -932,12 +936,12 @@ video {
 
 .bg-lightpink {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 249 248 / var(--tw-bg-opacity));
+  background-color: rgb(255 244 243 / var(--tw-bg-opacity));
 }
 
 .bg-pink {
   --tw-bg-opacity: 1;
-  background-color: rgb(245 202 195 / var(--tw-bg-opacity));
+  background-color: rgb(253 230 230 / var(--tw-bg-opacity));
 }
 
 .bg-primary {
@@ -958,6 +962,10 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-20 {
+  padding: 5rem;
 }
 
 .p-3 {

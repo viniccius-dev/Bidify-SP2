@@ -9,8 +9,8 @@ module.exports = {
         light: "#FCFCFC", // BACKGROUND GRAY
         grey: "#F5F5F5", // BACKGROUND MORE GRAY
         secondary: "#F28482",
-        pink: "#F5CAC3",
-        lightpink: "#FFF9F8",
+        pink: "#FDE6E6",
+        lightpink: "#FFF4F3",
       },
 
       sizes: {

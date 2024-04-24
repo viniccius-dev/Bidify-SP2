@@ -135,3 +135,8 @@ hr {
 .active {
     display: flex;
 }
+
+.modal {
+    background: rgba(37, 37, 37, 0.46);
+    backdrop-filter: blur(2px);
+}
