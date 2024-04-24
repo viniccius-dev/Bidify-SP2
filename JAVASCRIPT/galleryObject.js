@@ -24,7 +24,18 @@ export default function galleryObject() {
         image.src = imageUrl;
         image.alt = 'Uploaded Image';
 
-        figure.append(image);
+        const deleteButton = document.createElement('button');
+        deleteButton.setAttribute('class', 'bg-white rounded-full absolute top-4 right-4 h-8 w-8 flex items-center justify-center');
+
+        const abbrText = document.createElement('abbr');
+        abbrText.title = "Remove image";
+
+        const deleteIcon = document.createElement('i');
+        deleteIcon.setAttribute('class', 'fa-solid fa-xmark text-gray-500 hover:text-primary')
+
+        abbrText.append(deleteIcon);
+        deleteButton.append(abbrText);
+        figure.append(image, deleteButton);
         return figure;
     }
 

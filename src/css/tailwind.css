@@ -682,10 +682,6 @@ video {
   margin-top: 2rem;
 }
 
-.ml-24 {
-  margin-left: 6rem;
-}
-
 .flex {
   display: flex;
 }
@@ -1646,16 +1642,16 @@ video {
     margin-bottom: 0.5rem;
   }
 
-  .xl\:mt-3 {
-    margin-top: 0.75rem;
+  .xl\:mb-4 {
+    margin-bottom: 1rem;
   }
 
   .xl\:ml-24 {
     margin-left: 6rem;
   }
 
-  .xl\:mb-4 {
-    margin-bottom: 1rem;
+  .xl\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .xl\:block {
@@ -1768,10 +1764,6 @@ video {
     padding-top: 0.5rem;
   }
 
-  .xl\:pt-8 {
-    padding-top: 2rem;
-  }
-
   .xl\:pt-6 {
     padding-top: 1.5rem;
   }
@@ -1826,16 +1818,6 @@ video {
     margin-right: 20rem;
   }
 
-  .\32xl\:mx-3 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-  }
-
-  .\32xl\:mx-36 {
-    margin-left: 9rem;
-    margin-right: 9rem;
-  }
-
   .\32xl\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1845,8 +1827,12 @@ video {
     margin-bottom: 1.5rem;
   }
 
-  .\32xl\:ml-0 {
-    margin-left: 0px;
+  .\32xl\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .\32xl\:mb-2 {
+    margin-bottom: 0.5rem;
   }
 
   .\32xl\:h-12 {
@@ -1921,12 +1907,12 @@ video {
     padding-left: 5rem;
   }
 
-  .\32xl\:pt-5 {
-    padding-top: 1.25rem;
-  }
-
   .\32xl\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .\32xl\:pt-5 {
+    padding-top: 1.25rem;
   }
 
   .\32xl\:pt-8 {

@@ -9,7 +9,7 @@ const request = await fetch(baseURL + loginEndpoint, {
         "Content-Type": "application/json",
     },
     body: JSON.stringify({
-        email: "martinem@stud.noroff.no",
+        email: "julius@noroff.no",
         password: "Minnie2024!"
     })
 }) 
