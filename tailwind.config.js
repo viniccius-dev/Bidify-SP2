@@ -14,8 +14,9 @@ module.exports = {
       },
 
       sizes: {
-        
-      }
+        '88': '22rem',
+        '128': '32rem', 
+      },
     },
   },
   plugins: [],

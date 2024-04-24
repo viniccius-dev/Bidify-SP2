@@ -39,7 +39,7 @@
     </div>
 </header>
 
-<!--BORDER-->
+<!--UPPER PART-->
 
 <div class="bg-lightpink">
     <div class="flex flex-col px-4 md:px-14 xl:px-20 2xl:px-80">
@@ -55,42 +55,45 @@
     </div>
 </div>
 
-<!--LISTINGS: ENDING SOON-->
+<!--LISTINGS: ENDING SOON (HEADLINES)-->
 
-<section class="px-4 md:px-14 xl:px-20 2xl:px-80 pb-16">
-    <div class="flex justify-between pt-20 items-center">
+<section class="px-4 md:px-14 xl:px-20 2xl:px-80 2xl:py-20">
+    <div class="flex justify-between pb-4">    
         <div class="flex gap-32">
             <div class="flex flex-col">
-                <div class="flex items-center gap-3">
+                <span class="flex items-center gap-4">
                     <hr class="w-10">
-                    <span class="font-bold text-secondary text-lg">Don't miss out</span>
-                </div>
-                
-                <h1 class="text-2xl font-bold pl-12 ml-1">Ending soon.</h1>
+                    <p class="font-bold text-secondary text-lg w-full">Don't miss out</p>
+                </span>
+                <h1 class="text-2xl font-bold pl-12">Ending soon.</h1>
             </div>
 
-            <div class="flex self-end gap-4">
+            <div class="gap-4 self-end hidden md:flex">
                 <button class="bg-gray-100 w-12 h-12 rounded-full hover:bg-gray-200">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button class="bg-gray-100 w-12 h-12 rounded-full hover:bg-gray-200">
                     <i class="fa-solid fa-chevron-right"></i>
-                </button>
+                </button> 
             </div>
-        </div> 
-        <a href="/pages/auctions/index.html" class="view-all">view all</a>
+        </div>
+        <a href="/pages/auctions/index.html" class="view-all self-end">view all</a>
     </div>
 
-    <div class="grid grid-cols-4 gap-6 pt-6 pb-20">
+<!--LISTINGS: ENDING SOON (LISTINGS)-->
+
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 pt-6 pb-20">
         <figure>
             <a href="#">
-                <img src="/src/images/img-1.jpg" alt="" class="rounded w-full object-cover listing-image hover:opacity-90">
+                <img src="/src/images/img-1.jpg" alt="" class="rounded w-full object-cover hover:opacity-90 h-80 sm:h-96">
             </a>
             <figcaption>
-                <h2 class="font-medium xl:text-lg 2xl:text-xl pt-4">Mobi chair</h2>
-                <p class="text-gray-500 pb-2 xl:pb-3 pt-1 xl:pt-1 font-medium text-xs md:text-sm xl:text-base">Ends in<span class="time-left"> 2 hours 4 min</span></p>
-                <p class="pb-5 text-sm lg:text-base 2xl:text-lg">Current bid: <span class="current-bid">3 credits</span></p>
-                <button class="border rounded w-full py-2 md:py-3 hover:bg-secondary hover:border-secondary text-sm xl:text-base">Make an offer</button>
+                <figcaption>
+                    <h2 class="font-medium xl:text-lg 2xl:text-xl pt-4">Mobi chair</h2>
+                    <p class="text-gray-500 pb-2 xl:pb-3 pt-1 xl:pt-1 font-medium text-xs md:text-sm xl:text-base">Ends in:<span class="time-left"> 2 hours 4 min</span></p>
+                    <p class="pb-5 text-sm lg:text-base 2xl:text-lg">Current bid: <span class="current-bid">3 credits</span></p>
+                    <button class="border rounded w-full py-2 md:py-3 hover:bg-secondary hover:border-secondary text-sm xl:text-base">Make an offer</button>
+                </figcaption>
             </figcaption>
         </figure>
 
@@ -147,30 +150,29 @@
     </div>
 </div>
 
-<!--LISTINGS: ENDING SOON-->
+<!--LISTINGS: LATEST LISTINGS-->
 
-<section class="px-4 md:px-14 xl:px-20 2xl:px-80 pb-16">
-    <div class="flex justify-between pt-20 items-center">
+<section class="px-4 md:px-14 xl:px-20 2xl:px-80 2xl:py-20">
+    <div class="flex justify-between pb-4">    
         <div class="flex gap-32">
             <div class="flex flex-col">
-                <div class="flex items-center gap-3">
+                <span class="flex items-center gap-4">
                     <hr class="w-10">
-                    <span class="font-bold text-secondary text-lg">Look through the</span>
-                </div>
-                
-                <h1 class="text-2xl font-bold pl-12 ml-1">Latest listings.</h1>
+                    <p class="font-bold text-secondary text-lg w-full">Don't miss out</p>
+                </span>
+                <h1 class="text-2xl font-bold pl-12">Ending soon.</h1>
             </div>
 
-            <div class="flex self-end gap-4">
+            <div class="gap-4 self-end hidden md:flex">
                 <button class="bg-gray-100 w-12 h-12 rounded-full hover:bg-gray-200">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
                 <button class="bg-gray-100 w-12 h-12 rounded-full hover:bg-gray-200">
                     <i class="fa-solid fa-chevron-right"></i>
-                </button>
+                </button> 
             </div>
-        </div> 
-        <a href="/pages/auctions/index.html" class="view-all">view all</a>
+        </div>
+        <a href="/pages/auctions/index.html" class="view-all self-end">view all</a>
     </div>
 
     <div class="grid grid-cols-4 gap-6 pt-6 pb-20">
