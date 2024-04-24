@@ -690,6 +690,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1636,6 +1640,16 @@ video {
   .xl\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .xl\:my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .xl\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .xl\:mb-2 {
