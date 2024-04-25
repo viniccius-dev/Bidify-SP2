@@ -4,11 +4,15 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    max-width: 2800px;
 }
 
 .wrapper {
     max-width: 2000px;
+    padding: 0% 5%;
+}
+
+.header-wrapper {
+    max-width: 2200px;
     padding: 0% 5%;
 }
 

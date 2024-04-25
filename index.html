@@ -21,22 +21,25 @@
 <body class="mx-auto text-primary bg-light relative">
 
 <!--HEADER-->
-<header class="flex justify-between items-center pt-4 pb-3 lg:pt-8 lg:pb-6 px-4 md:px-14 xl:px-20 2xl:px-32 mx-auto bg-lightpink">
-    <span class="w-1/6">
-        <a href="/index.html" class="text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl font-semibold 2xl:font-bold">bidlify<span class="text-secondary">.</span></a>
-    </span>
+<header class="pt-4 pb-3 lg:pt-8 lg:pb-6 bg-lightpink">
+    <div class="header-wrapper flex justify-between items-center mx-auto">
+        <span class="w-1/6">
+            <a href="/index.html" class="text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl font-semibold 2xl:font-bold">bidlify<span class="text-secondary">.</span></a>
+        </span>
 
-    <div class="items-center justify-between w-1/4 xl:w-1/3 mx-auto gap-10 hidden xl:flex">
-        <a href="#" class="w-1/3 text-center py-4">New listing</a>
-        <a href="#" class="w-1/3 text-center py-4">Auctions</a>
-        <a href="#" class="w-1/3 text-center py-4">About</a>
-    </div>
+        <div class="items-center justify-between w-1/4 xl:w-1/3 mx-auto gap-10 hidden xl:flex">
+            <a href="#" class="w-1/3 text-center py-4">New listing</a>
+            <a href="#" class="w-1/3 text-center py-4">Auctions</a>
+            <a href="#" class="w-1/3 text-center py-4">About</a>
+        </div>
 
-    <div class="xl:w-1/5 2xl:w-1/6 gap-3 items-center justify-end hidden xl:flex">
-        <button class="font-semibold hover:text-secondary">Register</button>
-        <span>or</span>
-        <a href="/pages/login/index.html" class="border px-6 py-3 rounded hover:bg-secondary hover:border-secondary">Log in</a>
+        <div class="xl:w-1/5 2xl:w-1/6 gap-3 items-center justify-end hidden xl:flex">
+            <button class="font-semibold hover:text-secondary">Register</button>
+            <span>or</span>
+            <a href="/pages/login/index.html" class="border px-6 py-3 rounded hover:bg-secondary hover:border-secondary">Log in</a>
+        </div>
     </div>
+    
 </header>
 
 <!--UPPER PART-->
@@ -229,44 +232,46 @@
 
 <!--FOOTER-->
 
-<footer class="border-t border-b px-4 md:px-14 xl:px-20 2xl:px-32 pt-4 pb-6 lg:pt-10 lg:pb-14 flex flex-col xl:flex-row xl:justify-between bg-grey">
-    <span class="lg:w-1/6">
-        <a href="/index.html" class="text-lg lg:text-xl font-bold">Bidlify<span class="text-secondary">.</span></a>
-    </span>
+<footer class="border-t border-b py-6 lg:pt-10 lg:pb-14 bg-grey">
+    <div class="wrapper flex flex-col items-start lg:flex-row lg:justify-between mx-auto">
+        <span class="lg:w-1/7">
+            <a href="/index.html" class="text-lg lg:text-xl font-bold">Bidlify<span class="text-secondary">.</span></a>
+        </span>
 
-    <div class="pt-3 pb-4">
-        <a href="#" class="font-medium text-sm md:text-base">Contact us</a>
-        <ul class="text-gray-500 pt-1 lg:pt-4">
-            <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Support</li>
-            <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">FAQ</li>
-            <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Terms & policies</li>
-            <li class="pt-1 lg:pt-3 pb-1 text-xs md:text-sm 2xl:text-base">Phone: +47 56 97 34 00</li>
-            <li class="py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Mail: <span class="underline">contact@bidlify.com</span></li>
-        </ul>
-    </div>
-
-    <div class="pb-4">
-        <a href="#" class="font-medium text-sm md:text-base">Services</a>
-        <ul class="text-gray-500 pt-1 lg:pt-4">
-            <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">About us</li>
-            <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Gift cards</li>
-            <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Sales guide</li>
-            <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Positions</li>
-        </ul>
-    </div>
-
-    <div class="max-w-md">
-        <h2 class="font-medium text-sm md:text-base">Newsletter</h2>
-        <p class="py-2 lg:py-4 text-xs md:text-sm 2xl:text-base text-gray-500 leading-relaxed">Enter your email below to be the first to stay updated about new listings, bids and much more.</p>
-
-        <div class="flex items-center mt-2 mb-3 lg:mb-6 gap-2 lg:gap-3">
-            <input type="text" placeholder="Email address" class="border rounded h-8 md:h-10 lg:h-12 w-full pl-3 text-xs md:text-sm lg:text-base">
-            <button class="bg-primary text-white min-w-10 h-8 md:h-10 lg:min-w-12 lg:h-12 rounded flex items-center justify-center">
-                <i class="fa-regular fa-envelope text-sm md:text-base"></i>
-            </button>
+        <div class="pt-3 pb-4">
+            <a href="#" class="font-medium text-sm md:text-base">Contact us</a>
+            <ul class="text-gray-500 pt-1 lg:pt-4">
+                <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Support</li>
+                <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">FAQ</li>
+                <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Terms & policies</li>
+                <li class="pt-1 lg:pt-3 pb-1 text-xs md:text-sm 2xl:text-base">Phone: +47 56 97 34 00</li>
+                <li class="py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Mail: <span class="underline">contact@bidlify.com</span></li>
+            </ul>
         </div>
 
-        <img src="/src/images/payments.png.png" alt="">
+        <div class="pt-3 pb-4">
+            <a href="#" class="font-medium text-sm md:text-base">Services</a>
+            <ul class="text-gray-500 pt-1 lg:pt-4">
+                <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">About us</li>
+                <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Gift cards</li>
+                <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Sales guide</li>
+                <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Positions</li>
+            </ul>
+        </div>
+
+        <div class="pt-3 max-w-md">
+            <h2 class="font-medium text-sm md:text-base">Newsletter</h2>
+            <p class="py-2 lg:py-4 text-xs md:text-sm 2xl:text-base text-gray-500 leading-relaxed">Enter your email below to be the first to stay updated about new listings, bids and much more.</p>
+
+            <div class="flex items-center mt-2 mb-3 lg:mb-6 gap-2 lg:gap-3">
+                <input type="text" placeholder="Email address" class="border rounded h-8 md:h-10 lg:h-12 w-full pl-3 text-xs md:text-sm lg:text-base">
+                <button class="bg-primary text-white min-w-10 h-8 md:h-10 lg:min-w-12 lg:h-12 rounded flex items-center justify-center">
+                    <i class="fa-regular fa-envelope text-sm md:text-base"></i>
+                </button>
+            </div>
+
+            <img src="/src/images/payments.png.png" alt="">
+        </div>
     </div>
 </footer>
 
