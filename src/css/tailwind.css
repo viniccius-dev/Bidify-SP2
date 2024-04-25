@@ -725,11 +725,6 @@ video {
   height: 100vh;
 }
 
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .max-h-8 {
   max-height: 2rem;
 }
@@ -1288,6 +1283,10 @@ video {
 .hover\:text-3xl:hover {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.hover\:font-medium:hover {
+  font-weight: 500;
 }
 
 .hover\:text-primary:hover {
@@ -1883,14 +1882,6 @@ video {
 
   .\32xl\:w-96 {
     width: 24rem;
-  }
-
-  .\32xl\:w-\[40rem\] {
-    width: 40rem;
-  }
-
-  .\32xl\:w-\[60rem\] {
-    width: 60rem;
   }
 
   .\32xl\:min-w-\[40rem\] {
