@@ -11,6 +11,7 @@ module.exports = {
         secondary: "#F28482",
         pink: "#FDE6E6",
         lightpink: "#FFF4F3",
+        yellow: "#F6BD60",
       },
     },
   },
