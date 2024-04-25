@@ -717,18 +717,6 @@ video {
   max-height: 2rem;
 }
 
-.max-h-5 {
-  max-height: 1.25rem;
-}
-
-.max-h-56 {
-  max-height: 14rem;
-}
-
-.min-h-44 {
-  min-height: 11rem;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -984,10 +972,6 @@ video {
   padding: 0.75rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1006,6 +990,11 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-0 {
@@ -1048,21 +1037,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.py-7 {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1099,6 +1073,10 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -1109,10 +1087,6 @@ video {
 
 .pl-8 {
   padding-left: 2rem;
-}
-
-.pr-20 {
-  padding-right: 5rem;
 }
 
 .pr-3 {
@@ -1149,14 +1123,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
 }
 
 .text-center {
@@ -1247,16 +1213,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-pink {
-  --tw-text-opacity: 1;
-  color: rgb(253 230 230 / var(--tw-text-opacity));
-}
-
-.text-green {
-  --tw-text-opacity: 1;
-  color: rgb(132 165 157 / var(--tw-text-opacity));
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -1323,10 +1279,6 @@ video {
     height: 20rem;
   }
 
-  .sm\:h-72 {
-    height: 18rem;
-  }
-
   .sm\:w-3\/4 {
     width: 75%;
   }
@@ -1334,12 +1286,6 @@ video {
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  @media (min-width: 768px) {
-    .sm\:md\:h-96 {
-      height: 24rem;
-    }
   }
 }
 
@@ -1754,11 +1700,6 @@ video {
     padding-bottom: 0.5rem;
   }
 
-  .xl\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
   .xl\:pb-3 {
     padding-bottom: 0.75rem;
   }
@@ -1775,6 +1716,10 @@ video {
     padding-left: 4rem;
   }
 
+  .xl\:pr-20 {
+    padding-right: 5rem;
+  }
+
   .xl\:pt-1 {
     padding-top: 0.25rem;
   }
@@ -1789,10 +1734,6 @@ video {
 
   .xl\:pt-6 {
     padding-top: 1.5rem;
-  }
-
-  .xl\:pr-20 {
-    padding-right: 5rem;
   }
 
   .xl\:text-2xl {
