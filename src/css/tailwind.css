@@ -1715,6 +1715,10 @@ video {
     height: 20rem;
   }
 
+  .xl\:h-56 {
+    height: 14rem;
+  }
+
   .xl\:w-1\/2 {
     width: 50%;
   }
@@ -1886,6 +1890,18 @@ video {
     height: 24rem;
   }
 
+  .\32xl\:h-44 {
+    height: 11rem;
+  }
+
+  .\32xl\:h-40 {
+    height: 10rem;
+  }
+
+  .\32xl\:h-36 {
+    height: 9rem;
+  }
+
   .\32xl\:min-h-56 {
     min-height: 14rem;
   }
@@ -1908,6 +1924,18 @@ video {
 
   .\32xl\:w-\[40rem\] {
     width: 40rem;
+  }
+
+  .\32xl\:w-40 {
+    width: 10rem;
+  }
+
+  .\32xl\:w-44 {
+    width: 11rem;
+  }
+
+  .\32xl\:w-56 {
+    width: 14rem;
   }
 
   .\32xl\:min-w-\[40rem\] {
