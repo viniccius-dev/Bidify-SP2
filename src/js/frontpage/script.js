@@ -1,6 +1,10 @@
 import headerWord from "/src/js/effects/headerWord.js";
 import imageCarousel from "../effects/imageCarousel.js";
 import getListings from "../api/auth/requests/getListings.js"
+import thumbnail from "../templates/listings/thumbnails/index.js";
+
+const endingSoon = document.querySelector("#endingSoonListings");
+const latestListings = document.querySelector("#latestListings");
 
 headerWord();
 imageCarousel();
@@ -20,4 +24,17 @@ listings.forEach(listing => {
     }
 })
 
-console.log(activeListings)
+const sortByDate = activeListings.sort((a,b) => new Date(a.endsAt) - new Date(b.endsAt))
+
+for(let i = 0; i < 4; i++) {
+    endingSoon.appendChild(thumbnail(sortByDate[i]))
+}
+
+const sortByCreated = activeListings.sort((a,b) => new Date(b.created) - new Date(a.created))
+
+for(let i = 0; i < 4; i++) {
+    latestListings.appendChild(thumbnail(sortByCreated[i]))
+}
+
+
+
