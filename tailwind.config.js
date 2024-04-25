@@ -12,11 +12,6 @@ module.exports = {
         pink: "#FDE6E6",
         lightpink: "#FFF4F3",
       },
-
-      sizes: {
-        '88': '22rem',
-        '128': '32rem', 
-      },
     },
   },
   plugins: [],
