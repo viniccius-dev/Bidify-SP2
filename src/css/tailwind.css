@@ -566,6 +566,10 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -896,6 +900,14 @@ video {
 
 .self-end {
   align-self: flex-end;
+}
+
+.overscroll-auto {
+  overscroll-behavior: auto;
+}
+
+.overscroll-contain {
+  overscroll-behavior: contain;
 }
 
 .overscroll-none {
@@ -1333,6 +1345,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:fixed {
+    position: fixed;
+  }
+
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
   }
