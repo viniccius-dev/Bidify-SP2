@@ -1741,6 +1741,10 @@ video {
     padding-top: 1.5rem;
   }
 
+  .xl\:pr-20 {
+    padding-right: 5rem;
+  }
+
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
