@@ -1041,6 +1041,16 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1127,6 +1137,10 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .text-center {
@@ -1522,6 +1536,10 @@ video {
     padding-top: 2rem;
   }
 
+  .lg\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
   .lg\:text-right {
     text-align: right;
   }
@@ -1642,6 +1660,10 @@ video {
     width: 100%;
   }
 
+  .xl\:w-1\/5 {
+    width: 20%;
+  }
+
   .xl\:max-w-3xl {
     max-width: 48rem;
   }
@@ -1664,6 +1686,10 @@ video {
 
   .xl\:justify-between {
     justify-content: space-between;
+  }
+
+  .xl\:gap-4 {
+    gap: 1rem;
   }
 
   .xl\:px-0 {
@@ -1725,6 +1751,18 @@ video {
 
   .xl\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .xl\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
+  .xl\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
+  .xl\:pb-5 {
+    padding-bottom: 1.25rem;
   }
 
   .xl\:text-2xl {
@@ -1854,6 +1892,10 @@ video {
 
   .\32xl\:pt-8 {
     padding-top: 2rem;
+  }
+
+  .\32xl\:pb-8 {
+    padding-bottom: 2rem;
   }
 
   .\32xl\:text-2xl {
