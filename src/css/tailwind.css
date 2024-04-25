@@ -566,10 +566,6 @@ video {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -590,6 +586,10 @@ video {
   left: 0.75rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .right-3 {
   right: 0.75rem;
 }
@@ -598,24 +598,12 @@ video {
   right: 1rem;
 }
 
-.right-6 {
-  right: 1.5rem;
-}
-
 .top-0 {
   top: 0px;
 }
 
 .top-3 {
   top: 0.75rem;
-}
-
-.top-6 {
-  top: 1.5rem;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .col-span-1 {
@@ -906,18 +894,6 @@ video {
   align-self: flex-end;
 }
 
-.overscroll-auto {
-  overscroll-behavior: auto;
-}
-
-.overscroll-contain {
-  overscroll-behavior: contain;
-}
-
-.overscroll-none {
-  overscroll-behavior: none;
-}
-
 .rounded {
   border-radius: 0.25rem;
 }
@@ -932,10 +908,6 @@ video {
 
 .rounded-md {
   border-radius: 0.375rem;
-}
-
-.rounded-sm {
-  border-radius: 0.125rem;
 }
 
 .border {
@@ -1060,11 +1032,6 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 
 .py-3 {
@@ -1357,10 +1324,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:fixed {
-    position: fixed;
-  }
-
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -1414,12 +1377,12 @@ video {
     gap: 1.5rem;
   }
 
-  .md\:rounded-md {
-    border-radius: 0.375rem;
-  }
-
   .md\:rounded {
     border-radius: 0.25rem;
+  }
+
+  .md\:rounded-md {
+    border-radius: 0.375rem;
   }
 
   .md\:p-16 {
