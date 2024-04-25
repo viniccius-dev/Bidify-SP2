@@ -38,11 +38,15 @@ body {
 /* BORDERS */
 
 .border {
-    border: 1px solid #22222253;
+    border: 1px solid #22222234;
+}
+
+.border-t {
+    border-top: 1px solid #22222234;
 }
 
 .border-b {
-    border-bottom: 1px solid #22222253;
+    border-bottom: 1px solid #22222234;
 }
 
 hr {
