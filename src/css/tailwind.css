@@ -1265,6 +1265,14 @@ video {
   transition-duration: 300ms;
 }
 
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
+}
+
 .hover\:border-secondary:hover {
   --tw-border-opacity: 1;
   border-color: rgb(242 132 130 / var(--tw-border-opacity));
@@ -1311,6 +1319,10 @@ video {
 
 .hover\:opacity-90:hover {
   opacity: 0.9;
+}
+
+.hover\:duration-300:hover {
+  transition-duration: 300ms;
 }
 
 @media (min-width: 640px) {
