@@ -574,6 +574,10 @@ video {
   bottom: 0.25rem;
 }
 
+.bottom-6 {
+  bottom: 1.5rem;
+}
+
 .left-2 {
   left: 0.5rem;
 }
@@ -584,6 +588,10 @@ video {
 
 .right-3 {
   right: 0.75rem;
+}
+
+.right-4 {
+  right: 1rem;
 }
 
 .top-0 {
@@ -1206,6 +1214,11 @@ video {
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(38 30 30 / var(--tw-text-opacity));
+}
+
+.text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .text-secondary {
