@@ -8,7 +8,7 @@ export default function thumbnail(data) {
     a.href = "#";
     figure.appendChild(a);
 
-    const img = createEle("img", "rounded w-full object-cover listing-image hover:opacity-90 h-44 sm:h-80 md:h-96 xl:h-80 2xl:h-96");
+    const img = createEle("img", "rounded w-full object-cover listing-image hover:opacity-90 duration-300 h-44 sm:h-80 md:h-96 xl:h-80 2xl:h-96");
     img.src = data.media[0].url;
     img.alt = data.media[0].alt ? data.media[0].alt : `${data.title} - a bidlify listing`;
     a.appendChild(img);
@@ -29,7 +29,7 @@ export default function thumbnail(data) {
     p2.appendChild(span2);
     figcaption.appendChild(p2);
 
-    const button = createEle("button", "border rounded w-full py-2 md:py-3 hover:bg-secondary hover:border-secondary text-xs md:text-sm xl:text-base", "Make an offer");
+    const button = createEle("button", "border rounded w-full py-2 md:py-3 hover:bg-secondary hover:border-secondary text-xs md:text-sm xl:text-base duration-300", "Make an offer");
     figcaption.appendChild(button);
 
     return figure;
