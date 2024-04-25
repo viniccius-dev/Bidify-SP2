@@ -725,6 +725,11 @@ video {
   height: 100vh;
 }
 
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .max-h-8 {
   max-height: 2rem;
 }
@@ -1878,6 +1883,14 @@ video {
 
   .\32xl\:w-96 {
     width: 24rem;
+  }
+
+  .\32xl\:w-\[40rem\] {
+    width: 40rem;
+  }
+
+  .\32xl\:w-\[60rem\] {
+    width: 60rem;
   }
 
   .\32xl\:min-w-\[40rem\] {
