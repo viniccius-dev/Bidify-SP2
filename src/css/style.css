@@ -65,7 +65,7 @@ hr {
 }
 
 .listing-image {
-    height: 27rem;
+    height: 26rem;
 }
 
 .border {
@@ -104,6 +104,10 @@ hr {
     .gallery-object {
         height: 36rem;
     } 
+
+    .frontpage-image {
+        height: 35rem;
+    }
 }
 
 @media (min-width: 1280px) and (max-width: 1535px) {
@@ -129,7 +133,9 @@ hr {
     .frontpage-image {
         height: 40rem;
     }
+}
 
+@media screen and (min-width: 1024px) {
     .rounded-edges {
         border-radius: 0px 50% 50% 0px;
     }
