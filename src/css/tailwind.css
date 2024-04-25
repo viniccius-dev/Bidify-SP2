@@ -602,11 +602,6 @@ video {
   grid-column: span 2 / span 2;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -885,10 +880,6 @@ video {
 
 .self-end {
   align-self: flex-end;
-}
-
-.overflow-hidden {
-  overflow: hidden;
 }
 
 .rounded {
@@ -1239,20 +1230,6 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.transition-opacity {
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-1000 {
-  transition-duration: 1000ms;
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .hover\:border-secondary:hover {
   --tw-border-opacity: 1;
   border-color: rgb(242 132 130 / var(--tw-border-opacity));
@@ -1311,11 +1288,6 @@ video {
 @media (min-width: 768px) {
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
-  }
-
-  .md\:mx-14 {
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
   }
 
   .md\:mb-1 {
@@ -1596,11 +1568,6 @@ video {
     top: 1.25rem;
   }
 
-  .xl\:mx-20 {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
   .xl\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1792,11 +1759,6 @@ video {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:mx-80 {
-    margin-left: 20rem;
-    margin-right: 20rem;
-  }
-
   .\32xl\:mx-auto {
     margin-left: auto;
     margin-right: auto;
