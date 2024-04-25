@@ -931,6 +931,11 @@ video {
   border-color: rgb(242 132 130 / var(--tw-border-opacity));
 }
 
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1685,6 +1690,10 @@ video {
 
   .xl\:mt-3 {
     margin-top: 0.75rem;
+  }
+
+  .xl\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .xl\:block {
