@@ -1823,6 +1823,11 @@ video {
     padding-bottom: 0.5rem;
   }
 
+  .xl\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .xl\:pb-3 {
     padding-bottom: 0.75rem;
   }
@@ -1948,6 +1953,10 @@ video {
     width: 40rem;
   }
 
+  .\32xl\:w-80 {
+    width: 20rem;
+  }
+
   .\32xl\:min-w-\[40rem\] {
     min-width: 40rem;
   }
@@ -2010,6 +2019,10 @@ video {
 
   .\32xl\:pt-8 {
     padding-top: 2rem;
+  }
+
+  .\32xl\:pl-16 {
+    padding-left: 4rem;
   }
 
   .\32xl\:text-2xl {

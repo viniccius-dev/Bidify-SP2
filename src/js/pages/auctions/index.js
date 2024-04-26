@@ -2,11 +2,13 @@ import getListings from "../../api/auth/requests/getListings.js";
 import thumbnail from "../../templates/listings/thumbnails/index.js";
 
 const allListings = document.querySelector("#allListings");
+const amountOfListings = document.querySelector("#amountOfListings");
 
-let page = 1; 
-let loading = false; 
-let allListingsLoaded = false; 
-let loadedListings = []; 
+let page = 1;
+let loading = false;
+let allListingsLoaded = false;
+let loadedListings = [];
+let totalActiveListings = 0;
 
 async function loadInitialListings() {
     try {
@@ -15,6 +17,7 @@ async function loadInitialListings() {
 
         const now = new Date();
         const activeListings = listings.filter(listing => new Date(listing.endsAt) > now);
+        totalActiveListings = activeListings.length; // Count total active listings
 
         const initialListings = activeListings.slice(0, 12);
 
@@ -26,7 +29,8 @@ async function loadInitialListings() {
     } catch (error) {
         console.error("Error fetching initial listings:", error);
     } finally {
-        loading = false; 
+        loading = false;
+        updateAmountOfListings(); // Update the displayed total number of listings
     }
 }
 
@@ -52,7 +56,8 @@ async function loadMoreListings() {
     } catch (error) {
         console.error("Error fetching more listings:", error);
     } finally {
-        loading = false; 
+        loading = false;
+        updateAmountOfListings(); // Update the displayed total number of listings
     }
 }
 
@@ -62,12 +67,16 @@ function isBottom() {
 
 async function handleScroll() {
     if (isBottom() && !loading && !allListingsLoaded) {
-        loading = true; 
-        page++; 
-        await loadMoreListings(); 
+        loading = true;
+        page++;
+        await loadMoreListings();
     }
 }
 
 window.addEventListener("scroll", handleScroll);
+
+function updateAmountOfListings() {
+    amountOfListings.textContent = `(${totalActiveListings} listings)`;
+}
 
 loadInitialListings();
