@@ -2,7 +2,7 @@ import headerWord from "./headerWord.js";
 import imageCarousel from "./imageCarousel.js";
 import getListings from "../../api/auth/requests/getListings.js"
 import thumbnail from "../../templates/listings/thumbnails/index.js";
-import modalToggle from "../../helpers/toggleModal.js";
+import modalToggle from "../../helpers/modalToggle.js";
 
 
 const endingSoon = document.querySelector("#endingSoonListings");

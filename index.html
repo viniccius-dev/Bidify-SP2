@@ -193,7 +193,7 @@
 
 <div class="modal w-full h-screen fixed top-0 items-center justify-center hidden" id="modal-container">
     <div class="modal-container bg-white w-full md:w-2/3 lg:w-1/2 2xl:w-1/4 2xl:min-w-[40rem] relative h-screen md:rounded-md md:h-fit flex items-center">
-        <div class="modal-content px-6 sm:p-8 md:p-16">
+        <form class="modal-content px-6 sm:p-8 md:p-16" id="login-form">
             
             <button class="flex items-center justify-center absolute p-6 right-0 top-0" id="closeBtn">
                 <i class="fa-solid fa-xmark text-xl text-gray-500 hover:text-primary duration-300"></i>                      
@@ -218,7 +218,7 @@
                     </svg>  
                 </button>           
             </div>
-
+            
             <div class="login-error pt-4 xl:pt-6 hidden">
                 <p class="text-sm font-medium text-red-600">* Wrong email or password</p>
             </div>
@@ -237,7 +237,7 @@
             </div>
             
             <p class="mt-8">Don't have an account yet? Register <a href="/pages/signup/index.html" class="underline font-medium text-secondary">here.</a></p>
-        </div> 
+        </form> 
     </div>
 </div>
 
