@@ -15,6 +15,8 @@
     <link href="/src/css/tailwind.css" rel="stylesheet">
 
     <link rel="icon" sizes="16x16" type="image/png" href="/src/images/favico.png">  
+
+    <script type="module" src="/src/js/pages/auctions/index.js"></script>
 </head>
 <body class="mx-auto text-primary bg-light">
 
@@ -89,9 +91,9 @@
 
                 <div class="items-center min-w-64 justify-between hidden xl:flex">
                     <p>Per page</p>
-                    <button class="underline">12</button>
-                    <button>24</button>
-                    <button>48</button>
+                    <button class="per-page-btn underline" data-per-page="12">12</button>
+                    <button class="per-page-btn" data-per-page="24">24</button>
+                    <button class="per-page-btn" data-per-page="48">48</button>
                 </div>
             </div>
 
@@ -114,56 +116,7 @@
 
 <!--LISTINGS-->
 
-            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 lg:gap-y-12 pt-6 lg:pt-14">
-                <div>
-                    <img src="/src/images/img-1.jpg" alt="" class="w-full rounded-md listing-image object-cover">
-
-                    <div>
-                        <h2 class="font-medium xl:text-lg 2xl:text-xl pt-3">MOBI CHAIR</h2>
-                        <p class="text-gray-500 pb-2 xl:pb-4 pt-1 xl:pt-2 font-medium text-xs md:text-sm xl:text-base">Ends in<span class="time-left"> 2 hours 4 min</span></p>
-                        <p class="pb-5 text-sm lg:text-base 2xl:text-lg">Current bid: <span class="current-bid">$54.00</span></p>
-
-                        <button class="border rounded w-full py-2 md:py-3 hover:bg-primary hover:text-white text-sm xl:text-base">Make an offer</button>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="/src/images/img-3.png" alt="" class="w-full rounded-md listing-image object-cover">
-
-                    <div>
-                        <h2 class="font-medium xl:text-lg 2xl:text-xl pt-3">MOBI CHAIR</h2>
-                        <p class="text-gray-500 pb-2 xl:pb-4 pt-1 xl:pt-2 font-medium text-xs md:text-sm xl:text-base">Ends in<span class="time-left"> 2 hours 4 min</span></p>
-                        <p class="pb-5 text-sm lg:text-base 2xl:text-lg">Current bid: <span class="current-bid">$54.00</span></p>
-
-                        <button class="border rounded w-full py-2 md:py-3 hover:bg-primary hover:text-white text-sm xl:text-base">Make an offer</button>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="/src/images/img-4.png" alt="" class="w-full rounded-md listing-image object-cover">
-
-                    <div>
-                        <h2 class="font-medium xl:text-lg 2xl:text-xl pt-3">MOBI CHAIR</h2>
-                        <p class="text-gray-500 pb-2 xl:pb-4 pt-1 xl:pt-2 font-medium text-xs md:text-sm xl:text-base">Ends in<span class="time-left"> 2 hours 4 min</span></p>
-                        <p class="pb-5 text-sm lg:text-base 2xl:text-lg">Current bid: <span class="current-bid">$54.00</span></p>
-
-                        <button class="border rounded w-full py-2 md:py-3 hover:bg-primary hover:text-white text-sm xl:text-base">Make an offer</button>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="/src/images/img-2.png" alt="" class="w-full rounded-md listing-image object-cover">
-
-                    <div>
-                        <h2 class="font-medium xl:text-lg 2xl:text-xl pt-3">MOBI CHAIR</h2>
-                        <p class="text-gray-500 pb-2 xl:pb-4 pt-1 xl:pt-2 font-medium text-xs md:text-sm xl:text-base">Ends in<span class="time-left"> 2 hours 4 min</span></p>
-                        <p class="pb-5 text-sm lg:text-base 2xl:text-lg">Current bid: <span class="current-bid">$54.00</span></p>
-
-                        <button class="border rounded w-full py-2 md:py-3 hover:bg-primary hover:text-white text-sm xl:text-base">Make an offer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 lg:gap-y-12 pt-6 lg:pt-14" id="allListings"></div>
     </main>
 
 <!--FOOTER-->

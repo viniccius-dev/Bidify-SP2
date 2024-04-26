@@ -3,6 +3,7 @@ import endsAt from "../../../helpers/endsAt.js";
 
 export default function thumbnail(data) {
     const figure = createEle("figure");
+    figure.setAttribute('class', 'listing');
 
     const a = createEle("a");
     a.href = `pages/listing/?id=${data.id}`;
