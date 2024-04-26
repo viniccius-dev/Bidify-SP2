@@ -1,6 +1,9 @@
+import header from "../templates/header/index.js";
 import modalToggle from "../helpers/modalToggle.js";
-// Ment for functions and requests that needs to run on every page when initializing.
+
+// Meant for functions and requests that needs to run on every page when initializing.
 export default function init() {
-    modalToggle()
+    header()
+
     
 }

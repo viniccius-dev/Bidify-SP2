@@ -2,7 +2,7 @@ import headerWord from "./headerWord.js";
 import imageCarousel from "./imageCarousel.js";
 import getListings from "../../api/auth/requests/getListings.js"
 import thumbnail from "../../templates/listings/thumbnails/index.js";
-import modalToggle from "../../helpers/modalToggle.js";
+import init from "../../updates/init.js";
 
 
 const endingSoon = document.querySelector("#endingSoonListings");
@@ -38,4 +38,4 @@ for(let i = 0; i < 4; i++) {
     latestListings.appendChild(thumbnail(sortByCreated[i]))
 }
 
-modalToggle();
+init();
