@@ -17,7 +17,7 @@ async function loadInitialListings() {
 
         const now = new Date();
         const activeListings = listings.filter(listing => new Date(listing.endsAt) > now);
-        totalActiveListings = activeListings.length; // Count total active listings
+        totalActiveListings = activeListings.length; 
 
         const initialListings = activeListings.slice(0, 12);
 
@@ -30,7 +30,7 @@ async function loadInitialListings() {
         console.error("Error fetching initial listings:", error);
     } finally {
         loading = false;
-        updateAmountOfListings(); // Update the displayed total number of listings
+        updateAmountOfListings(); 
     }
 }
 
