@@ -62,7 +62,7 @@ async function loadMoreListings() {
 }
 
 function isBottom() {
-    const offset = 200; 
+    const offset = 300; 
     return window.innerHeight + window.scrollY >= document.body.offsetHeight - offset;
 }
 
