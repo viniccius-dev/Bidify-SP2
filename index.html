@@ -36,7 +36,7 @@
         <div class="xl:w-1/5 2xl:w-1/6 gap-3 items-center justify-end hidden xl:flex">
             <button class="font-semibold hover:text-secondary duration-100">Register</button>
             <span>or</span>
-            <a href="/pages/login/index.html" class="border px-6 py-3 rounded hover:bg-secondary hover:border-secondary duration-300">Log in</a>
+            <button class="border px-6 py-3 rounded hover:bg-secondary hover:border-secondary duration-300" id="openLogin">Log in</button>
         </div>
     </div>
 </header>
@@ -84,7 +84,7 @@
 
 <!--LISTINGS: ENDING SOON (LISTINGS)-->
 
-<div class="grid grid-cols-2 xl:grid-cols-4 gap-x-3 gap-y-6 md:gap-6" id="endingSoonListings"></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-3 gap-y-6 md:gap-6" id="endingSoonListings"></div>
 </section>
 
 <!-- MID SECTION -->
@@ -130,7 +130,7 @@
         <a href="/pages/auctions/index.html" class="view-all self-end text-xs md:text-sm xl:text-base hover:font-medium">view all</a>
     </div>
 
-    <div class="grid grid-cols-2 xl:grid-cols-4 gap-x-3 gap-y-6 md:gap-6 pb-8 lg:pb-12" id="latestListings">
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-3 gap-y-6 md:gap-6 pb-8 lg:pb-12" id="latestListings">
     </div>
 </section>
 
@@ -191,11 +191,11 @@
     
 </footer>
 
-<div class="modal w-full h-screen fixed top-0 items-center justify-center hidden">
+<div class="modal w-full h-screen fixed top-0 items-center justify-center hidden" id="modal-container">
     <div class="modal-container bg-white w-full md:w-2/3 lg:w-1/2 2xl:w-1/4 2xl:min-w-[40rem] relative h-screen md:rounded-md md:h-fit flex items-center">
         <div class="modal-content px-6 sm:p-8 md:p-16">
             
-            <button class="flex items-center justify-center absolute p-6 right-0 top-0">
+            <button class="flex items-center justify-center absolute p-6 right-0 top-0" id="closeBtn">
                 <i class="fa-solid fa-xmark text-xl text-gray-500 hover:text-primary duration-300"></i>                      
             </button>
 
@@ -232,7 +232,7 @@
             </div>
 
             <div class="flex gap-3">
-                <button class="px-6 py-3 rounded mt-8 border hover:bg-primary hover:text-white duration-300 text-sm md:text-base">Cancel</button>
+                <button class="px-6 py-3 rounded mt-8 border hover:bg-primary hover:text-white duration-300 text-sm md:text-base" id="modalCancel">Cancel</button>
                 <button class="bg-secondary px-6 py-3 rounded mt-8 text-sm md:text-base">Log in</button>
             </div>
             
