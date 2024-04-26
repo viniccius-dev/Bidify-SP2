@@ -554,40 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .fixed {
   position: fixed;
 }
@@ -702,10 +668,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.block {
-  display: block;
 }
 
 .flex {
@@ -828,10 +790,6 @@ video {
   min-width: 2.5rem;
 }
 
-.min-w-64 {
-  min-width: 16rem;
-}
-
 .max-w-md {
   max-width: 28rem;
 }
@@ -846,10 +804,6 @@ video {
 
 .resize-none {
   resize: none;
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
@@ -1412,10 +1366,6 @@ video {
     width: 66.666667%;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1572,8 +1522,8 @@ video {
     gap: 0.75rem;
   }
 
-  .lg\:gap-y-12 {
-    row-gap: 3rem;
+  .lg\:gap-y-10 {
+    row-gap: 2.5rem;
   }
 
   .lg\:px-6 {
@@ -1823,11 +1773,6 @@ video {
     padding-bottom: 0.5rem;
   }
 
-  .xl\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
   .xl\:pb-3 {
     padding-bottom: 0.75rem;
   }
@@ -1945,16 +1890,12 @@ video {
     width: 2rem;
   }
 
-  .\32xl\:w-96 {
-    width: 24rem;
+  .\32xl\:w-80 {
+    width: 20rem;
   }
 
   .\32xl\:w-\[40rem\] {
     width: 40rem;
-  }
-
-  .\32xl\:w-80 {
-    width: 20rem;
   }
 
   .\32xl\:min-w-\[40rem\] {
@@ -2005,8 +1946,8 @@ video {
     padding-bottom: 5rem;
   }
 
-  .\32xl\:pl-20 {
-    padding-left: 5rem;
+  .\32xl\:pl-16 {
+    padding-left: 4rem;
   }
 
   .\32xl\:pr-28 {
@@ -2019,10 +1960,6 @@ video {
 
   .\32xl\:pt-8 {
     padding-top: 2rem;
-  }
-
-  .\32xl\:pl-16 {
-    padding-left: 4rem;
   }
 
   .\32xl\:text-2xl {
