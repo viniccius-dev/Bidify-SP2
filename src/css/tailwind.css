@@ -1312,6 +1312,10 @@ video {
   transition-duration: 300ms;
 }
 
+.duration-150 {
+  transition-duration: 150ms;
+}
+
 .hover\:border-secondary:hover {
   --tw-border-opacity: 1;
   border-color: rgb(242 132 130 / var(--tw-border-opacity));
@@ -1798,6 +1802,10 @@ video {
 
   .xl\:w-full {
     width: 100%;
+  }
+
+  .xl\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .xl\:max-w-3xl {
