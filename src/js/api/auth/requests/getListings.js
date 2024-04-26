@@ -1,6 +1,5 @@
 import config from "../../config.js";
 
-
 export default async function getListings() {
 
 const url = config.BaseURL + "auction/listings?_bids=true"

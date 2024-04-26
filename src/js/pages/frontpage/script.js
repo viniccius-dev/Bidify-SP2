@@ -1,7 +1,7 @@
-import headerWord from "/src/js/effects/headerWord.js";
-import imageCarousel from "../effects/imageCarousel.js";
-import getListings from "../api/auth/requests/getListings.js"
-import thumbnail from "../templates/listings/thumbnails/index.js";
+import headerWord from "./headerWord.js";
+import imageCarousel from "./imageCarousel.js";
+import getListings from "../../api/auth/requests/getListings.js"
+import thumbnail from "../../templates/listings/thumbnails/index.js";
 
 const endingSoon = document.querySelector("#endingSoonListings");
 const latestListings = document.querySelector("#latestListings");
