@@ -10,7 +10,7 @@ export default function thumbnail(data) {
     a.href = `pages/listing/?id=${data.id}`;
     figure.appendChild(a);
 
-    const img = createEle("img", "rounded w-full object-cover listing-image hover:opacity-90 duration-100 h-96 md:h-96 xl:h-80 2xl:h-96");
+    const img = createEle("img", "rounded w-full object-cover listing-image hover:opacity-90 duration-100 h-80 md:h-96 xl:h-80 2xl:h-96");
     img.src = data.media[0]?.url ? data.media[0]?.url : `/src/images/placeholder/placeholder${randomNumber(15)}.jpg` ;
     img.alt = data.media[0]?.alt ? data.media[0].alt : `${data.title} - a bidlify listing`;
     a.appendChild(img);
