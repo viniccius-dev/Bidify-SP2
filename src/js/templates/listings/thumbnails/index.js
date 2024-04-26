@@ -2,8 +2,6 @@ import createEle from "../../../helpers/createElement.js";
 import endsAt from "../../../helpers/endsAt.js";
 import randomNumber from "../../../helpers/randomNumber.js";
 
-
-
 export default function thumbnail(data) {
     const figure = createEle("figure");
     figure.setAttribute('class', 'listing');
