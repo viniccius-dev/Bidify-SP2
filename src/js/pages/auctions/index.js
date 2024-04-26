@@ -57,12 +57,13 @@ async function loadMoreListings() {
         console.error("Error fetching more listings:", error);
     } finally {
         loading = false;
-        updateAmountOfListings(); // Update the displayed total number of listings
+        updateAmountOfListings(); 
     }
 }
 
 function isBottom() {
-    return window.innerHeight + window.scrollY >= document.body.offsetHeight;
+    const offset = 200; 
+    return window.innerHeight + window.scrollY >= document.body.offsetHeight - offset;
 }
 
 async function handleScroll() {
