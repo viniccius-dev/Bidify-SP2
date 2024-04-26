@@ -3,12 +3,11 @@ import thumbnail from "../../templates/listings/thumbnails/index.js";
 
 const allListings = document.querySelector("#allListings");
 
-let page = 1; // Track the current page
-let loading = false; // Track if data is currently being loaded
-let allListingsLoaded = false; // Track if all listings have been loaded
-let loadedListings = []; // Track the IDs of loaded listings
+let page = 1; 
+let loading = false; 
+let allListingsLoaded = false; 
+let loadedListings = []; 
 
-// Function to load initial listings
 async function loadInitialListings() {
     try {
         const data = await getListings(page);
