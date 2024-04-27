@@ -1974,6 +1974,11 @@ video {
     border-radius: 0.25rem;
   }
 
+  .xl\:bg-grey {
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+  }
+
   .xl\:p-4 {
     padding: 1rem;
   }
@@ -2233,12 +2238,28 @@ video {
     width: 50%;
   }
 
+  .\32xl\:w-\[\] {
+    width: ;
+  }
+
+  .\32xl\:w-\[30rem\] {
+    width: 30rem;
+  }
+
   .\32xl\:min-w-\[32rem\] {
     min-width: 32rem;
   }
 
   .\32xl\:min-w-\[40rem\] {
     min-width: 40rem;
+  }
+
+  .\32xl\:min-w-\[\] {
+    min-width: ;
+  }
+
+  .\32xl\:min-w-\[30rem\] {
+    min-width: 30rem;
   }
 
   .\32xl\:max-w-2xl {
