@@ -15,6 +15,8 @@
     <link href="/src/css/tailwind.css" rel="stylesheet">
 
     <link rel="icon" sizes="16x16" type="image/png" href="/src/images/favico.png"> 
+
+    <script defer src="/JAVASCRIPT/listingMobileImages.js"></script>
 </head>
 <body class="mx-auto text-primary">
 
@@ -45,31 +47,41 @@
 
 <!--MAIN CONTENT-->
 
-<main class="flex mx-auto 2xl:py-10">
+<main class="flex flex-col xl:flex-row mx-auto 2xl:py-10 wrapper">
 
 <!-- LEFT SIDE MOBILE --> 
-    <div class="w-full xl:hidden">
-        <figure class="relative flex items w-full h-[36rem]" id="mainImageBig">
-            <img src="/src/images/Chair.png" alt="" class="h-full w-full object-cover">
+    <div class="w-full xl:hidden flex">
+        <figure class="relative flex w-full mt-5">
+            <img src="/src/images/Chair.png" alt="" class="w-full object-cover h-96 rounded active" id="mainImageBig">
+            <img src="/src/images/placeholder/placeholder1.jpg" alt="" class="w-full object-cover h-96 rounded hidden">
+            <img src="/src/images/placeholder/placeholder2.jpg" alt="" class="w-full object-cover h-96 rounded hidden">
+            <img src="/src/images/placeholder/placeholder3.jpg" alt="" class="w-full object-cover h-96 rounded hidden">
 
-            <button class="absolute flex items-center justify-center bg-white rounded-full h-8 w-8 2xl:h-8 2xl:w-8 top-3 right-3 xl:top-5 xl:right-5 text-sm">   
-                <abbr class="rounded-full cursor-pointer" title="Zoom in">
-                    <img src="/src/images/zoom.png" alt="" class="h-5 w-5">
-                </abbr>                      
-            </button>
+            <div class="absolute top-4 right-4">
+                <span class="bg-grey rounded-full px-3 py-1.5 text-xs text-gray-700" id="imageCounter">1/4 images</span>
+            </div>
+
+            <div class="flex justify-between items-center absolute bottom-4 right-4 left-4">
+                <button class="bg-grey rounded-full px-3 py-2 text-xs text-gray-700" id="prevBtn">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </button>
+                <button class="bg-grey rounded-full px-3 py-2 text-xs text-gray-700" id="nextBtn">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+            </div>
         </figure>
     </div>
 
 <!-- LEFT SIDE DESKTOP -->    
 
-    <div class="w-1/2 flex-col hidden xl:flex justify-center my-20 wrapper items-center">
+    <div class="w-1/2 flex-col hidden xl:flex justify-center my-20 items-center">
         <div class="flex items-center gap-7">
             <button class="bg-gray-100 w-12 h-12 rounded-full hover:bg-gray-200 duration-150 mb-4">
                 <i class="fa-solid fa-chevron-left"></i>
             </button>
 
-            <figure class="relative flex items" id="mainImageBig">
-                <img src="/src/images/Chair.png" alt="" class="h-[36rem] 2xl:min-w-[32rem] 2xl:max-w-[34rem] object-cover rounded-lg">
+            <figure class="relative flex items">
+                <img src="/src/images/Chair.png" alt="" class="h-[36rem] 2xl:min-w-[32rem] 2xl:max-w-[34rem] object-cover rounded-lg" id="mainImageBig">
 
                 <button class="absolute flex items-center justify-center bg-white rounded-full h-8 w-8 2xl:h-8 2xl:w-8 top-3 right-3 xl:top-5 xl:right-5 text-sm">   
                     <abbr class="rounded-full cursor-pointer" title="Zoom in">
@@ -85,25 +97,25 @@
 
         <div class="grid grid-cols-4 my-6 gap-2 min-w-[32rem] max-w-[34rem]">
             <figure class="" id="mainImageSmall">
-                <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded-sm">
+                <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded">
             </figure>
 
             <figure class="">
-                <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded-sm">
+                <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded">
             </figure>
 
             <figure class="">
-                <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded-sm">
+                <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded">
             </figure>
 
             <figure class="">
-                <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded-sm">
+                <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded">
             </figure>
         </div>
     </div> 
 
     <!--RIGHT SIDE-->
-    <section class="w-full xl:w-1/2 flex flex-col pt-6 pb-14 lg:pt-10 items-center xl:items-start xl:py-16">
+    <section class="w-full xl:w-1/2 flex flex-col pt-6 pb-14 lg:pt-10 xl:items-start xl:py-16 bg-grey xl:bg-light">
         <div class="flex gap-6 items-center">
             <figure>
                 <img src="/src/images/Chair.png" alt="" class="rounded-full w-14 h-14 object-cover" id="userImage">
