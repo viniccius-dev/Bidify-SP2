@@ -47,11 +47,11 @@
 
 <!--MAIN CONTENT-->
 
-<main class="flex flex-col xl:flex-row mx-auto 2xl:py-10 wrapper">
+<main class="flex flex-col xl:flex-row mx-auto 2xl:py-16 wrapper items-center">
 
 <!-- LEFT SIDE MOBILE --> 
     <div class="w-full xl:hidden flex">
-        <div class="relative flex w-full mt-5 md:mt-3 items-center justify-center bg-grey rounded md:py-4">
+        <div class="relative flex w-full mt-5 md:mt-3 justify-center bg-grey rounded md:py-4">
             <div class="relative w-full md:w-1/2">
                 <figure class="active listing-img active">
                     <img src="/src/images/Chair.png" alt="" class="object-cover h-80 sm:h-96 lg:h-[30rem] rounded w-full">
@@ -88,7 +88,7 @@
 
 <!-- LEFT SIDE DESKTOP -->    
 
-    <div class="w-1/2 flex-col hidden xl:flex justify-center my-20 items-center">
+    <div class="w-1/2 flex-col hidden xl:flex justify-center items-center">
         <div class="flex items-center gap-7">
             <button class="bg-gray-100 w-12 h-12 rounded-full hover:bg-gray-200 duration-150 mb-4">
                 <i class="fa-solid fa-chevron-left"></i>
@@ -110,64 +110,65 @@
         </div>
 
         <div class="grid grid-cols-4 my-6 gap-2 min-w-[32rem] max-w-[34rem]">
-            <figure class="" id="mainImageSmall">
+            <figure id="mainImageSmall">
                 <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded">
             </figure>
 
-            <figure class="">
+            <figure>
                 <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded">
             </figure>
 
-            <figure class="">
+            <figure>
                 <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded">
             </figure>
 
-            <figure class="">
+            <figure>
                 <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded">
             </figure>
         </div>
     </div> 
 
     <!--RIGHT SIDE-->
-    <section class="w-full xl:w-1/2 flex flex-col pt-6 pb-14 lg:pt-10 xl:items-start xl:py-16 bg-grey md:bg-white">
-        <div class="flex gap-6 items-center">
+    <section class="px-6 w-full xl:w-1/2 flex flex-col pt-6 pb-14 lg:pt-10 xl:items-start xl:py-16 bg-grey md:bg-white">
+        
+        <div class="flex gap-6 2xl:gap-10 items-center sm:w-3/4 md:w-2/3 2xl:max-w-2xl">
             <figure>
-                <img src="/src/images/Chair.png" alt="" class="rounded-full w-14 h-14 object-cover" id="userImage">
+                <img src="/src/images/Chair.png" alt="" class="rounded-full min-w-14 h-14 2xl:w-24 2xl:h-24 object-cover" id="userImage">
             </figure>
             <div class="flex flex-col">
-                <div class="flex gap-4">
-                    <h1 class="mb-2 text-lg"><span id="listingName">Martine's</span> listing</h1>
-                    <a href="" class="flex text-xs bg-grey rounded-full items-center justify-center px-3 max-h-8">view profile</a>
+                <div class="flex flex-col">
+                    <p class="text-sm 2xl:text-base">Seller:</p>
+                    <h1 class="mb-2 text-lg 2xl:text-xl font-medium"><span id="userName">MartineM</span></h1>
                 </div>
                 
-                <div class="flex gap-2 items-center">
-                    <span class="rounded w-12 flex items-center justify-center text-xs bg-pink py-1">5/5</span>
-                    <p class="text-sm">Based on <span id="ratings">22</span> ratings</p>
+                <div class="flex gap-2 2xl:gap-4 items-center">
+                    <span class="rounded px-3 py-1 flex items-center justify-center text-xs 2xl:text-sm bg-pink">4.8 / 5</span>
+                    <p class="text-sm 2xl:text-base">Based on <span id="ratings">22</span> ratings</p>
                 </div>
             </div>
         </div>
 
         <div class="flex-col w-full sm:w-3/4 md:w-2/3 2xl:max-w-2xl mt-6">
-            <h2 class="font-medium xl:text-xl my-3">Beige bouclé chair</h2>
+            <h2 class="font-medium xl:text-xl my-3 2xl:text-2xl">Beige bouclé chair</h2>
             <div class="grid grid-cols-2">
-                <p class="flex gap-5 text-sm">Starting bid:</p>
-                <span id="startingBid" class="text-sm">$ 50.00</span>
-                <p class="flex gap-5 text-sm mt-1">Ends in:</p>
-                <span id="endingTime" class="text-sm mt-1">5 hours 43 min 26 sec</span>
+                <p class="flex gap-5 text-sm 2xl:text-base">Starting bid:</p>
+                <span id="startingBid" class="text-sm 2xl:text-base">$ 50.00</span>
+                <p class="flex gap-5 text-sm mt-1 2xl:text-base">Ends in:</p>
+                <span id="endingTime" class="text-sm mt-1 2xl:text-base">5 hours 43 min 26 sec</span>
             </div>
         </div>
 
-        <div class="flex flex-col mt-1 xl:max-w-md xl:mt-6">
-            <h3 class="font-medium mb-3">Description:</h3>
-            <p id="listingDescription" class="text-sm leading-relaxed">
+        <div class="flex flex-col mt-1 xl:max-w-md 2xl:max-w-xl xl:mt-6">
+            <h3 class="font-semibold mb-3">Description:</h3>
+            <p id="listingDescription" class="text-sm leading-relaxed 2xl:text-base text-gray-700 2xl:mb-3">
                 Beautiful Bouclé vintage chair from the Danish designer Jenny Uteng. 
                 The chair have been rinsed and are in perfect condition. 
                 The legs and framework are made of high-quality oak. 
             </p>
 
-            <div class="flex gap-1">
-                <p class="text-xs text-gray-500 mt-2">#furniture</p>
-                <p class="text-xs text-gray-500 mt-2">#chair</p>
+            <div class="flex gap-1 2xl:gap-3">
+                <p class="text-xs 2xl:text-sm text-gray-500 mt-2">#furniture</p>
+                <p class="text-xs 2xl:text-sm text-gray-500 mt-2">#chair</p>
             </div>
 
             <div class="border-b mt-8"></div>
