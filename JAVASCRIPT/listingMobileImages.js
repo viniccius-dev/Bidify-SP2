@@ -1,58 +1,59 @@
-let currentImageIndex = 0;
-const totalImages = document.querySelectorAll('.listing-img').length;
-const imageCounter = document.getElementById('imageCounter');
+const listingImages = document.querySelectorAll(".listing-img");
+const imageCounter = document.getElementById("imageCounter");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
 
-function showImage(index) {
-    const images = document.querySelectorAll('.listing-img');
-    images.forEach((img, i) => {
-        if (i === index) {
-            img.classList.remove('hidden');
-            img.classList.add('active');
-        } else {
-            img.classList.remove('active');
-            img.classList.add('hidden');
-        }
-    });
-    imageCounter.textContent = `${index + 1}/${totalImages} images`;
+let currentImageIndex = 0;
+let startX = 0;
+let endX = 0;
+
+updateImageCounter();
+
+prevBtn.addEventListener("click", prevImage);
+nextBtn.addEventListener("click", nextImage);
+
+document.addEventListener("mousedown", handleStart);
+document.addEventListener("mouseup", handleEnd);
+
+document.addEventListener("touchstart", handleStart);
+document.addEventListener("touchend", handleEnd);
+
+function handleStart(event) {
+    startX = event.clientX || event.touches[0].clientX;
 }
 
-document.getElementById('prevBtn').addEventListener('click', () => {
-    currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
-    showImage(currentImageIndex);
-});
+function handleEnd(event) {
+    endX = event.clientX || event.changedTouches[0].clientX;
+    handleSwipe();
+}
 
-document.getElementById('nextBtn').addEventListener('click', () => {
-    currentImageIndex = (currentImageIndex + 1) % totalImages;
-    showImage(currentImageIndex);
-});
-
-const figure = document.querySelector('.relative.flex');
-let startX;
-let dist;
-let threshold = 100; 
-
-figure.addEventListener('touchstart', (e) => {
-    let touchObj = e.changedTouches[0];
-    startX = touchObj.pageX;
-    dist = 0;
-});
-
-figure.addEventListener('touchmove', (e) => {
-    e.preventDefault();
-    let touchObj = e.changedTouches[0];
-    let deltaX = touchObj.pageX - startX;
-    if (Math.abs(deltaX) >= threshold) {
-        dist = deltaX;
+function handleSwipe() {
+    if (startX - endX > 50) {
+        nextImage();
+    } else if (endX - startX > 50) {
+        prevImage();
     }
-});
+}
 
-figure.addEventListener('touchend', () => {
-    if (Math.abs(dist) >= threshold) {
-        if (dist > 0) {
-            currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
+function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % listingImages.length;
+    updateImageCounter();
+}
+
+function prevImage() {
+    currentImageIndex = (currentImageIndex - 1 + listingImages.length) % listingImages.length;
+    updateImageCounter();
+}
+
+function updateImageCounter() {
+    listingImages.forEach((img, index) => {
+        if (index === currentImageIndex) {
+            img.classList.remove("hidden");
+            img.classList.add("active");
         } else {
-            currentImageIndex = (currentImageIndex + 1) % totalImages;
+            img.classList.remove("active");
+            img.classList.add("hidden");
         }
-        showImage(currentImageIndex);
-    }
-});
+    });
+    imageCounter.textContent = `${currentImageIndex + 1}/${listingImages.length} images`;
+}
