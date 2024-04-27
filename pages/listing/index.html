@@ -51,24 +51,39 @@
 
 <!-- LEFT SIDE MOBILE --> 
     <div class="w-full xl:hidden flex">
-        <div class="relative flex w-full mt-5">
-            <img src="/src/images/Chair.png" alt="" class="w-full object-cover h-96 rounded listing-img active">
-            <img src="/src/images/placeholder/placeholder1.jpg" alt="" class="w-full object-cover h-96 rounded listing-img hidden">
-            <img src="/src/images/placeholder/placeholder2.jpg" alt="" class="w-full object-cover h-96 rounded listing-img hidden">
-            <img src="/src/images/placeholder/placeholder3.jpg" alt="" class="w-full object-cover h-96 rounded listing-img hidden">
+        <div class="relative flex w-full mt-5 items-center justify-center bg-grey rounded md:py-4">
 
-            <div class="absolute top-4 right-4">
-                <span class="bg-grey rounded-full px-3 py-1.5 text-xs text-gray-700" id="imageCounter">1/4 images</span>
-            </div>
+            <div class="relative w-full md:w-1/2">
+                <figure class="active listing-img active">
+                    <img src="/src/images/Chair.png" alt="" class="object-cover h-80 sm:h-96 lg:h-[30rem] rounded w-full">
+                </figure>
 
-            <div class="flex justify-between items-center absolute bottom-4 right-4 left-4">
-                <button class="bg-grey rounded-full px-3 py-2 text-xs text-gray-700" id="prevBtn">
-                    <i class="fa-solid fa-arrow-left-long"></i>
-                </button>
-                <button class="bg-grey rounded-full px-3 py-2 text-xs text-gray-700" id="nextBtn">
-                    <i class="fa-solid fa-arrow-right-long"></i>
-                </button>
+                <figure class="active listing-img active hidden">
+                    <img src="/src/images/placeholder/placeholder1.jpg" alt="" class="object-cover h-80 sm:h-96 lg:h-[30rem] rounded w-full">
+                </figure>
+
+                <figure class="active listing-img active hidden">
+                    <img src="/src/images/placeholder/placeholder2.jpg" alt="" class="object-cover h-80 sm:h-96 lg:h-[30rem] rounded w-full">
+                </figure>
+
+                <figure class="active listing-img active hidden">
+                    <img src="/src/images/placeholder/placeholder3.jpg" alt="" class="object-cover h-80 sm:h-96 lg:h-[30rem] rounded w-full">
+                </figure>
+                
+                <div class="absolute flex top-4 right-4 md:top-5 md:right-5">
+                    <span class="bg-grey rounded-full px-3 py-1.5 text-xs text-gray-700" id="imageCounter">1/4 images</span>
+                </div>
+
+                <div class="flex justify-between items-center absolute bottom-4 right-4 left-4 md:bottom-5">
+                    <button class="bg-grey rounded-full px-3 py-2 text-xs text-gray-700" id="prevBtn">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </button>
+                    <button class="bg-grey rounded-full px-3 py-2 text-xs text-gray-700" id="nextBtn">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
+                </div>
             </div>
+            
         </div>
     </div>
 
@@ -80,7 +95,7 @@
                 <i class="fa-solid fa-chevron-left"></i>
             </button>
 
-            <figure class="relative flex items">
+            <figure class="relative flex">
                 <img src="/src/images/Chair.png" alt="" class="h-[36rem] 2xl:min-w-[32rem] 2xl:max-w-[34rem] object-cover rounded-lg" id="mainImageBig">
 
                 <button class="absolute flex items-center justify-center bg-white rounded-full h-8 w-8 2xl:h-8 2xl:w-8 top-3 right-3 xl:top-5 xl:right-5 text-sm">   
@@ -115,7 +130,7 @@
     </div> 
 
     <!--RIGHT SIDE-->
-    <section class="w-full xl:w-1/2 flex flex-col pt-6 pb-14 lg:pt-10 xl:items-start xl:py-16 bg-grey xl:bg-light">
+    <section class="w-full xl:w-1/2 flex flex-col pt-6 pb-14 lg:pt-10 xl:items-start xl:py-16 bg-grey md:bg-white">
         <div class="flex gap-6 items-center">
             <figure>
                 <img src="/src/images/Chair.png" alt="" class="rounded-full w-14 h-14 object-cover" id="userImage">
