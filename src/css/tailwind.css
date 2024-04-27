@@ -1588,6 +1588,10 @@ video {
     display: block;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:h-10 {
     height: 2.5rem;
   }
