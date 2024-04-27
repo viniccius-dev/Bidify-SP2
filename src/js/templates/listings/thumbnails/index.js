@@ -7,7 +7,7 @@ export default function thumbnail(data) {
     figure.setAttribute('class', 'listing');
 
     const a = createEle("a");
-    a.href = `pages/listing/?id=${data.id}`;
+    a.href = `/pages/listing/?id=${data.id}`;
     figure.appendChild(a);
 
     const img = createEle("img", "rounded w-full object-cover listing-image hover:opacity-90 duration-100 h-80 md:h-96 xl:h-80 2xl:h-96");
