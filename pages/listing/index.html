@@ -18,7 +18,7 @@
 
     <script defer src="/JAVASCRIPT/listingMobileImages.js"></script>
 </head>
-<body class="mx-auto text-primary">
+<body class="mx-auto text-primary bg-light">
 
 <!--HEADER-->
 <header class="pt-4 pb-3 lg:pt-8 lg:pb-6 bg-grey">
@@ -47,90 +47,47 @@
 
 <!--MAIN CONTENT-->
 
-<main class="flex flex-col xl:flex-row mx-auto 2xl:py-16 wrapper items-center">
+<main class="flex flex-col xl:flex-row mx-auto header-wrapper items-center bg-grey xl:px-0">
 
-<!-- LEFT SIDE MOBILE --> 
-    <div class="w-full xl:hidden flex">
-        <div class="relative flex w-full mt-5 md:mt-3 justify-center bg-grey rounded md:py-4">
-            <div class="relative w-full md:w-1/2">
+<!-- LEFT SIDE --> 
+    <div class="w-full xl:w-1/2 xl:h-full flex">
+        <div class="flex w-full mt-5 md:mt-3 justify-center bg-grey rounded md:py-4">
+            <div class="relative w-full md:w-1/2 xl:w-2/3 2xl:w-1/2">
                 <figure class="active listing-img active">
-                    <img src="/src/images/Chair.png" alt="" class="object-cover h-80 sm:h-96 lg:h-[30rem] rounded w-full">
+                    <img src="/src/images/Chair.png" alt="" class="object-cover h-80 sm:h-96 lg:h-[30rem] xl:h-[35rem] 2xl:h-[39rem] rounded w-full">
                 </figure>
 
                 <figure class="active listing-img active hidden">
-                    <img src="/src/images/placeholder/placeholder1.jpg" alt="" class="object-cover h-80 sm:h-96 lg:h-[30rem] rounded w-full">
+                    <img src="/src/images/placeholder/placeholder1.jpg" alt="" class="object-cover h-80 sm:h-96 lg:h-[30rem] xl:h-[35rem] 2xl:h-[39rem] rounded w-full">
                 </figure>
 
                 <figure class="active listing-img active hidden">
-                    <img src="/src/images/placeholder/placeholder2.jpg" alt="" class="object-cover h-80 sm:h-96 lg:h-[30rem] rounded w-full">
+                    <img src="/src/images/placeholder/placeholder2.jpg" alt="" class="object-cover h-80 sm:h-96 lg:h-[30rem] xl:h-[35rem] 2xl:h-[39rem] rounded w-full">
                 </figure>
 
                 <figure class="active listing-img active hidden">
-                    <img src="/src/images/placeholder/placeholder3.jpg" alt="" class="object-cover h-80 sm:h-96 lg:h-[30rem] rounded w-full">
+                    <img src="/src/images/placeholder/placeholder3.jpg" alt="" class="object-cover h-80 sm:h-96 lg:h-[30rem] xl:h-[35rem] 2xl:h-[39rem] rounded w-full">
                 </figure>
                 
                 <div class="absolute flex top-4 right-4 md:top-5 md:right-5">
-                    <span class="bg-grey rounded-full px-3 py-1.5 text-xs md:text-sm text-gray-700" id="imageCounter">1/4 images</span>
+                    <span class="bg-grey rounded-full px-3 py-1.5 text-xs md:text-sm text-gray-700 2xl:text-base xl:px-4 xl:py-2 text-center" id="imageCounter">1/4 images</span>
                 </div>
 
                 <div class="flex justify-between items-center absolute bottom-4 right-4 left-4 md:bottom-5">
-                    <button class="bg-grey rounded-full px-3 py-2 text-xs md:text-sm text-gray-700" id="prevBtn">
+                    <button class="bg-grey rounded-full px-3 py-2 text-xs md:text-sm xl:text-base 2xl:text-lg text-gray-700 xl:p-4 xl:max-h-10 2xl:px-6 2xl:py-5 2xl:max-h-12 flex items-center justify-center" id="prevBtn">
                         <i class="fa-solid fa-arrow-left-long"></i>
                     </button>
-                    <button class="bg-grey rounded-full px-3 py-2 text-xs md:text-sm text-gray-700" id="nextBtn">
+                    <button class="bg-grey rounded-full px-3 py-2 text-xs md:text-sm xl:text-base 2xl:text-lg text-gray-700 xl:p-4 xl:max-h-10 2xl:px-6 2xl:py-5 2xl:max-h-12 flex items-center justify-center" id="nextBtn">
                         <i class="fa-solid fa-arrow-right-long"></i>
                     </button>
                 </div>
             </div>
-            
         </div>
     </div>
 
-<!-- LEFT SIDE DESKTOP -->    
-
-    <div class="w-1/2 flex-col hidden xl:flex justify-center items-center">
-        <div class="flex items-center gap-7">
-            <button class="bg-gray-100 w-12 h-12 rounded-full hover:bg-gray-200 duration-150 mb-4">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
-
-            <figure class="relative flex">
-                <img src="/src/images/Chair.png" alt="" class="h-[36rem] 2xl:min-w-[32rem] 2xl:max-w-[34rem] object-cover rounded-lg" id="mainImageBig">
-
-                <button class="absolute flex items-center justify-center bg-white rounded-full h-8 w-8 2xl:h-8 2xl:w-8 top-3 right-3 xl:top-5 xl:right-5 text-sm">   
-                    <abbr class="rounded-full cursor-pointer" title="Zoom in">
-                        <img src="/src/images/zoom.png" alt="A zoom / expand icon from HeroIcons" class="h-5 w-5">
-                    </abbr>                      
-                </button>
-            </figure>
-
-            <button class="bg-gray-100 w-12 h-12 rounded-full hover:bg-gray-200 duration-150 mb-4">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
-        </div>
-
-        <div class="grid grid-cols-4 my-6 gap-2 min-w-[32rem] max-w-[34rem]">
-            <figure id="mainImageSmall">
-                <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded">
-            </figure>
-
-            <figure>
-                <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded">
-            </figure>
-
-            <figure>
-                <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded">
-            </figure>
-
-            <figure>
-                <img src="/src/images/Chair.png" alt="" class="object-cover w-full h-32 rounded">
-            </figure>
-        </div>
-    </div> 
-
     <!--RIGHT SIDE-->
-    <section class="px-6 w-full xl:w-1/2 flex flex-col pt-6 pb-14 lg:pt-10 xl:items-start xl:py-16 bg-grey md:bg-white">
-        
+    <section class="px-6 w-full xl:w-1/2 flex flex-col pt-6 pb-14 lg:pt-10 xl:items-start xl:py-20 2xl:py-36 bg-grey md:bg-white xl:pl-20 2xl:pl-24">
+
         <div class="flex gap-6 2xl:gap-10 items-center sm:w-3/4 md:w-2/3 2xl:max-w-2xl">
             <figure>
                 <img src="/src/images/Chair.png" alt="" class="rounded-full min-w-14 h-14 2xl:w-24 2xl:h-24 object-cover" id="userImage">
@@ -150,11 +107,9 @@
 
         <div class="flex-col w-full sm:w-3/4 md:w-2/3 2xl:max-w-2xl mt-6">
             <h2 class="font-medium xl:text-xl my-3 2xl:text-2xl">Beige bouclé chair</h2>
-            <div class="grid grid-cols-2">
-                <p class="flex gap-5 text-sm 2xl:text-base">Starting bid:</p>
-                <span id="startingBid" class="text-sm 2xl:text-base">$ 50.00</span>
-                <p class="flex gap-5 text-sm mt-1 2xl:text-base">Ends in:</p>
-                <span id="endingTime" class="text-sm mt-1 2xl:text-base">5 hours 43 min 26 sec</span>
+            <div class="flex gap-5">
+                <p class="text-sm 2xl:text-base text-gray-600 font-medium">Ends in:</p>
+                <span id="endingTime" class="text-sm 2xl:text-base text-gray-600 font-medium">5 hours 43 min 26 sec</span>
             </div>
         </div>
 
