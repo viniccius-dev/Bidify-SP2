@@ -1,6 +1,8 @@
 import getListings from "../../api/auth/requests/getListings.js";
 import endsAt from "../../helpers/endsAt.js";
 import createElement from "../../helpers/createElement.js";
+import mediaElements from "./mediaElements.js";
+import listingImages from "../listing/listingImages.js";
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
@@ -47,6 +49,16 @@ listing.bids.forEach((bid, i) => {
 
 });
 
-console.log(listing);
+console.log(listing.media);
 
-// grid grid-cols-2 py-3 rounded
+// listingImages(listing.media);
+if (listing.media.length > 1) {mediaElements(listing.media)}
+
+
+
+else if (listing.media.length === 1) {}
+
+
+else {
+
+}
