@@ -18,7 +18,7 @@ export default function thumbnail(data) {
     const figcaption = createEle("figcaption");
     figure.appendChild(figcaption);
 
-    const h2 = createEle("h2", "font-medium text-sm md:text-base xl:text-lg 2xl:text-xl pt-3 md:pt-4", data.title.length > 35 ? data.title.slice(0, 25) + "..." : data.title);
+    const h2 = createEle("h2", "font-medium text-sm md:text-base xl:text-lg 2xl:text-xl pt-3 md:pt-4", data.title.length > 25 ? data.title.slice(0, 25) + "..." : data.title);
     figcaption.appendChild(h2);
 
     const p1 = createEle("p", "text-gray-500 pb-2 xl:pb-3 pt-1 xl:pt-1 font-medium text-xs md:text-sm xl:text-base", "Ends in ");

@@ -662,24 +662,18 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .mb-2 {
@@ -694,8 +688,12 @@ video {
   margin-bottom: 1rem;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mt-2 {
@@ -704,6 +702,10 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-5 {
@@ -716,26 +718,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-9 {
-  margin-top: 2.25rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 
 .flex {
@@ -1464,16 +1446,28 @@ video {
     margin-bottom: 1.5rem;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:mb-1 {
     margin-bottom: 0.25rem;
   }
 
-  .md\:mt-3 {
-    margin-top: 0.75rem;
-  }
-
   .md\:mb-2 {
     margin-bottom: 0.5rem;
+  }
+
+  .md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .md\:mt-1 {
+    margin-top: 0.25rem;
+  }
+
+  .md\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .md\:mt-6 {
@@ -1484,24 +1478,16 @@ video {
     margin-top: 2rem;
   }
 
-  .md\:mt-1 {
-    margin-top: 0.25rem;
-  }
-
-  .md\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
-  .md\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .md\:block {
     display: block;
   }
 
   .md\:h-10 {
     height: 2.5rem;
+  }
+
+  .md\:h-12 {
+    height: 3rem;
   }
 
   .md\:h-8 {
@@ -1515,10 +1501,6 @@ video {
   .md\:h-fit {
     height: -moz-fit-content;
     height: fit-content;
-  }
-
-  .md\:h-12 {
-    height: 3rem;
   }
 
   .md\:w-1\/2 {
@@ -1931,11 +1913,6 @@ video {
   .xl\:bg-grey {
     --tw-bg-opacity: 1;
     background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-  }
-
-  .xl\:bg-light {
-    --tw-bg-opacity: 1;
-    background-color: rgb(252 252 252 / var(--tw-bg-opacity));
   }
 
   .xl\:p-4 {
