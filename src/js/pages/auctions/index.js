@@ -39,9 +39,9 @@ async function loadMoreListings() {
         const data = await getListings(page);
         const listings = data.data;
 
-        if (!listings || listings.length === 0) { // Check if listings are empty or undefined
+        if (!listings || listings.length === 0) {
             allListingsLoaded = true;
-            return; // No more listings to load, exit the function
+            return; 
         }
 
         const now = new Date();
