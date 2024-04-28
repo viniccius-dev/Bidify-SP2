@@ -1,8 +1,8 @@
 import getListings from "../../api/auth/requests/getListings.js";
-import endsAt from "../../helpers/endsAt.js";
 import createElement from "../../helpers/createElement.js";
 import mediaElements from "./mediaElements.js";
 import listingImages from "../listing/listingImages.js";
+import liveEndsAt from "../../helpers/liveEndsAt.js";
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
@@ -13,8 +13,8 @@ const listing = data.data;
 document.querySelector("#userName").textContent = listing.seller.name;
 document.querySelector("#listingTitle").textContent = listing.title;
 
-const formattedEndingTime = endsAt(listing.endsAt);
-document.querySelector("#endingTime").textContent = formattedEndingTime;
+const endsAtContainer = document.querySelector("#endingTime")
+liveEndsAt(listing.endsAt, endsAtContainer);
 
 document.querySelector("#listingDescription").textContent = listing.description;
 
