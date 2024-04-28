@@ -17,6 +17,7 @@
     <link rel="icon" sizes="16x16" type="image/png" href="/src/images/favico.png"> 
 
     <script defer src="/JAVASCRIPT/listingMobileImages.js"></script>
+    <script type="module" src="/src/js/pages/listing/index.js"></script>
 </head>
 <body class="mx-auto text-primary bg-light xl:bg-grey">
 
@@ -52,7 +53,7 @@
 <!-- LEFT SIDE --> 
     <div class="w-full xl:w-1/2 xl:h-full flex">
         <div class="flex w-full mt-5 md:mt-3 justify-center bg-grey rounded md:py-4">
-            <div class="relative w-full md:w-1/2 xl:w-2/3 2xl:w-1/2">
+            <div class="relative w-full md:w-1/2 xl:w-2/3 2xl:w-1/2" id="listingMediaContainer">
                 <figure class="active listing-img active">
                     <img src="/src/images/placeholder/placeholder1.jpg" alt="" class="object-cover h-80 sm:h-96 lg:h-[30rem] xl:h-[35rem] 2xl:h-[38rem] rounded w-full">
                 </figure>
@@ -90,12 +91,12 @@
 
         <div class="flex gap-6 2xl:gap-10 items-center sm:w-3/4 md:w-2/3 2xl:max-w-2xl">
             <figure>
-                <img src="/src/images/placeholder/placeholder15.jpg" alt="" class="rounded-full min-w-14 h-14 2xl:w-24 2xl:h-24 object-cover" id="userImage">
+                <img src="" alt="" class="rounded-full min-w-14 h-14 2xl:w-24 2xl:h-24 object-cover" id="userImage">
             </figure>
             <div class="flex flex-col">
                 <div class="flex flex-col">
                     <p class="text-sm 2xl:text-base">Seller:</p>
-                    <h1 class="mb-1 md:mb-2 text-lg 2xl:text-xl font-medium"><span id="userName">MartineM</span></h1>
+                    <h1 class="mb-1 md:mb-2 text-lg 2xl:text-xl font-medium hover:text-secondary duration-100" id="userName"></h1>
                 </div>
                 
                 <div class="flex gap-2 2xl:gap-4 items-center">
@@ -106,33 +107,26 @@
         </div>
 
         <div class="flex-col w-full sm:w-3/4 md:w-2/3 2xl:max-w-xl mt-4 md:mt-6">
-            <h2 class="font-medium text-lg xl:text-xl mt-3 mb-1 md:my-3">Beige bouclé chair</h2>
+            <h2 class="font-medium text-lg xl:text-xl mt-3 mb-1 md:my-3" id="listingTitle"></h2>
             <div class="flex gap-5 text-sm 2xl:text-base font-medium">
                 <p>Ends in:</p>
-                <span id="endingTime">5 hours 43 min 26 sec</span>
+                <span id="endingTime"></span>
             </div>
             <div class="border-b my-6 md:mt-8 2xl:mb-3"></div>
         </div>
 
-        <div class="flex flex-col md:mt-1 xl:max-w-md 2xl:max-w-xl xl:mt-6">
+        <div class="flex flex-col md:mt-1 xl:max-w-md 2xl:w-full xl:mt-6">
             <h3 class="font-medium mb-3 2xl:mb-4">Description:</h3>
-            <p id="listingDescription" class="text-sm leading-relaxed 2xl:text-base text-gray-700 2xl:mb-3">
-                Beautiful Bouclé vintage chair from the Danish designer Jenny Uteng. 
-                The chair have been rinsed and are in perfect condition. 
-                The legs and framework are made of high-quality oak. 
-            </p>
+            <p id="listingDescription" class="text-sm leading-relaxed 2xl:text-base text-gray-700 2xl:mb-3"></p>
 
-            <div class="flex gap-1 2xl:gap-3 mt-2 text-xs 2xl:text-sm text-gray-600">
-                <p>#furniture</p>
-                <p>#chair</p>
-            </div>
+            <div class="flex gap-1 2xl:gap-3 mt-2 text-xs 2xl:text-sm text-gray-600 w-full" id="tagsContainer"></div>
 
             <div class="border-b my-6 md:mt-8 2xl:mb-3"></div>
         </div>
 
         <div class="grid grid-cols-2 w-full sm:w-3/4 md:w-2/3 2xl:max-w-2xl md:mt-6 font-medium">
             <p class="flex gap-5">Current bid:</p>
-            <span id="currentBid">$ 65.00</span>
+            <span id="currentBid"></span>
         </div>
 
         <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 2xl:max-w-2xl mt-6">
@@ -147,32 +141,7 @@
         <div class="mt-3 2xl:mt-6 sm:w-3/4 md:w-2/3 2xl:max-w-2xl">
             <details class="text-sm 2xl:text-base">
                 <summary class="cursor-pointer">Click here to view bid history</summary>
-                <div class="my-4">
-                    <span class="bg-white xl:bg-grey grid grid-cols-2 py-3 rounded">
-                        <p class="pl-3">Veronica Svensson</p>
-                        <p class="text-right pr-3">$ 50.00</p>
-                    </span>
-
-                    <span class="grid grid-cols-2 py-3 rounded">
-                        <p class="pl-3">Kristian Hagesæter</p>
-                        <p class="text-right pr-3">$ 55.00</p>
-                    </span>
-
-                    <span class="bg-white xl:bg-grey grid grid-cols-2 py-3 rounded">
-                        <p class="pl-3">Mathias Tinberg</p>
-                        <p class="text-right pr-3">$ 57.00</p>
-                    </span>
-
-                    <span class="grid grid-cols-2 py-3 rounded">
-                        <p class="pl-3">Maik Cavalcante</p>
-                        <p class="text-right pr-3">$ 60.00</p>
-                    </span>
-                  
-                    <span class="bg-white xl:bg-grey grid grid-cols-2 py-3 rounded">
-                        <p class="pl-3">Weronica Larsen</p>
-                        <p class="text-right pr-3">$ 65.00</p>
-                    </span>
-                </div>
+                <div class="my-4" id="bidHistory"></div>
             </details>
             <p class="col-span-2 text-xs 2xl:text-sm text-gray-500 mt-2">*Shipping method and costs will be negotiated with the seller.</p>
         </div>

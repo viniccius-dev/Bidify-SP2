@@ -836,6 +836,10 @@ video {
   min-width: 3.5rem;
 }
 
+.min-w-full {
+  min-width: 100%;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -2093,6 +2097,10 @@ video {
 
   .\32xl\:w-\[40rem\] {
     width: 40rem;
+  }
+
+  .\32xl\:w-full {
+    width: 100%;
   }
 
   .\32xl\:min-w-\[40rem\] {

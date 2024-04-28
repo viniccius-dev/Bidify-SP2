@@ -1,8 +1,10 @@
 import config from "../../config.js";
 
-export default async function getListings() {
+export default async function getListings(id = "") {
 
-const url = config.BaseURL + "auction/listings?_bids=true"
+
+
+const url = config.BaseURL + `auction/listings/${id}?_bids=true&_seller=true`
 
 const response = await fetch(url, {
     method: "GET",

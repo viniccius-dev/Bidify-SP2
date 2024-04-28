@@ -12,7 +12,7 @@ let totalActiveListings = 0;
 
 async function loadInitialListings() {
     try {
-        const data = await getListings(page);
+        const data = await getListings();
         const listings = data.data;
 
         const now = new Date();
