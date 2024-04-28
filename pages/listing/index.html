@@ -86,7 +86,7 @@
     </div>
 
     <!--RIGHT SIDE-->
-    <section class="px-6 w-full xl:w-1/2 flex flex-col pt-6 pb-14 lg:pt-10 xl:items-start xl:py-20 2xl:py-36 bg-grey md:bg-white xl:pl-20 2xl:pl-24">
+    <section class="mb-6 rounded-lg px-6 w-full xl:w-1/2 flex flex-col pt-6 pb-14 lg:pt-10 xl:items-start xl:py-20 2xl:py-36 bg-grey md:bg-white xl:pl-20 2xl:pl-24">
 
         <div class="flex gap-6 2xl:gap-10 items-center sm:w-3/4 md:w-2/3 2xl:max-w-2xl">
             <figure>
@@ -95,26 +95,26 @@
             <div class="flex flex-col">
                 <div class="flex flex-col">
                     <p class="text-sm 2xl:text-base">Seller:</p>
-                    <h1 class="mb-2 text-lg 2xl:text-xl font-medium"><span id="userName">MartineM</span></h1>
+                    <h1 class="mb-1 md:mb-2 text-lg 2xl:text-xl font-medium"><span id="userName">MartineM</span></h1>
                 </div>
                 
                 <div class="flex gap-2 2xl:gap-4 items-center">
                     <span class="rounded px-3 py-1 flex items-center justify-center text-xs 2xl:text-sm bg-pink">4.8 / 5</span>
-                    <p class="text-sm">Based on <span id="ratings">22</span> ratings</p>
+                    <p class="text-xs md:text-sm">Based on <span id="ratings">22</span> ratings</p>
                 </div>
             </div>
         </div>
 
-        <div class="flex-col w-full sm:w-3/4 md:w-2/3 2xl:max-w-xl mt-6">
-            <h2 class="font-medium xl:text-xl my-3">Beige bouclé chair</h2>
+        <div class="flex-col w-full sm:w-3/4 md:w-2/3 2xl:max-w-xl mt-4 md:mt-6">
+            <h2 class="font-medium xl:text-xl mt-3 mb-1 md:my-3">Beige bouclé chair</h2>
             <div class="flex gap-5 text-sm 2xl:text-base font-medium">
                 <p>Ends in:</p>
                 <span id="endingTime">5 hours 43 min 26 sec</span>
             </div>
-            <div class="border-b mt-8 2xl:mb-3"></div>
+            <div class="border-b my-6 md:mt-8 2xl:mb-3"></div>
         </div>
 
-        <div class="flex flex-col mt-1 xl:max-w-md 2xl:max-w-xl xl:mt-6">
+        <div class="flex flex-col md:mt-1 xl:max-w-md 2xl:max-w-xl xl:mt-6">
             <h3 class="font-medium mb-3 2xl:mb-4">Description:</h3>
             <p id="listingDescription" class="text-sm leading-relaxed 2xl:text-base text-gray-700 2xl:mb-3">
                 Beautiful Bouclé vintage chair from the Danish designer Jenny Uteng. 
@@ -127,19 +127,19 @@
                 <p>#chair</p>
             </div>
 
-            <div class="border-b mt-9"></div>
+            <div class="border-b my-6 md:mt-8 2xl:mb-3"></div>
         </div>
 
-        <div class="grid grid-cols-2 w-full sm:w-3/4 md:w-2/3 2xl:max-w-2xl mt-6 font-medium">
+        <div class="grid grid-cols-2 w-full sm:w-3/4 md:w-2/3 2xl:max-w-2xl md:mt-6 font-medium">
             <p class="flex gap-5">Current bid:</p>
             <span id="currentBid">$ 65.00</span>
         </div>
 
         <div class="flex flex-col w-full sm:w-3/4 md:w-2/3 2xl:max-w-2xl mt-6">
-            <label for="bidAmount" class="text-sm 2xl:text-base mb-4 2xl:mb-6">Type the amount of your bid:</label>
+            <label for="bidAmount" class="text-sm 2xl:text-base mb-5 md:mb-4 2xl:mb-6">Type the amount of your bid:</label>
 
-            <div class="flex gap-3 w-full 2xl:gap-4">
-                <input type="number" id="bidAmount" name="bidAmount" class="border rounded h-12 px-3 outline-none">
+            <div class="flex gap-3 w-full 2xl:gap-4 mb-2 md:mb-0">
+                <input type="number" id="bidAmount" name="bidAmount" class="border rounded h-10 md:h-12 px-3 outline-none w-1/2">
                 <button class="bg-red px-4 py-2 md:px-6 md:py-3 rounded bg-secondary text-sm 2xl:text-base">Place offer</button>
             </div>
         </div>
