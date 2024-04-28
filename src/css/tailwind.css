@@ -1203,6 +1203,10 @@ video {
   padding-top: 2rem;
 }
 
+.pl-20 {
+  padding-left: 5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1896,6 +1900,18 @@ video {
 
   .xl\:max-w-md {
     max-width: 28rem;
+  }
+
+  .xl\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .xl\:max-w-xl {
+    max-width: 36rem;
+  }
+
+  .xl\:max-w-2xl {
+    max-width: 42rem;
   }
 
   .xl\:grid-cols-4 {
