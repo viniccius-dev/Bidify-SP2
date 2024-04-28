@@ -49,15 +49,9 @@ listing.bids.forEach((bid, i) => {
 
 });
 
-console.log(listing.media);
-
-// listingImages(listing.media);
 if (listing.media.length > 1) {mediaElements(listing.media)}
 
-
-
 else if (listing.media.length === 1) {}
-
 
 else {
 

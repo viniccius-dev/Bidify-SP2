@@ -39,6 +39,11 @@ async function loadMoreListings() {
         const data = await getListings(page);
         const listings = data.data;
 
+        if (!listings || listings.length === 0) { // Check if listings are empty or undefined
+            allListingsLoaded = true;
+            return; // No more listings to load, exit the function
+        }
+
         const now = new Date();
         const activeListings = listings.filter(listing => new Date(listing.endsAt) > now);
 
@@ -53,8 +58,6 @@ async function loadMoreListings() {
             allListings.appendChild(thumbnailElement);
             loadedListings.push(listing.id);
         });
-    } catch (error) {
-        console.error("Error fetching more listings:", error);
     } finally {
         loading = false;
         updateAmountOfListings(); 
