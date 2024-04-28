@@ -1933,6 +1933,11 @@ video {
     background-color: rgb(245 245 245 / var(--tw-bg-opacity));
   }
 
+  .xl\:bg-light {
+    --tw-bg-opacity: 1;
+    background-color: rgb(252 252 252 / var(--tw-bg-opacity));
+  }
+
   .xl\:p-4 {
     padding: 1rem;
   }
