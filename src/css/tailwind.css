@@ -2178,8 +2178,24 @@ video {
     height: 6rem;
   }
 
+  .\32xl\:h-\[25rem\] {
+    height: 25rem;
+  }
+
+  .\32xl\:h-\[24rem\] {
+    height: 24rem;
+  }
+
+  .\32xl\:h-\[22rem\] {
+    height: 22rem;
+  }
+
   .\32xl\:max-h-12 {
     max-height: 3rem;
+  }
+
+  .\32xl\:max-h-96 {
+    max-height: 24rem;
   }
 
   .\32xl\:w-1\/2 {
@@ -2214,6 +2230,18 @@ video {
     min-width: 40rem;
   }
 
+  .\32xl\:min-w-\[25rem\] {
+    min-width: 25rem;
+  }
+
+  .\32xl\:min-w-\[24rem\] {
+    min-width: 24rem;
+  }
+
+  .\32xl\:min-w-\[22rem\] {
+    min-width: 22rem;
+  }
+
   .\32xl\:max-w-2xl {
     max-width: 42rem;
   }
@@ -2224,6 +2252,10 @@ video {
 
   .\32xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .\32xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .\32xl\:gap-10 {
