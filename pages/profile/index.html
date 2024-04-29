@@ -67,10 +67,19 @@
 
     <section class="w-full bg-grey md:bg-white mb-6 mt-3 md:my-6 rounded-lg py-16 px-20">
         <div class="flex flex-col">
-            <div class="flex gap-5 items-center mb-8">
-                <h1 class="font-medium 2xl:font-semibold md:text-lg lg:text-xl 2xl:text-2xl md:mb-1">Your active listings</h1>
-                <span class="text-gray-500 text-sm lg:text-base lg:font-medium">(4 listings)</span>
+            <div class="flex justify-between items-center mb-8">
+                <div class="flex gap-5 items-center">
+                    <h1 class="font-medium 2xl:font-semibold md:text-lg lg:text-xl 2xl:text-2xl md:mb-1">Your active listings</h1>
+                    <span class="text-gray-500 text-sm lg:text-base lg:font-medium">(4 listings)</span>
+                </div>
+
+                <select name="sort-by" id="sort-by" class="border w-64 h-full rounded px-3 py-2 outline-none">
+                    <option value="All" selected>Active listings</option>
+                    <option value="Latest">Expired listings</option>
+                    <option value="Ending">Sold</option>
+                </select>
             </div>
+            
 
             <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-y-6 sm:gap-x-3 sm:gap-y-6 md:gap-3 lg:gap-y-6 mb-16">
                 <figure>
@@ -116,7 +125,7 @@
         </div>
         
 
-        <div class="flex flex-col">
+        <div class="hidden flex-col">
             <div class="flex gap-5 items-center mb-6">
                 <h1 class="font-medium 2xl:font-semibold md:text-lg lg:text-xl 2xl:text-2xl md:mb-1">Expired listings</h1>
                 <span class="text-gray-500 text-sm lg:text-base lg:font-medium">(4 listings)</span>
@@ -170,7 +179,7 @@
 
 <!--FOOTER-->
 
-<footer class="py-6 lg:pt-10 lg:pb-14 bg-lightpink">
+<footer class="py-6 lg:pt-10 lg:pb-14 bg-light">
     <div class="wrapper flex flex-col items-start lg:flex-row lg:justify-between mx-auto">
         <span class="lg:w-1/7">
             <a href="/index.html" class="text-lg lg:text-xl font-bold">Bidlify<span class="text-secondary">.</span></a>
