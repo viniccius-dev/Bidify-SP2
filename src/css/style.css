@@ -35,6 +35,10 @@ body {
     height: 26rem;
 }
 
+.border-green {
+    border: 1px solid #54736B;
+}
+
 /* BORDERS */
 
 .border {
