@@ -57,7 +57,12 @@
             <p>martinem@stud.noroff.no</p>
         </div>
 
-        <div class="w-full flex flex-col gap-4 mt-10">
+        <div class="mt-6 w-full">
+            <button class="px-4 2xl:px-6 py-2 2xl:py-3 w-full rounded bg-light border hover:bg-secondary duration-300">Create new listing</button>
+            <div class="border-b w-full my-10"></div>
+        </div>
+
+        <div class="w-full flex flex-col gap-4">
             <button class="px-4 2xl:px-6 py-2 2xl:py-3 w-full rounded bg-secondary">Your listings</button>
             <button class="px-4 2xl:px-6 py-2 2xl:py-3 bg-light w-full rounded hover:bg-secondary duration-300 border">Auctions you won</button>
             <button class="px-4 2xl:px-6 py-2 2xl:py-3 bg-light w-full rounded hover:bg-secondary duration-300 border">Your bid history</button>
@@ -143,14 +148,11 @@
                     <span class="text-gray-500 text-sm lg:text-base lg:font-medium">(4 listings)</span>
                 </div>
 
-                <div class="flex gap-3">
-                    <button class="px-4 2xl:px-6 py-2 2xl:py-3 rounded border-green hover:bg-secondary hover:text-primary hover:border-transparent text-green duration-300">New listing</button>
-                    <select name="sort-by" id="sort-by" class="border w-64 h-full rounded px-3 py-2 2xl:py-3 outline-none">
-                        <option value="All" selected>Active listings</option>
-                        <option value="Latest">Expired listings</option>
-                        <option value="Ending">Sold</option>
-                    </select>
-                </div>
+                <select name="sort-by" id="sort-by" class="border w-64 h-full rounded px-3 py-2 2xl:py-3 outline-none">
+                    <option value="All" selected>Active listings</option>
+                    <option value="Latest">Expired listings</option>
+                    <option value="Ending">Sold</option>
+                </select>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 sm:gap-x-3 sm:gap-y-6 md:gap-3 lg:gap-y-6 mb-16">
