@@ -45,6 +45,27 @@ export default function register(){
       : "#EF4444";
   });
 
+  confirmPasswordInput.addEventListener("input", function () {
+    const confirmPassword = this.value;
+    const password = passwordInput.value;
 
+    if (password === "" || confirmPassword === "") {
+      incorrectPassword.classList.add("hidden");
+    } else {
+      password !== confirmPassword
+        ? incorrectPassword.classList.remove("hidden")
+        : incorrectPassword.classList.add("hidden");
+    }
+  });
+
+  confirmPasswordInput.addEventListener("blur", function () {
+    const password = passwordInput.value;
+    const confirmPassword = this.value;
+
+    if (password === "" && confirmPassword === "") {
+      setTimeout(function () {
+        incorrectPassword.classList.add("hidden");
+      }, 500);
+    }
+  });
 }
-

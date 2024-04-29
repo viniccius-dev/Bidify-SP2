@@ -1,5 +1,8 @@
 import storage from "../../utils/storage.js";
 import seePassword from "../login/seePassword.js";
+import register from "./register.js";
+
+register();
 
 const registerForm = document.querySelector("#registrationForm");
 
