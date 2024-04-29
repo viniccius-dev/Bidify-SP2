@@ -12,7 +12,12 @@ const id = params.get("id");
 const data = await getListings(id);
 const listing = data.data;
 
-document.querySelector("#userName").textContent = listing.seller.name;
+const profileName = document.querySelector("#userName");
+
+profileName.textContent = listing.seller.name;
+profileName.href = `/pages/profile/?name=${listing.seller.name}`
+
+console.log(profileName)
 document.querySelector("#listingTitle").textContent = listing.title;
 
 const endsAtContainer = document.querySelector("#endingTime")
@@ -31,8 +36,13 @@ listing.tags.forEach(tag => {
 
 document.querySelector("#currentBid").textContent = listing.bids.length > 0 ? listing.bids[listing.bids.length - 1].amount + " credits": 0 + " credits";
 
+const userImg = document.querySelector("#userImg");
+userImg.href = `/pages/profile/?name=${listing.seller.name}`;
+
 const userImage = document.querySelector("#userImage");
 userImage.src = listing.seller.avatar.url;
+
+userImg.append(userImage);
 
 const bidHistory = document.querySelector("#bidHistory");
 
