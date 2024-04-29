@@ -900,6 +900,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -1322,6 +1326,10 @@ video {
   font-weight: 600;
 }
 
+.lowercase {
+  text-transform: lowercase;
+}
+
 .leading-relaxed {
   line-height: 1.625;
 }
@@ -1398,6 +1406,10 @@ video {
   transition-duration: 300ms;
 }
 
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 .hover\:border-secondary:hover {
   --tw-border-opacity: 1;
   border-color: rgb(242 132 130 / var(--tw-border-opacity));
@@ -1416,6 +1428,11 @@ video {
 .hover\:bg-secondary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(242 132 130 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-light:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 252 252 / var(--tw-bg-opacity));
 }
 
 .hover\:text-3xl:hover {
@@ -2181,6 +2198,14 @@ video {
 
   .\32xl\:max-h-12 {
     max-height: 3rem;
+  }
+
+  .\32xl\:max-h-96 {
+    max-height: 24rem;
+  }
+
+  .\32xl\:min-h-96 {
+    min-height: 24rem;
   }
 
   .\32xl\:w-1\/2 {

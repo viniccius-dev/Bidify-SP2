@@ -45,3 +45,4 @@ function displayListings() {
         allListings.append(thumbnail(listing));
     });
 }
+
