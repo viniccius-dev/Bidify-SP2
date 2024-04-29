@@ -155,6 +155,8 @@
                 </select>
             </div>
 
+<!--"FEILMELDINGER"-->
+
             <div class="activeListings hidden">
                 <p class="text-sm lg:text-base 2xl:text-lg">No active listings yet. Create a listing to get started!</p>
             </div>
@@ -176,12 +178,14 @@
                 <p class="text-sm lg:text-base 2xl:text-lg">No won auctions yet. Better luck next time! Look through <a href="/pages/auctions/" class="font-semibold text-secondary">our auctions.</a></p>
             </div>
 
+<!--ACTIVE AUCTIONS-->
+
             <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-y-6 sm:gap-x-3 sm:gap-y-6 md:gap-3 lg:gap-y-6 mb-16">
                 <figure>
                     <img src="/src/images/placeholder/placeholder1.jpg" alt="" class="rounded w-full object-cover listing-image hover:opacity-90 duration-100 h-80 md:h-96 xl:h-80 2xl:h-96">
                     <figcaption>
                         <h2 class="font-medium text-sm md:text-base xl:text-lg 2xl:text-xl pt-3 md:pt-4">Title</h2>
-                        <p class="text-gray-500 pb-2 xl:pb-3 pt-1 xl:pt-1 font-medium text-xs md:text-sm xl:text-base">Auction ended: <span>2d 1h 32min</span></p>
+                        <p class="text-gray-500 pb-2 xl:pb-3 pt-1 xl:pt-1 font-medium text-xs md:text-sm xl:text-base">Ends in: <span>2d 1h 32min</span></p>
                         <p class="pb-4 md:pb-5 text-xs font-medium md:font-normal sm:text-sm lg:text-base 2xl:text-lg">Current bid:<span>3 credits</span></p>
                     </figcaption>
                     <button class="border rounded w-full py-2 md:py-2 2xl:py-3 hover:bg-secondary hover:border-secondary text-xs md:text-sm xl:text-base duration-300">View listing</button>
@@ -218,7 +222,8 @@
                 </figure>
             </div>
         </div>
-        
+
+<!--EXPIRED AUCTIONS-->
 
         <div class="hidden flex-col">
             <div class="flex gap-5 items-center mb-6">
@@ -267,6 +272,8 @@
                     <button class="border rounded w-full py-2 md:py-2 2xl:py-3 hover:bg-secondary hover:border-secondary text-xs md:text-sm xl:text-base duration-300">View listing</button>
                 </figure>
         </div>
+
+<!--SOLD / WON AUCTIONS-->
 
         <div class="hidden flex-col">
             <div class="flex gap-5 items-center mb-6">
