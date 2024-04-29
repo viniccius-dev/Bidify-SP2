@@ -2,21 +2,46 @@ import getListings from "../../api/auth/requests/getListings.js";
 import thumbnail from "../../templates/listings/thumbnails/index.js";
 
 const allListings = document.querySelector("#allListings");
-
-const data = await getListings();
-const listings = data.data;
-
-const activeListings = [] 
-
-listings.forEach(listing => {
-   if(new Date(listing.endsAt) > new Date()) activeListings.push(listing);
-})
-console.log(activeListings)
 const amountOfListings = document.querySelector("#amountOfListings");
 
-const totalListings = activeListings.length;
-amountOfListings.textContent = `(${totalListings} listings)`;
+let activeListings = [];
 
-activeListings.forEach(listing => {
-    allListings.append(thumbnail(listing));
-})
+async function fetchAndDisplayListings() {
+    const data = await getListings();
+    activeListings = data.data.filter(listing => new Date(listing.endsAt) > new Date());
+    sortListings("Latest"); 
+    amountOfListings.textContent = `(${activeListings.length} listings)`;
+}
+
+fetchAndDisplayListings();
+
+document.getElementById("sort-by").addEventListener("change", () => {
+    const sortBy = document.getElementById("sort-by").value;
+    sortListings(sortBy);
+});
+
+function sortListings(sortBy) {
+    switch (sortBy) {
+        case "Latest":
+            activeListings.sort((a, b) => new Date(b.created) - new Date(a.created));
+            break;
+        case "Ending":
+            activeListings.sort((a, b) => new Date(a.endsAt) - new Date(b.endsAt));
+            break;
+        case "TitleAZ":
+            activeListings.sort((a, b) => a.title.localeCompare(b.title));
+            break;
+        case "TitleZA":
+            activeListings.sort((a, b) => b.title.localeCompare(a.title));
+            break;
+    }
+    displayListings();
+}
+
+function displayListings() {
+    allListings.innerHTML = ""; 
+
+    activeListings.forEach(listing => {
+        allListings.append(thumbnail(listing));
+    });
+}
