@@ -66,7 +66,7 @@
 
 <!-- BID HISTORY -->
 
-    <section class="w-full bg-grey md:bg-white mb-6 mt-3 md:my-6 rounded-lg py-16 px-20">
+    <section class="w-full bg-grey md:bg-white mb-6 mt-3 md:my-6 rounded-lg py-16 px-20 hidden">
         <div class="flex flex-col">
 
                 <div class="flex gap-5 items-center">
@@ -135,7 +135,7 @@
     </section>
 
 <!-- YOUR LISTINGS -->
-    <section class="w-full bg-grey md:bg-white mb-6 mt-3 md:my-6 rounded-lg py-16 px-20 hidden">
+    <section class="w-full bg-grey md:bg-white mb-6 mt-3 md:my-6 rounded-lg py-16 px-20">
         <div class="flex flex-col">
             <div class="flex justify-between items-center mb-8">
                 <div class="flex gap-5 items-center">
@@ -151,9 +151,7 @@
                         <option value="Ending">Sold</option>
                     </select>
                 </div>
-                
             </div>
-            
 
             <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-y-6 sm:gap-x-3 sm:gap-y-6 md:gap-3 lg:gap-y-6 mb-16">
                 <figure>
@@ -199,7 +197,7 @@
         </div>
         
 
-        <div class="flex flex-col">
+        <div class="hidden flex-col">
             <div class="flex gap-5 items-center mb-6">
                 <h1 class="font-medium 2xl:font-semibold md:text-lg lg:text-xl 2xl:text-2xl md:mb-1">Expired listings</h1>
                 <span class="text-gray-500 text-sm lg:text-base lg:font-medium">(4 listings)</span>
@@ -247,7 +245,7 @@
                 </figure>
         </div>
 
-        <div class="flex flex-col">
+        <div class="hidden flex-col">
             <div class="flex gap-5 items-center mb-6">
                 <h1 class="font-medium 2xl:font-semibold md:text-lg lg:text-xl 2xl:text-2xl md:mb-1">Items you sold</h1>
                 <span class="text-gray-500 text-sm lg:text-base lg:font-medium">(3 listings)</span>
