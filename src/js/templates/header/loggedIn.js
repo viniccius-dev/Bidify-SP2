@@ -1,27 +1,39 @@
 import createElement from "../../helpers/createElement.js";
+import dropDown from "./dropDown.js";
 import getProfile from "../../api/auth/requests/getProfile.js";
 
 export default async function loggedIn(container, name) {
+    const profile = await getProfile(name);
 
-    const profile = await getProfile(name)
+    const headerLoggedIn = createHeaderLoggedIn(profile);
+    const dropDownMenu = dropDown(profile);
 
-    const dropDownContainer = createElement("div", "relative");
+    container.appendChild(headerLoggedIn);
+    container.appendChild(dropDownMenu);
+}
 
-    const img = createElement("img", "h-14 w-14 rounded-full object-cover");
-    img.src = profile.avatar.url;
-    img.alt = profile.avatar.alt;
+function createHeaderLoggedIn(profile) {
+    const div1 = createElement('div', 'xl:w-1/5 2xl:w-1/6 gap-2 items-center justify-end hidden xl:flex');
+    div1.setAttribute("id", "headerLoggedIn");
 
-    const dropDownBtn = createElement("button", "h-8 w-8 bg-light");
+    const div2 = createElement('div', 'flex flex-col mr-3');
+    const credits = createElement('p', 'text-right text-sm', 'Credits:');
+    const userCredits = createElement('p', 'text-right text-sm font-medium', profile.credits);
+    const div3 = createElement('div', 'relative h-16 w-16');
 
-    const dropDownIcon = createElement("i", "fa-solid fa-chevron-down text-sm");
+    const profileAvatar = createElement('img', 'h-14 w-14 rounded-full object-cover');
+    profileAvatar.src = profile.avatar.url; 
+    profileAvatar.alt = profile.avatar.alt;
 
-    const dropDownMenu = createElement("div", "");
+    const dropDownBtn = createElement('button', 'absolute bottom-0 right-0 h-6 w-6 bg-light rounded-full border flex items-center justify-center');
+    dropDown.setAttribute("id", "dropDownBtn");
 
-    dropDownContainer.append(img, dropDownBtn, dropDownMenu);
+    const dropDownIcon = createElement('i', 'fa-solid fa-chevron-down text-xs');
 
-    const div2 = createElement("div", "h-14 w-14 rounded-full flex items-center justify-center border hover:bg-secondary hover:border-transparent duration-300");
-    const i = createElement("i", "fa-solid fa-bell");
-    div2.appendChild(i);
+    dropDownBtn.appendChild(dropDownIcon);
+    div3.append(profileAvatar, dropDownBtn);
+    div2.append(credits, userCredits);
+    div1.append(div2, div3);
 
-    container.append(dropDownContainer, div2)
+    return div1;
 }

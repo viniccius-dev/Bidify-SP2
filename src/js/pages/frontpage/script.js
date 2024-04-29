@@ -5,7 +5,6 @@ import thumbnail from "../../templates/listings/thumbnails/index.js";
 import init from "../../updates/init.js";
 import loggedIn from "../../templates/header/loggedIn.js";
 
-
 const endingSoon = document.querySelector("#endingSoonListings");
 const latestListings = document.querySelector("#latestListings");
 
