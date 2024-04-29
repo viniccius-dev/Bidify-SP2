@@ -1,5 +1,5 @@
-const toggleButton = document.getElementById("seePassword");
-const passwordInput = document.getElementById("password");
+const toggleButton = document.querySelector("#seePassword");
+const passwordInput = document.querySelector("#password");
 
 export default function seePassword() {
   toggleButton.style.display = "none"; 
