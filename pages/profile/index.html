@@ -44,8 +44,7 @@
 <!--SIDEBAR-->
 
 <main class="flex header-wrapper mx-auto xl:bg-grey">
-    <section class="flex flex-col items-start gap-3 py-20 pr-16 bg-grey">
-
+    <section class="flex flex-col items-start gap-3 py-20 pr-16 mb-40 bg-grey">
         <div class="flex justify-between items-center w-full mb-6">
             <h1 class="xl:text-xl 2xl:text-2xl font-medium 2xl:font-semibold">Your profile</h1>
             <button class="border px-6 py-2 rounded bg-light hover:bg-primary hover:text-white duration-300">Edit profile</button>
@@ -73,11 +72,15 @@
                     <span class="text-gray-500 text-sm lg:text-base lg:font-medium">(4 listings)</span>
                 </div>
 
-                <select name="sort-by" id="sort-by" class="border w-64 h-full rounded px-3 py-2 outline-none">
-                    <option value="All" selected>Active listings</option>
-                    <option value="Latest">Expired listings</option>
-                    <option value="Ending">Sold</option>
-                </select>
+                <div class="flex gap-3">
+                    <button class="px-6 py-3 rounded bg-pink hover:bg-secondary duration-300">New listing</button>
+                    <select name="sort-by" id="sort-by" class="border w-64 h-full rounded px-3 py-3 outline-none">
+                        <option value="All" selected>Active listings</option>
+                        <option value="Latest">Expired listings</option>
+                        <option value="Ending">Sold</option>
+                    </select>
+                </div>
+                
             </div>
             
 
