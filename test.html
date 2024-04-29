@@ -21,30 +21,61 @@
 <body class="bg-grey">
 
 <!--HEADER-->
-<header class="pt-4 pb-3 lg:pt-8 lg:pb-6 bg-lightpink">
+<header class="pt-4 pb-3 lg:pt-8 lg:pb-6 bg-lightpink relative">
     <div class="header-wrapper flex justify-between items-center mx-auto">
         <span class="w-1/6">
             <a href="/index.html" class="text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl font-semibold 2xl:font-bold">bidlify<span class="text-secondary">.</span></a>
         </span>
 
-            <div class="items-center justify-between w-1/4 xl:w-1/3 mx-auto gap-10 hidden xl:flex">
-                <a href="#" class="w-1/3 text-center py-4 hover:font-medium duration-100">New listing</a>
-                <a href="#" class="w-1/3 text-center py-4 hover:font-medium duration-100">Auctions</a>
-                <a href="#" class="w-1/3 text-center py-4 hover:font-medium duration-100">About</a>
-            </div>
+        <div class="items-center justify-between w-1/4 xl:w-1/3 mx-auto gap-10 hidden xl:flex">
+            <a href="#" class="w-1/3 text-center py-4 hover:font-medium duration-100">New listing</a>
+            <a href="#" class="w-1/3 text-center py-4 hover:font-medium duration-100">Auctions</a>
+            <a href="#" class="w-1/3 text-center py-4 hover:font-medium duration-100">About</a>
+        </div>
 
-            <div class="xl:w-1/5 2xl:w-1/6 gap-8 items-center justify-end hidden xl:flex">
-                <div class="flex flex-col">
-                    <p class="text-center">Hello, MartineM</p>
-                    <p class="text-center font-medium text-sm">1000 credits</p>
-                </div>
-                <img src="/src/images/Chair.png" alt="" class="h-14 w-14 rounded-full object-cover">
-                <div class="h-14 w-14 rounded-full flex items-center justify-center border">
-                    <i class="fa-solid fa-bell"></i>
-                </div>
+        <div class="xl:w-1/5 2xl:w-1/6 gap-2 items-center justify-end hidden xl:flex">
+            <div class="flex flex-col mr-3">
+                <p class="text-right text-sm">Credits:</p>
+                <p class="text-right text-sm font-medium">1000</p>
             </div>
+            <div class="relative h-16 w-16">
+                <img src="/src/images/placeholder/placeholder1.jpg" alt="" class="h-14 w-14 rounded-full object-cover">
+                <button class="absolute bottom-0 right-0 h-6 w-6 bg-light rounded-full border flex items-center justify-center">
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </button>
+            </div>
+               
+            <div class="h-14 w-14 rounded-full flex items-center justify-center border">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </div>
     </div>
 </header>
+
+<div class="w-full mx-auto flex justify-end header-wrapper relative" id="dropDownMenu">
+    <div class="bg-light w-80 border rounded-lg p-10 flex flex-col mr-16">
+        <div class="flex items-center gap-6 border-b mb-6">
+            <img src="/src/images/placeholder/placeholder1.jpg" alt="" class="mb-4 h-14 w-14 rounded-full object-cover">
+            <div class="mb-4">
+                <p class="font-medium">Hello, MartineM</p>
+                <p class="flex gap-3 text-sm">Credits: <span>1000</span></p>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-3 border-b">
+            <a href="">Your profile</a>
+            <a href="" class="flex justify-between items-center">Messages<span class="bg-secondary text-sm px-1.5 py-1 rounded">3</span></a>
+            <a href="" class="mb-6">Notifications</a>
+        </div>
+
+        <div class="mt-6 flex flex-col items-start gap-4">
+            <span>Support</span>
+            <button class="font-medium">Log out</button>
+        </div>
+    </div>
+</div>
+
+
 
 <!-- ARE YOU SURE YOU WANT TO MAKE AN OFFER-->
 

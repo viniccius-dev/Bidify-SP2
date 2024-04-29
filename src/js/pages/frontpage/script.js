@@ -3,6 +3,7 @@ import imageCarousel from "./imageCarousel.js";
 import getListings from "../../api/auth/requests/getListings.js"
 import thumbnail from "../../templates/listings/thumbnails/index.js";
 import init from "../../updates/init.js";
+import loggedIn from "../../templates/header/loggedIn.js";
 
 
 const endingSoon = document.querySelector("#endingSoonListings");
@@ -39,3 +40,4 @@ for(let i = 0; i < 4; i++) {
 }
 
 init();
+loggedIn();
