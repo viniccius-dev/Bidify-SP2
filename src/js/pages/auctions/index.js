@@ -12,7 +12,6 @@ async function fetchAndDisplayListings() {
     sortListings("Latest"); 
     amountOfListings.textContent = `(${activeListings.length} listings)`;
 }
-
 fetchAndDisplayListings();
 
 document.getElementById("sort-by").addEventListener("change", () => {

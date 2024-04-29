@@ -57,9 +57,14 @@ listing.bids.forEach((bid, i) => {
 
   bidDetails.append(bidder, bidAmount);
   bidHistory.append(bidDetails);
-
 });
+
+const bidCount = document.querySelector("#bidCount");
+bidCount.textContent = " (" + listing.bids.length + ")";
 
 if (listing.media.length > 1) mediaElements(listing.media)
 else if (listing.media.length === 1) listingMediaContainer.append(listingMedia(listing.media[0]))
 else listingMediaContainer.append(listingMedia())
+
+
+
