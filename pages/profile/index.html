@@ -3,9 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bidlify | Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link href="/src/css/tailwind.css" rel="stylesheet">
+
+    <link rel="icon" sizes="16x16" type="image/png" href="/src/images/favico.png">  
+
+    <script type="module" src="/src/js/pages/frontpage/script.js"></script>
 </head>
-<body>
-    
+<body class="mx-auto text-primary bg-light xl:bg-grey">
+
+<!--HEADER-->
+<header class="pt-4 pb-3 lg:pt-8 lg:pb-6 bg-grey border-b">
+    <div class="header-wrapper flex justify-between items-center mx-auto">
+        <span class="w-1/6">
+            <a href="/index.html" class="text-2xl lg:text-3xl xl:text-2xl 2xl:text-3xl font-semibold 2xl:font-bold opacity-95 hover:opacity-100 duration-100">bidlify<span class="text-secondary">.</span></a>
+        </span>
+
+        <div class="items-center justify-between w-1/4 xl:w-1/3 mx-auto gap-10 hidden xl:flex">
+            <a href="#" class="w-1/3 text-center py-4 hover:font-medium duration-100">New listing</a>
+            <a href="/pages/auctions/index.html" class="w-1/3 text-center py-4 hover:font-medium duration-100">Auctions</a>
+            <a href="#" class="w-1/3 text-center py-4 hover:font-medium duration-100">About</a>
+        </div>
+
+        <div class="xl:w-1/5 2xl:w-1/6 gap-3 items-center justify-end hidden xl:flex" id="header-login">
+            <button class="font-semibold hover:text-secondary duration-100">Register</button>
+            <span>or</span>
+            <button class="border px-6 py-3 rounded hover:bg-secondary hover:border-secondary duration-300" id="openLogin">Log in</button>
+        </div>
+    </div>
+</header>
+
+<!--SIDEBAR-->
+
+<main class="flex header-wrapper mx-auto xl:bg-grey">
+    <section class="flex flex-col items-start gap-3 h-screen py-20 pr-16 bg-grey">
+
+        <div class="flex justify-between items-center w-full mb-6">
+            <h1 class="xl:text-xl 2xl:text-2xl font-medium 2xl:font-semibold">Your profile</h1>
+            <button class="border px-6 py-2 rounded bg-light hover:bg-primary hover:text-white duration-300">Edit profile</button>
+        </div>
+        
+        <img src="/src/images/placeholder/placeholder1.jpg" alt="" class="2xl:h-[28rem] 2xl:min-w-[28rem] object-cover rounded-lg">
+
+        <div class="flex flex-col gap-2 mt-6">
+            <h2 class="2xl:text-xl font-medium 2xl:font-semibold">MartineM</h2>
+            <p>martinem@stud.noroff.no</p>
+        </div>
+
+        <div class="w-full flex flex-col gap-4 mt-10">
+            <button class="px-6 py-3 w-full rounded bg-secondary">Your listings</button>
+            <button class="px-6 py-3 bg-light w-full rounded hover:bg-secondary duration-300 border">Auctions you won</button>
+            <button class="px-6 py-3 bg-light w-full rounded hover:bg-secondary duration-300 border">Your bid history</button>
+        </div>
+    </section>
+
+    <section class="w-full bg-grey md:bg-white mb-6 mt-3 md:my-6 rounded-lg py-16 px-20">
+        <div class="flex flex-col">
+            <div class="flex gap-5 items-center mb-8">
+                <h1 class="font-medium 2xl:font-semibold md:text-lg lg:text-xl 2xl:text-2xl md:mb-1">Your active listings</h1>
+                <span class="text-gray-500 text-sm lg:text-base lg:font-medium">(4 listings)</span>
+            </div>
+
+            <div class="grid grid-cols-4 gap-y-6 sm:gap-x-3 sm:gap-y-6 md:gap-4 lg:gap-y-6 mb-16">
+                <figure>
+                    <img src="/src/images/placeholder/placeholder1.jpg" alt="" class="rounded w-full object-cover listing-image hover:opacity-90 duration-100 h-80 md:h-96 xl:h-80 2xl:h-90">
+                    <figcaption>
+                        <h2 class="font-medium text-sm md:text-base xl:text-lg 2xl:text-xl pt-3 md:pt-4">Title</h2>
+                        <p class="text-gray-500 pb-2 xl:pb-3 pt-1 xl:pt-1 font-medium text-xs md:text-sm xl:text-base">Ends in: <span>1d 1h 2min</span></p>
+                        <p class="pb-4 md:pb-5 text-xs font-medium md:font-normal sm:text-sm lg:text-base 2xl:text-lg">Current bid:<span>3 credits</span></p>
+                    </figcaption>
+                    <button class="border rounded w-full py-2 md:py-3 hover:bg-secondary hover:border-secondary text-xs md:text-sm xl:text-base duration-300">View listing</button>
+                </figure>
+
+                <figure>
+                    <img src="/src/images/placeholder/placeholder2.jpg" alt="" class="rounded w-full object-cover listing-image hover:opacity-90 duration-100 h-80 md:h-96 xl:h-80 2xl:h-90">
+                    <figcaption>
+                        <h2 class="font-medium text-sm md:text-base xl:text-lg 2xl:text-xl pt-3 md:pt-4">Title</h2>
+                        <p class="text-gray-500 pb-2 xl:pb-3 pt-1 xl:pt-1 font-medium text-xs md:text-sm xl:text-base">Ends in: <span>1d 1h 2min</span></p>
+                        <p class="pb-4 md:pb-5 text-xs font-medium md:font-normal sm:text-sm lg:text-base 2xl:text-lg">Current bid:<span>3 credits</span></p>
+                    </figcaption>
+                    <button class="border rounded w-full py-2 md:py-3 hover:bg-secondary hover:border-secondary text-xs md:text-sm xl:text-base duration-300">View listing</button>
+                </figure>
+
+                <figure>
+                    <img src="/src/images/placeholder/placeholder3.jpg" alt="" class="rounded w-full object-cover listing-image hover:opacity-90 duration-100 h-80 md:h-96 xl:h-80 2xl:h-90">
+                    <figcaption>
+                        <h2 class="font-medium text-sm md:text-base xl:text-lg 2xl:text-xl pt-3 md:pt-4">Title</h2>
+                        <p class="text-gray-500 pb-2 xl:pb-3 pt-1 xl:pt-1 font-medium text-xs md:text-sm xl:text-base">Ends in: <span>1d 1h 2min</span></p>
+                        <p class="pb-4 md:pb-5 text-xs font-medium md:font-normal sm:text-sm lg:text-base 2xl:text-lg">Current bid:<span>3 credits</span></p>
+                    </figcaption>
+                    <button class="border rounded w-full py-2 md:py-3 hover:bg-secondary hover:border-secondary text-xs md:text-sm xl:text-base duration-300">View listing</button>
+                </figure>
+
+                <figure>
+                    <img src="/src/images/placeholder/placeholder4.jpg" alt="" class="rounded w-full object-cover listing-image hover:opacity-90 duration-100 h-80 md:h-96 xl:h-80 2xl:h-90">
+                    <figcaption>
+                        <h2 class="font-medium text-sm md:text-base xl:text-lg 2xl:text-xl pt-3 md:pt-4">Title</h2>
+                        <p class="text-gray-500 pb-2 xl:pb-3 pt-1 xl:pt-1 font-medium text-xs md:text-sm xl:text-base">Ends in: <span>1d 1h 2min</span></p>
+                        <p class="pb-4 md:pb-5 text-xs font-medium md:font-normal sm:text-sm lg:text-base 2xl:text-lg">Current bid: <span> 3 credits</span></p>
+                    </figcaption>
+                    <button class="border rounded w-full py-2 md:py-3 hover:bg-secondary hover:border-secondary text-xs md:text-sm xl:text-base duration-300">View listing</button>
+                </figure>
+            </div>
+        </div>
+        
+
+        <div class="flex flex-col">
+            <div class="flex gap-5 items-center mb-6">
+                <h1 class="font-medium 2xl:font-semibold md:text-lg lg:text-xl 2xl:text-2xl md:mb-1">Expired listings</h1>
+                <span class="text-gray-500 text-sm lg:text-base lg:font-medium">(4 listings)</span>
+            </div>
+
+            <div class="grid grid-cols-4 gap-y-6 sm:gap-x-3 sm:gap-y-6 md:gap-4 lg:gap-y-6 mb-16">
+                <figure>
+                    <img src="/src/images/placeholder/placeholder5.jpg" alt="" class="rounded w-full object-cover listing-image opacity-60 hover:opacity-100 duration-100 h-80 md:h-96 xl:h-80 2xl:h-90">
+                    <figcaption>
+                        <h2 class="font-medium text-sm md:text-base xl:text-lg 2xl:text-xl pt-3 md:pt-4">Title</h2>
+                        <p class="text-gray-500 pb-2 xl:pb-3 pt-1 xl:pt-1 font-medium text-xs md:text-sm xl:text-base">Ends in: <span>1d 1h 2min</span></p>
+                        <p class="pb-4 md:pb-5 text-xs font-medium md:font-normal sm:text-sm lg:text-base 2xl:text-lg">Sold for:<span>3 credits</span></p>
+                    </figcaption>
+                    <button class="border rounded w-full py-2 md:py-3 hover:bg-secondary hover:border-secondary text-xs md:text-sm xl:text-base duration-300">View listing</button>
+                </figure>
+
+                <figure>
+                    <img src="/src/images/placeholder/placeholder6.jpg" alt="" class="rounded w-full object-cover listing-image opacity-60 hover:opacity-100 duration-100 h-80 md:h-96 xl:h-80 2xl:h-90">
+                    <figcaption>
+                        <h2 class="font-medium text-sm md:text-base xl:text-lg 2xl:text-xl pt-3 md:pt-4">Title</h2>
+                        <p class="text-gray-500 pb-2 xl:pb-3 pt-1 xl:pt-1 font-medium text-xs md:text-sm xl:text-base">Ends in: <span>1d 1h 2min</span></p>
+                        <p class="pb-4 md:pb-5 text-xs font-medium md:font-normal sm:text-sm lg:text-base 2xl:text-lg">Sold for:<span>3 credits</span></p>
+                    </figcaption>
+                    <button class="border rounded w-full py-2 md:py-3 hover:bg-secondary hover:border-secondary text-xs md:text-sm xl:text-base duration-300">View listing</button>
+                </figure>
+
+                <figure>
+                    <img src="/src/images/placeholder/placeholder7.jpg" alt="" class="rounded w-full object-cover listing-image opacity-60 hover:opacity-100 duration-100 h-80 md:h-96 xl:h-80 2xl:h-90">
+                    <figcaption>
+                        <h2 class="font-medium text-sm md:text-base xl:text-lg 2xl:text-xl pt-3 md:pt-4">Title</h2>
+                        <p class="text-gray-500 pb-2 xl:pb-3 pt-1 xl:pt-1 font-medium text-xs md:text-sm xl:text-base">Ends in: <span>1d 1h 2min</span></p>
+                        <p class="pb-4 md:pb-5 text-xs font-medium md:font-normal sm:text-sm lg:text-base 2xl:text-lg">Sold for:<span>3 credits</span></p>
+                    </figcaption>
+                    <button class="border rounded w-full py-2 md:py-3 hover:bg-secondary hover:border-secondary text-xs md:text-sm xl:text-base duration-300">View listing</button>
+                </figure>
+
+                <figure>
+                    <img src="/src/images/placeholder/placeholder8.jpg" alt="" class="rounded w-full object-cover listing-image opacity-60 hover:opacity-100 duration-100 h-80 md:h-96 xl:h-80 2xl:h-90">
+                    <figcaption>
+                        <h2 class="font-medium text-sm md:text-base xl:text-lg 2xl:text-xl pt-3 md:pt-4">Title</h2>
+                        <p class="text-gray-500 pb-2 xl:pb-3 pt-1 xl:pt-1 font-medium text-xs md:text-sm xl:text-base">Ends in: <span>1d 1h 2min</span></p>
+                        <p class="pb-4 md:pb-5 text-xs font-medium md:font-normal sm:text-sm lg:text-base 2xl:text-lg">Sold for: <span> 3 credits</span></p>
+                    </figcaption>
+                    <button class="border rounded w-full py-2 md:py-3 hover:bg-secondary hover:border-secondary text-xs md:text-sm xl:text-base duration-300">View listing</button>
+                </figure>
+        </div>
+        
+    </section>
+</main>
+
+
+<!--FOOTER-->
+
+<footer class="py-6 lg:pt-10 lg:pb-14 bg-lightpink">
+    <div class="wrapper flex flex-col items-start lg:flex-row lg:justify-between mx-auto">
+        <span class="lg:w-1/7">
+            <a href="/index.html" class="text-lg lg:text-xl font-bold">Bidlify<span class="text-secondary">.</span></a>
+        </span>
+
+        <div class="pt-3 pb-4">
+            <a href="#" class="font-medium text-sm md:text-base">Contact us</a>
+            <ul class="text-gray-500 pt-1 lg:pt-4">
+                <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Support</li>
+                <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">FAQ</li>
+                <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Terms & policies</li>
+                <li class="pt-1 lg:pt-3 pb-1 text-xs md:text-sm 2xl:text-base">Phone: +47 56 97 34 00</li>
+                <li class="py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Mail: <span class="underline">contact@bidlify.com</span></li>
+            </ul>
+        </div>
+
+        <div class="pt-3 pb-4">
+            <a href="#" class="font-medium text-sm md:text-base">Services</a>
+            <ul class="text-gray-500 pt-1 lg:pt-4">
+                <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">About us</li>
+                <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Gift cards</li>
+                <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Sales guide</li>
+                <li class="hover:text-primary py-0.5 lg:py-1 text-xs md:text-sm 2xl:text-base">Positions</li>
+            </ul>
+        </div>
+
+        <div class="pt-3 max-w-md">
+            <h2 class="font-medium text-sm md:text-base">Newsletter</h2>
+            <p class="py-2 lg:py-4 text-xs md:text-sm 2xl:text-base text-gray-500 leading-relaxed">Enter your email below to be the first to stay updated about new listings, bids and much more.</p>
+
+            <div class="flex items-center mt-2 mb-3 lg:mb-6 gap-2 lg:gap-3">
+                <input type="text" placeholder="Email address" class="border rounded h-8 md:h-10 lg:h-12 w-full pl-3 text-sm lg:text-base">
+                <button class="bg-primary text-white min-w-10 h-8 md:h-10 lg:min-w-12 lg:h-12 rounded flex items-center justify-center">
+                    <i class="fa-regular fa-envelope text-sm md:text-base"></i>
+                </button>
+            </div>
+
+            <img src="/src/images/payments.png.png" alt="">
+        </div>
+    </div>
+</footer>
+
+<footer class="py-4 md:py-6 bg-primary text-white">
+    <div class="flex lg:items-center flex-col lg:flex-row lg:justify-between wrapper mx-auto">
+        <p class="text-xs md:text-sm 2xl:text-base">Copyright © Bidlify 2024. All rights reserved.</p>
+        <div class="flex items-center justify-between w-28 lg:w-40 text-lg md:text-2xl mt-2 md:mt-3">
+            <i class="fa-brands fa-instagram w-1/3 lg:text-right"></i>
+            <i class="fa-brands fa-square-facebook w-1/3 lg:text-right"></i>
+            <i class="fa-brands fa-square-twitter w-1/3 lg:text-right"></i>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
