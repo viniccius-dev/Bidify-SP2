@@ -1,7 +1,6 @@
 import createElement from "../../helpers/createElement.js";
 
 const listingMediaContainer = document.querySelector("#listingMediaContainer");
-// const listingImages = document.querySelectorAll(".listing-img");
 const imageCounter = document.getElementById("imageCounter");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
@@ -12,7 +11,7 @@ let endX = 0;
 let listingImages;
 
 
-export default function listingImagesFun(imgs) {
+export default function swipe(imgs) {
 
     let images = imgs;
     function nextImage() {

@@ -1,8 +1,10 @@
 import getListings from "../../api/auth/requests/getListings.js";
 import createElement from "../../helpers/createElement.js";
 import mediaElements from "./mediaElements.js";
-import listingImages from "../listing/listingImages.js";
 import liveEndsAt from "../../helpers/liveEndsAt.js";
+import listingMedia from "./listingMedia.js";
+
+const listingMediaContainer = document.querySelector("#listingMediaContainer");
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
@@ -36,7 +38,6 @@ const bidHistory = document.querySelector("#bidHistory");
 
 listing.bids.reverse()
 
-
 listing.bids.forEach((bid, i) => {
   const bidDetails =  i % 2 === 0 ? createElement("div",  "bg-white xl:bg-grey grid grid-cols-2 py-3 rounded") : createElement("div", "grid grid-cols-2 py-3 rounded")
 
@@ -49,10 +50,6 @@ listing.bids.forEach((bid, i) => {
 
 });
 
-if (listing.media.length > 1) {mediaElements(listing.media)}
-
-else if (listing.media.length === 1) {}
-
-else {
-
-}
+if (listing.media.length > 1) mediaElements(listing.media)
+else if (listing.media.length === 1) listingMediaContainer.append(listingMedia(listing.media[0]))
+else listingMediaContainer.append(listingMedia())

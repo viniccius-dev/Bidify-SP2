@@ -2,85 +2,21 @@ import getListings from "../../api/auth/requests/getListings.js";
 import thumbnail from "../../templates/listings/thumbnails/index.js";
 
 const allListings = document.querySelector("#allListings");
+
+const data = await getListings();
+const listings = data.data;
+
+const activeListings = [] 
+
+listings.forEach(listing => {
+   if(new Date(listing.endsAt) > new Date()) activeListings.push(listing);
+})
+console.log(activeListings)
 const amountOfListings = document.querySelector("#amountOfListings");
 
-let page = 1;
-let loading = false;
-let allListingsLoaded = false;
-let loadedListings = [];
-let totalActiveListings = 0;
+const totalListings = activeListings.length;
+amountOfListings.textContent = `(${totalListings} listings)`;
 
-async function loadInitialListings() {
-    try {
-        const data = await getListings();
-        const listings = data.data;
-
-        const now = new Date();
-        const activeListings = listings.filter(listing => new Date(listing.endsAt) > now);
-        totalActiveListings = activeListings.length; 
-
-        const initialListings = activeListings.slice(0, 12);
-
-        initialListings.forEach(listing => {
-            const thumbnailElement = thumbnail(listing);
-            allListings.appendChild(thumbnailElement);
-            loadedListings.push(listing.id);
-        });
-    } catch (error) {
-        console.error("Error fetching initial listings:", error);
-    } finally {
-        loading = false;
-        updateAmountOfListings(); 
-    }
-}
-
-async function loadMoreListings() {
-    try {
-        const data = await getListings(page);
-        const listings = data.data;
-
-        if (!listings || listings.length === 0) {
-            allListingsLoaded = true;
-            return; 
-        }
-
-        const now = new Date();
-        const activeListings = listings.filter(listing => new Date(listing.endsAt) > now);
-
-        const newActiveListings = activeListings.filter(listing => !loadedListings.includes(listing.id));
-
-        if (newActiveListings.length < 12) {
-            allListingsLoaded = true;
-        }
-
-        newActiveListings.forEach(listing => {
-            const thumbnailElement = thumbnail(listing);
-            allListings.appendChild(thumbnailElement);
-            loadedListings.push(listing.id);
-        });
-    } finally {
-        loading = false;
-        updateAmountOfListings(); 
-    }
-}
-
-function isBottom() {
-    const offset = 400; 
-    return window.innerHeight + window.scrollY >= document.body.offsetHeight - offset;
-}
-
-async function handleScroll() {
-    if (isBottom() && !loading && !allListingsLoaded) {
-        loading = true;
-        page++;
-        await loadMoreListings();
-    }
-}
-
-window.addEventListener("scroll", handleScroll);
-
-function updateAmountOfListings() {
-    amountOfListings.textContent = `(${totalActiveListings} listings)`;
-}
-
-loadInitialListings();
+activeListings.forEach(listing => {
+    allListings.append(thumbnail(listing));
+})

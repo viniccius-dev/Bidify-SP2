@@ -1,4 +1,5 @@
 import createElement from "../../helpers/createElement.js";
+import listingMedia from "./listingMedia.js";
 
 const listingMediaContainer = document.querySelector("#listingMediaContainer");
 
@@ -25,12 +26,8 @@ export default function mediaElements (images) {
     const imgArray = []
 
     images.forEach((img,i) => {
-        const imgContainer = createElement("figure", " listing-img");
+        const imgContainer = listingMedia(img);
         i === 0 ? imgContainer.classList.add("active") : imgContainer.classList.add("hidden")
-        const listingImage = createElement("img", "object-cover h-80 sm:h-96 lg:h-[30rem] xl:h-[35rem] 2xl:h-[38rem] rounded w-full");
-        listingImage.src = img.url;
-        listingImage.alt = img.alt ? img.alt : "A bidlify listing image";
-        imgContainer.append(listingImage);
         listingMediaContainer.append(imgContainer);
         imgArray.push(true)
     });
