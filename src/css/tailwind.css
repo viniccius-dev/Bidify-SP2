@@ -724,6 +724,14 @@ video {
   margin-right: 0.75rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-1\.5 {
+  margin-top: 0.375rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -746,18 +754,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
-.mt-1\.5 {
-  margin-top: 0.375rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .flex {
@@ -868,6 +864,14 @@ video {
   width: 75%;
 }
 
+.w-32 {
+  width: 8rem;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
 .w-5 {
   width: 1.25rem;
 }
@@ -898,14 +902,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
-.w-4\/5 {
-  width: 80%;
 }
 
 .min-w-10 {
@@ -1067,6 +1063,11 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
 .bg-grey {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 245 / var(--tw-bg-opacity));
@@ -1100,11 +1101,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -1323,10 +1319,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pr-10 {
-  padding-right: 2.5rem;
 }
 
 .text-center {
@@ -2082,10 +2074,6 @@ video {
     width: 100%;
   }
 
-  .xl\:w-4\/5 {
-    width: 80%;
-  }
-
   .xl\:min-w-\[18rem\] {
     min-width: 18rem;
   }
@@ -2166,6 +2154,10 @@ video {
     padding-left: 4rem;
   }
 
+  .xl\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
   .xl\:pr-20 {
     padding-right: 5rem;
   }
@@ -2184,10 +2176,6 @@ video {
 
   .xl\:pt-8 {
     padding-top: 2rem;
-  }
-
-  .xl\:pr-10 {
-    padding-right: 2.5rem;
   }
 
   .xl\:text-2xl {
@@ -2247,12 +2235,12 @@ video {
     margin-bottom: 1.5rem;
   }
 
-  .\32xl\:mt-6 {
-    margin-top: 1.5rem;
-  }
-
   .\32xl\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .\32xl\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .\32xl\:h-12 {
@@ -2390,6 +2378,10 @@ video {
     padding-left: 6rem;
   }
 
+  .\32xl\:pr-16 {
+    padding-right: 4rem;
+  }
+
   .\32xl\:pr-28 {
     padding-right: 7rem;
   }
@@ -2400,10 +2392,6 @@ video {
 
   .\32xl\:pt-8 {
     padding-top: 2rem;
-  }
-
-  .\32xl\:pr-16 {
-    padding-right: 4rem;
   }
 
   .\32xl\:text-2xl {
