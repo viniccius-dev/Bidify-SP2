@@ -27,18 +27,19 @@ export default async function postBid(id, body) {
     const bidHistory = document.querySelector("#bidHistory")
     console.log(bidHistory)
     const bidDetails = bidHistory.length % 2 === 0 ? createElement("div",  "bg-white xl:bg-grey grid grid-cols-2 py-3 rounded") : createElement("div", "grid grid-cols-2 py-3 rounded")
-console.log(bidHistory.children.length)
-  const bidder = createElement("p", "pl-3", profile.name);
-  const bidAmount = createElement("p", "text-right pr-3", body.amount + " credits");
-  document.getElementById("bidCount").textContent = ` (${bidHistory.children.length + 1})`
-  bidDetails.append(bidder, bidAmount);
-  bidHistory.appendChild(bidDetails)
-  
+    console.log(bidHistory.children.length)
+    const bidder = createElement("p", "pl-3", profile.name);
+    const bidAmount = createElement("p", "text-right pr-3", body.amount + " credits");
+    document.getElementById("bidCount").textContent = ` (${bidHistory.children.length + 1})`
+    document.getElementById("currentBid").textContent = `${body.amount} credits`
+    bidDetails.append(bidder, bidAmount);
+    bidHistory.prepend(bidDetails)
+    
 
    }
  
 
-
+   // currentBid
 }
 
   

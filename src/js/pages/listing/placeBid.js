@@ -27,4 +27,4 @@ postBid(id, body)
     })     
 }
 
-// bidHistory
+// currentBid
