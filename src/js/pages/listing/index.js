@@ -53,7 +53,7 @@ listing.bids.reverse()
 listing.bids.forEach((bid, i) => {
   const bidDetails =  i % 2 === 0 ? createElement("div",  "bg-white xl:bg-grey grid grid-cols-2 py-3 rounded") : createElement("div", "grid grid-cols-2 py-3 rounded")
 
-  const bidder = createElement("p", "pl-3",i+1+". "+bid.bidder.name);
+  const bidder = createElement("p", "pl-3", bid.bidder.name);
 
   const bidAmount = createElement("p", "text-right pr-3", bid.amount + " credits");
 
