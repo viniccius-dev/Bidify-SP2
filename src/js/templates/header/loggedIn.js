@@ -26,11 +26,11 @@ function createHeaderLoggedIn(profile) {
     profileAvatar.alt = profile.avatar.alt;
 
     const dropDownBtn = createElement('button', 'absolute bottom-0 right-0 h-6 w-6 bg-light rounded-full border flex items-center justify-center');
-    dropDown.setAttribute("id", "dropDownBtn");
+    dropDownBtn.setAttribute("id", "dropDownBtn");
 
     const dropDownIcon = createElement('i', 'fa-solid fa-chevron-down text-xs');
 
-    dropDownBtn.appendChild(dropDownIcon);
+    dropDownBtn.append(dropDownIcon);
     div3.append(profileAvatar, dropDownBtn);
     div2.append(credits, userCredits);
     div1.append(div2, div3);

@@ -1,8 +1,10 @@
+import init from "../../updates/init.js";
 import getListings from "../../api/auth/requests/getListings.js";
 import createElement from "../../helpers/createElement.js";
 import mediaElements from "./mediaElements.js";
 import liveEndsAt from "../../helpers/liveEndsAt.js";
 import listingMedia from "./listingMedia.js";
+import placeBid from "./placeBid.js";
 
 const listingMediaContainer = document.querySelector("#listingMediaContainer");
 
@@ -67,4 +69,5 @@ else if (listing.media.length === 1) listingMediaContainer.append(listingMedia(l
 else listingMediaContainer.append(listingMedia())
 
 
-
+placeBid(id);
+init();

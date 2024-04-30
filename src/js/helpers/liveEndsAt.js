@@ -16,8 +16,23 @@ export default function liveEndsAt (date, ele) {
         const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-        ele.textContent = `${days} d ${hours} h ${minutes} min ${seconds} sec`
+if (days > 0) {
+    return `${days} d ${hours} h ${minutes} min ${seconds} sec`
+}
 
-    }, 1000)
+else if (hours > 0) {
+    ele.textContent = `${hours} h ${minutes} min ${seconds} sec`
+
+}
+
+else if (minutes > 0) { 
+        ele.textContent = ` ${minutes} min ${seconds} sec`
+
+    }
+
+    else ele.textContent = `${seconds} sec`
+}
+
+, 1000)
 
 }
