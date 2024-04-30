@@ -6,6 +6,21 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+#dropDown {
+    z-index: -1; /* Rev */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, z-index 0.3s;
+    transform: translateY(-20px);
+}
+
+#dropDown.show {
+    z-index:99;
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 /* WRAPPERS */
 
 .wrapper {
