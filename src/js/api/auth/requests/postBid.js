@@ -30,9 +30,6 @@ export default async function postBid(id, body) {
     bidDetails.append(bidder, bidAmount);
     bidHistory.prepend(bidDetails)
    }
- 
-
-   // currentBid
 }
 
   
