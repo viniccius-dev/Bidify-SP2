@@ -3,7 +3,7 @@ import storage from "../../../helpers/storage.js"
 import createElement from "../../../helpers/createElement.js"
 
 export default async function postBid(id, body) {
-    const url = `${config.BaseURL}auction/listings/${id}/bids`
+    const url = `${config.BaseURL}auction/listings/${id}/bids/?_seller=true`
 
     const token = storage.get("token")
    
@@ -18,19 +18,30 @@ export default async function postBid(id, body) {
     } )
 
     const data = await response.json()
+    console.log(data)
 
    if(data) {
 
+    const profile = storage.get("profile")
+
     const bidHistory = document.querySelector("#bidHistory")
-    console
+    console.log(bidHistory)
     const bidDetails = bidHistory.length % 2 === 0 ? createElement("div",  "bg-white xl:bg-grey grid grid-cols-2 py-3 rounded") : createElement("div", "grid grid-cols-2 py-3 rounded")
+console.log(bidHistory.children.length)
+  const bidder = createElement("p", "pl-3", (Number(bidHistory.children.length + 1)) + ". " + profile.name);
 
-  const bidder = createElement("p", "pl-3", (bidItems.length + 1) + ". " + bid.bidder.name);
+  const bidAmount = createElement("p", "text-right pr-3", body.amount + " credits");
 
-  const bidAmount = createElement("p", "text-right pr-3", bid.amount + " credits");
 
+
+  document.getElementById("bidCount").textContent = ` (${bidHistory.children.length + 1})`
+
+  console.log(bidAmount)
+  console.log(bidder)
   bidDetails.append(bidder, bidAmount);
   bidHistory.appendChild(bidDetails)
+  
+
    }
  
 
