@@ -16,15 +16,8 @@ placeBidBtn.addEventListener('click', () => {
     const body = {
     amount: Number(bidInput.value)
    } 
-  
 
-
-
-
-postBid(id, body)
-
+    postBid(id, body)
    
     })     
 }
-
-// currentBid
